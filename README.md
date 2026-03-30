@@ -2,7 +2,7 @@
 
 Personal portfolio website for **Yong Benitez**, a freelance Virtual Assistant & Content Creator with 5+ years of experience in video editing, photo editing, social media marketing, and podcast management.
 
-**Live site:** [yongbenitez.com](https://yongbenitez.com)
+**Live site:** [yongbenitez.com](https://yongbenitez.netlify.app)
 
 ---
 

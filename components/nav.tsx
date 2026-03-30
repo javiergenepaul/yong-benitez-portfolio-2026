@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { LogoIcon } from "@/components/logo"
 
 const links = [
   { href: "#about", label: "About" },
@@ -21,9 +22,12 @@ export function Nav() {
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="text-lg font-black tracking-widest text-foreground"
+          className="flex items-center gap-2.5 group"
         >
-          YONG<span className="text-primary">.</span>
+          <LogoIcon variant="square" size={32} />
+          <span className="text-lg font-black tracking-widest text-foreground group-hover:text-primary transition-colors duration-300">
+            YONG<span className="text-primary">.</span>
+          </span>
         </button>
 
         <ul className="hidden md:flex gap-8 list-none">

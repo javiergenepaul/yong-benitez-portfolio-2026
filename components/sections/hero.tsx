@@ -1,38 +1,8 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import { TypeAnimation } from "react-type-animation"
 import { Button } from "@/components/ui/button"
-
-const TYPEWRITER_TEXT = "Yong Benitez, Virtual Assistant"
-
-function Typewriter() {
-  const [displayed, setDisplayed] = useState("")
-  const [done, setDone] = useState(false)
-
-  useEffect(() => {
-    const start = setTimeout(() => {
-      let i = 0
-      const interval = setInterval(() => {
-        i++
-        setDisplayed(TYPEWRITER_TEXT.slice(0, i))
-        if (i >= TYPEWRITER_TEXT.length) {
-          clearInterval(interval)
-          setDone(true)
-        }
-      }, 60)
-      return () => clearInterval(interval)
-    }, 800)
-    return () => clearTimeout(start)
-  }, [])
-
-  return (
-    <span
-      className={`text-lg font-bold text-primary border-r-2 border-primary pr-0.5 ${done ? "animate-blink" : ""}`}
-    >
-      {displayed || "\u00A0"}
-    </span>
-  )
-}
 
 function StatCounter({ target, suffix = "+" }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0)
@@ -109,6 +79,16 @@ function scrollTo(id: string) {
   if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: "smooth" })
 }
 
+// Each role is shown for 2.5 s then deleted over 1 s before the next types in
+const ROLES_SEQUENCE: (string | number)[] = [
+  "General Virtual Assistant",   2500,
+  "Social Media Manager",        2500,
+  "Podcast Manager",             2500,
+  "Executive Assistant",         2500,
+  "Brand Manager",               2500,
+  "Appointment Setter",          2500,
+]
+
 export function Hero() {
   return (
     <section
@@ -148,10 +128,22 @@ export function Hero() {
             </h1>
           </div>
 
+          {/* Name (static) + animated role — single line */}
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".4s" }}>
-            <div className="flex items-baseline gap-1 mt-4 mb-6">
-              <span className="text-lg text-foreground/40">I&apos;m </span>
-              <Typewriter />
+            <div className="mt-4 mb-6 flex items-baseline flex-wrap gap-x-2">
+              <span className="text-lg text-foreground/40 whitespace-nowrap">I&apos;m</span>
+              <span className="text-lg font-black text-foreground whitespace-nowrap">
+                Yong Benitez,
+              </span>
+              <TypeAnimation
+                sequence={ROLES_SEQUENCE}
+                wrapper="span"
+                speed={55}
+                deletionSpeed={70}
+                repeat={Infinity}
+                cursor={true}
+                className="text-lg font-bold text-primary"
+              />
             </div>
             <p className="text-base text-foreground/50 max-w-md leading-relaxed mb-8">
               5+ years crafting scroll-stopping content, managing social media growth,

@@ -1,8 +1,13 @@
+"use client"
+
+import { useTranslation } from "react-i18next"
 import { LogoIcon } from "@/components/logo"
 import { LinkPreview } from "@/components/ui/link-preview"
 import { SparklesText } from "@/components/ui/sparkles-text"
 
 export function Footer() {
+  const { t } = useTranslation()
+
   return (
     <footer className="bg-card border-t border-border py-10 px-6 text-center">
       <div className="max-w-6xl mx-auto">
@@ -12,9 +17,7 @@ export function Footer() {
             YONG<span className="text-primary">.</span>
           </span>
         </div>
-        <div className="text-xs text-foreground/20 mb-6">
-          Virtual Assistant · Video Editing · Photo Editing · Social Media Marketing
-        </div>
+        <div className="text-xs text-foreground/20 mb-6">{t("footer.tagline")}</div>
         <div className="flex gap-3 justify-center mb-6">
           <a
             href="https://www.linkedin.com/in/virtualassistbyyong/"
@@ -40,10 +43,10 @@ export function Footer() {
           </a>
         </div>
         <div className="text-xs text-foreground/15">
-          © {new Date().getFullYear()} Yong Benitez. All rights reserved.
+          {t("footer.copyright", { year: new Date().getFullYear() })}
         </div>
         <div className="text-xs text-foreground/25 mt-3">
-          developed by{" "}
+          {t("footer.developedBy")}{" "}
           <LinkPreview
             url="https://paul-javier-portfolio.netlify.app/"
             className="inline-block text-foreground/40 hover:text-primary transition-colors duration-300"

@@ -1,0 +1,217 @@
+{
+  "nav": {
+    "about": "Chi Sono",
+    "services": "Servizi",
+    "works": "Lavori",
+    "clients": "Clienti",
+    "contact": "Contatti",
+    "hireMe": "Assumimi"
+  },
+  "hero": {
+    "badge": "Disponibile per Freelance",
+    "tagline1": "Creativo.",
+    "tagline2": "Visivo.",
+    "tagline3": "Strategico.",
+    "intro": "Sono",
+    "description": "Oltre 5 anni a creare contenuti accattivanti, gestire la crescita sui social media, montare video e ottimizzare le operazioni per clienti globali.",
+    "cta1": "Lavora con Me →",
+    "cta2": "Vedi i Lavori ↓",
+    "stats": {
+      "yearsExp": "Anni di Esp.",
+      "clients": "Clienti",
+      "services": "Servizi",
+      "remote": "Remoto"
+    },
+    "avatarBadge": "Assistente Virtuale · PH",
+    "chips": {
+      "videoEditing": "Montaggio Video",
+      "photoEditing": "Editing Foto",
+      "socialMedia": "Social Media",
+      "podcasting": "Podcasting"
+    },
+    "roles": [
+      "Assistente Virtuale Generale",
+      "Social Media Manager",
+      "Podcast Manager",
+      "Assistente Esecutivo",
+      "Brand Manager",
+      "Coordinatore Appuntamenti"
+    ]
+  },
+  "ticker": {
+    "items": [
+      "Montaggio Video",
+      "Editing Foto",
+      "Marketing Social Media",
+      "Gestione Podcast",
+      "Assistente Virtuale",
+      "Creazione Contenuti",
+      "Strategia di Brand"
+    ]
+  },
+  "about": {
+    "label": "Chi Sono",
+    "title1": "Il tuo assistente",
+    "title2": "virtuale di fiducia.",
+    "p1": "Ho oltre cinque anni di esperienza come freelancer e assistente virtuale, specializzato nell'aiutare le aziende a ottimizzare le operazioni e migliorare l'efficienza.",
+    "p2": "Il mio focus principale è",
+    "p2Highlight": "montaggio video, editing fotografico e marketing sui social media",
+    "p2After": "— creare contenuti visivi che fermano lo scroll e costruiscono brand online.",
+    "p3": "Ho supportato clienti globali nel settore immobiliare, coaching, podcasting, e-commerce e tech — con velocità e creatività.",
+    "cta": "Collaboriamo →",
+    "skillsTitle": "Competenze & Livello",
+    "skills": {
+      "videoEditing": "Montaggio Video",
+      "photoEditing": "Editing Foto",
+      "smm": "Marketing Social Media",
+      "podcastMgmt": "Gestione Podcast",
+      "adminVA": "Compiti Admin & VA",
+      "contentCreation": "Creazione Contenuti"
+    }
+  },
+  "services": {
+    "label": "Cosa Offro",
+    "title": "Servizi che",
+    "titleHighlight": "convertono.",
+    "items": [
+      {
+        "title": "Montaggio Video",
+        "desc": "Color grading, tagli, transizioni, sottotitoli e post-produzione per far risaltare i tuoi contenuti su qualsiasi piattaforma.",
+        "tags": ["Reels", "YouTube", "TikTok"]
+      },
+      {
+        "title": "Editing Foto",
+        "desc": "Ritocco, correzione colore e graphic design per creare visual che rispecchiano l'identità del tuo brand.",
+        "tags": ["Canva", "Ritocco", "Branding"]
+      },
+      {
+        "title": "Marketing Social Media",
+        "desc": "Strategia, calendari editoriali, pubblicazione, engagement e analytics per far crescere il tuo pubblico e ottenere risultati.",
+        "tags": ["Instagram", "Facebook", "LinkedIn"]
+      },
+      {
+        "title": "Podcast & Supporto VA",
+        "desc": "Produzione episodi, compiti amministrativi, inserimento dati e supporto operativo per far girare il tuo business senza intoppi.",
+        "tags": ["Montaggio", "Admin", "Pubblicazione"]
+      }
+    ]
+  },
+  "clients": {
+    "label": "Esperienza Lavorativa",
+    "title": "Clienti che ho",
+    "titleHighlight": "servito.",
+    "items": [
+      {
+        "sub": "Team Immobiliare",
+        "desc": "Gestione social media, creazione contenuti e coinvolgimento del pubblico per un team immobiliare che sfrutta la tecnologia.",
+        "tag": "Immobiliare"
+      },
+      {
+        "sub": "Servizi di Recensioni e Video Online",
+        "desc": "Gestione delle recensioni online e servizi di montaggio video per migliorare la reputazione e aumentare l'engagement.",
+        "tag": "Marketing Digitale"
+      },
+      {
+        "sub": "Agente Immobiliare – La Tua Casa Venduta Garantita",
+        "desc": "Digital marketing, presenza sui social, sviluppo strategia, creazione contenuti e analisi dei dati.",
+        "tag": "Immobiliare"
+      },
+      {
+        "sub": "Coach Notarile – California",
+        "desc": "Gestione piattaforme social e contenuti video accattivanti — curation, ottimizzazione piattaforma, montaggio.",
+        "tag": "Coaching"
+      },
+      {
+        "sub": "Attività di Campeggio",
+        "desc": "Presenza social con contenuti coinvolgenti e strategie di marketing per la community outdoor.",
+        "tag": "E-Commerce"
+      },
+      {
+        "sub": "Podcast",
+        "desc": "Supporto alla produzione podcast — pianificazione episodi, montaggio, pubblicazione e coinvolgimento del pubblico.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "Azienda HVAC",
+        "desc": "VA generale — supporto amministrativo, inserimento dati e gestione chiamate per le operazioni quotidiane.",
+        "tag": "HVAC / Servizi"
+      },
+      {
+        "sub": "Tech per l'Edilizia",
+        "desc": "Compiti admin, inserimento dati e ricerca per supportare le operazioni aziendali — organizzato, efficiente e digitale.",
+        "tag": "Tech / Edilizia"
+      }
+    ]
+  },
+  "works": {
+    "label": "I Miei Lavori",
+    "title": "Guarda.",
+    "titleHighlight": "Scopri.",
+    "description": "Una selezione di montaggi video, contenuti social e progetti creativi consegnati a clienti reali.",
+    "tabs": ["Tutti", "Montaggio Video", "Social Media", "Podcast"],
+    "items": [
+      {
+        "title": "Reel Promo Immobiliare",
+        "sub": "Robin Michael · Social Media",
+        "desc": "Montaggio video per Robin Michael – reel promozionale per annunci immobiliari sui social."
+      },
+      {
+        "title": "Campagna di Crescita Instagram",
+        "sub": "BMP Network · Engagement",
+        "desc": "Campagna di marketing social per BMP Network — engagement triplicato in 60 giorni."
+      },
+      {
+        "title": "Highlight Episodio Podcast",
+        "sub": "Talking Shift with Craig · Audio",
+        "desc": "Prodotto e montato un clip da Talking Shift with Craig — tagli puliti, sottotitoli, audiogramma."
+      },
+      {
+        "title": "Spot Video Short-Form",
+        "sub": "Savage Sales · TikTok / Reels",
+        "desc": "Spot video breve per Savage Sales — showcase prodotto con transizioni e sottotitoli."
+      },
+      {
+        "title": "Contenuto Brand Outdoor",
+        "sub": "Outcamping UK · Instagram",
+        "desc": "Strategia contenuti per Outcamping UK — estetica naturale, atmosfera community."
+      },
+      {
+        "title": "Highlight Feedback Clienti",
+        "sub": "Vari Clienti · Testimonianze",
+        "desc": "Raccolta di feedback e risultati dei clienti — dimostrando l'impatto reale su tutti i servizi."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Efficienza al massimo livello. Lasciami essere il tuo assistente virtuale di fiducia — porto organizzazione, strategia ed esecuzione così puoi concentrarti su ciò che sai fare meglio.",
+    "attribution": "— Yong Benitez, Assistente Virtuale"
+  },
+  "contact": {
+    "label": "Contattami",
+    "title": "Pronto a",
+    "titleHighlight": "collaborare?",
+    "description": "Che tu abbia bisogno di montaggi video accattivanti, contenuti fotografici straordinari o una strategia social completa — sono pronto. Parliamone!",
+    "info": {
+      "emailSub": "Scrivimi quando vuoi",
+      "locationSub": "Lavoro da remoto in tutto il mondo",
+      "availabilitySub": "Disponibile ora"
+    },
+    "form": {
+      "name": "Il Tuo Nome",
+      "namePlaceholder": "Mario Rossi",
+      "email": "Indirizzo Email",
+      "emailPlaceholder": "mario@esempio.it",
+      "service": "Servizio Richiesto",
+      "servicePlaceholder": "es. Montaggio Video, Social Media",
+      "message": "Messaggio",
+      "messagePlaceholder": "Raccontami del tuo progetto..."
+    },
+    "send": "Invia Messaggio →",
+    "sent": "Messaggio Inviato ✓"
+  },
+  "footer": {
+    "tagline": "Assistente Virtuale · Montaggio Video · Editing Foto · Marketing Social Media",
+    "copyright": "© {{year}} Yong Benitez. Tutti i diritti riservati.",
+    "developedBy": "sviluppato da"
+  }
+}

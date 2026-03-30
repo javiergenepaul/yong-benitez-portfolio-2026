@@ -1,0 +1,217 @@
+{
+  "nav": {
+    "about": "关于",
+    "services": "服务",
+    "works": "作品",
+    "clients": "客户",
+    "contact": "联系",
+    "hireMe": "雇用我"
+  },
+  "hero": {
+    "badge": "接受自由职业",
+    "tagline1": "创意.",
+    "tagline2": "视觉.",
+    "tagline3": "策略.",
+    "intro": "我是",
+    "description": "拥有5年以上经验，专注于创作吸引眼球的内容、管理社交媒体增长、视频剪辑及优化全球客户的业务流程。",
+    "cta1": "与我合作 →",
+    "cta2": "查看作品 ↓",
+    "stats": {
+      "yearsExp": "年经验",
+      "clients": "客户",
+      "services": "服务",
+      "remote": "远程"
+    },
+    "avatarBadge": "虚拟助理 · PH",
+    "chips": {
+      "videoEditing": "视频剪辑",
+      "photoEditing": "图片编辑",
+      "socialMedia": "社交媒体",
+      "podcasting": "播客"
+    },
+    "roles": [
+      "通用虚拟助理",
+      "社交媒体经理",
+      "播客经理",
+      "行政助理",
+      "品牌经理",
+      "预约专员"
+    ]
+  },
+  "ticker": {
+    "items": [
+      "视频剪辑",
+      "图片编辑",
+      "社交媒体营销",
+      "播客管理",
+      "虚拟助理",
+      "内容创作",
+      "品牌策略"
+    ]
+  },
+  "about": {
+    "label": "关于我",
+    "title1": "您的虚拟",
+    "title2": "得力助手。",
+    "p1": "我拥有超过五年的自由职业者和虚拟助理经验，专注于帮助企业优化运营流程、提升效率。",
+    "p2": "我的核心专长是",
+    "p2Highlight": "视频剪辑、图片编辑和社交媒体营销",
+    "p2After": "——创作让人停滞滚动的视觉内容，在线打造品牌。",
+    "p3": "我曾为房地产、教练、播客、电商和科技领域的全球客户提供支持，以速度和创意交付成果。",
+    "cta": "立即合作 →",
+    "skillsTitle": "技能 & 熟练度",
+    "skills": {
+      "videoEditing": "视频剪辑",
+      "photoEditing": "图片编辑",
+      "smm": "社交媒体营销",
+      "podcastMgmt": "播客管理",
+      "adminVA": "行政 & VA 任务",
+      "contentCreation": "内容创作"
+    }
+  },
+  "services": {
+    "label": "我的服务",
+    "title": "带来转化的",
+    "titleHighlight": "服务。",
+    "items": [
+      {
+        "title": "视频剪辑",
+        "desc": "调色、剪辑、转场、字幕及后期制作，让您的内容在任何平台上脱颖而出。",
+        "tags": ["Reels", "YouTube", "TikTok"]
+      },
+      {
+        "title": "图片编辑",
+        "desc": "修图、色彩校正和平面设计，打造反映品牌形象的视觉内容。",
+        "tags": ["Canva", "修图", "品牌设计"]
+      },
+      {
+        "title": "社交媒体营销",
+        "desc": "策略规划、内容日历、发帖、互动和数据分析，扩大受众群体并驱动业绩。",
+        "tags": ["Instagram", "Facebook", "LinkedIn"]
+      },
+      {
+        "title": "播客 & VA 支持",
+        "desc": "节目制作、行政任务、数据录入和运营支持，让您的业务平稳运行。",
+        "tags": ["剪辑", "Admin", "发布"]
+      }
+    ]
+  },
+  "clients": {
+    "label": "工作经历",
+    "title": "服务过的",
+    "titleHighlight": "客户。",
+    "items": [
+      {
+        "sub": "房地产团队",
+        "desc": "为善用科技的房地产团队提供社交媒体管理、内容创作和受众互动服务。",
+        "tag": "房地产"
+      },
+      {
+        "sub": "在线评价与视频服务",
+        "desc": "在线评价管理和视频剪辑服务，提升品牌声誉并促进互动。",
+        "tag": "数字营销"
+      },
+      {
+        "sub": "房产经纪人 – 保证售出您的房子",
+        "desc": "数字营销、社媒运营、战略规划、内容创作和数据分析。",
+        "tag": "房地产"
+      },
+      {
+        "sub": "公证教练 – 加利福尼亚",
+        "desc": "社交媒体平台管理和吸引眼球的视频内容——内容策划、平台优化、剪辑。",
+        "tag": "教练"
+      },
+      {
+        "sub": "露营业务",
+        "desc": "为户外社区提供有吸引力的社媒内容和营销策略，提升品牌曝光。",
+        "tag": "电商"
+      },
+      {
+        "sub": "播客",
+        "desc": "播客制作支持——节目规划、剪辑、发布和受众互动。",
+        "tag": "播客"
+      },
+      {
+        "sub": "暖通空调公司",
+        "desc": "通用虚拟助理——行政支持、数据录入及日常运营的电话处理。",
+        "tag": "暖通 / 服务"
+      },
+      {
+        "sub": "建筑科技",
+        "desc": "行政任务、数据录入和调研，支持业务运营——有条不紊、高效、数字化。",
+        "tag": "科技 / 建筑"
+      }
+    ]
+  },
+  "works": {
+    "label": "我的作品",
+    "title": "观看。",
+    "titleHighlight": "体验。",
+    "description": "为真实客户交付的视频剪辑、社媒内容和创意项目精选集锦。",
+    "tabs": ["全部", "视频剪辑", "社交媒体", "播客"],
+    "items": [
+      {
+        "title": "房产宣传短视频",
+        "sub": "Robin Michael · 社交媒体",
+        "desc": "为 Robin Michael 制作的视频——房产列表社媒宣传短视频。"
+      },
+      {
+        "title": "Instagram 增粉活动",
+        "sub": "BMP Network · 互动",
+        "desc": "为 BMP Network 开展的社媒营销活动——60天内互动量增长3倍。"
+      },
+      {
+        "title": "播客精彩片段",
+        "sub": "Talking Shift with Craig · 音频",
+        "desc": "制作并剪辑 Talking Shift with Craig 的精彩片段——干净剪辑、字幕、音频图。"
+      },
+      {
+        "title": "短视频广告",
+        "sub": "Savage Sales · TikTok / Reels",
+        "desc": "为 Savage Sales 制作的短视频广告——含转场和字幕的产品展示。"
+      },
+      {
+        "title": "户外品牌内容",
+        "sub": "Outcamping UK · Instagram",
+        "desc": "Outcamping UK 的内容策略与后期制作——自然美学，社区氛围。"
+      },
+      {
+        "title": "客户反馈集锦",
+        "sub": "多位客户 · 见证",
+        "desc": "客户反馈与成果汇编——展示全服务线的真实影响力。"
+      }
+    ]
+  },
+  "quote": {
+    "text": "极致效率，尽在于此。让我成为您的虚拟得力助手——我带来组织力、策略和执行力，让您专注于自己最擅长的事。",
+    "attribution": "— Yong Benitez，虚拟助理"
+  },
+  "contact": {
+    "label": "联系我",
+    "title": "准备好",
+    "titleHighlight": "合作了吗？",
+    "description": "无论您需要吸引眼球的视频剪辑、精美的图片内容还是完整的社媒策略——我已准备就绪。让我们聊聊！",
+    "info": {
+      "emailSub": "随时发邮件给我",
+      "locationSub": "支持全球远程",
+      "availabilitySub": "现在可接单"
+    },
+    "form": {
+      "name": "您的姓名",
+      "namePlaceholder": "张三",
+      "email": "电子邮件",
+      "emailPlaceholder": "zhang@example.com",
+      "service": "所需服务",
+      "servicePlaceholder": "例如：视频剪辑、社交媒体",
+      "message": "留言",
+      "messagePlaceholder": "请告诉我您的项目详情..."
+    },
+    "send": "发送消息 →",
+    "sent": "已发送 ✓"
+  },
+  "footer": {
+    "tagline": "虚拟助理 · 视频剪辑 · 图片编辑 · 社交媒体营销",
+    "copyright": "© {{year}} Yong Benitez. 版权所有。",
+    "developedBy": "开发者"
+  }
+}

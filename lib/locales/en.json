@@ -1,0 +1,217 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "works": "Works",
+    "clients": "Clients",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "badge": "Available for Freelance",
+    "tagline1": "Creative.",
+    "tagline2": "Visual.",
+    "tagline3": "Strategic.",
+    "intro": "I'm",
+    "description": "5+ years crafting scroll-stopping content, managing social media growth, editing videos, and streamlining operations for global clients.",
+    "cta1": "Work With Me →",
+    "cta2": "View Work ↓",
+    "stats": {
+      "yearsExp": "Years Exp.",
+      "clients": "Clients",
+      "services": "Services",
+      "remote": "Remote"
+    },
+    "avatarBadge": "Virtual Assistant · PH",
+    "chips": {
+      "videoEditing": "Video Editing",
+      "photoEditing": "Photo Editing",
+      "socialMedia": "Social Media",
+      "podcasting": "Podcasting"
+    },
+    "roles": [
+      "General Virtual Assistant",
+      "Social Media Manager",
+      "Podcast Manager",
+      "Executive Assistant",
+      "Brand Manager",
+      "Appointment Setter"
+    ]
+  },
+  "ticker": {
+    "items": [
+      "Video Editing",
+      "Photo Editing",
+      "Social Media Marketing",
+      "Podcast Management",
+      "General VA",
+      "Content Creation",
+      "Brand Strategy"
+    ]
+  },
+  "about": {
+    "label": "About Me",
+    "title1": "Your virtual",
+    "title2": "helping hand.",
+    "p1": "I have over five years of experience as a dedicated freelancer and virtual assistant, specializing in helping businesses streamline their operations and improve efficiency.",
+    "p2": "My core focus is",
+    "p2Highlight": "video editing, photo editing, and social media marketing",
+    "p2After": "— crafting visual content that stops the scroll and builds brands online.",
+    "p3": "I've supported global clients across real estate, coaching, podcasting, e-commerce, and tech — delivering results with speed and creativity.",
+    "cta": "Let's collaborate →",
+    "skillsTitle": "Skills & Proficiency",
+    "skills": {
+      "videoEditing": "Video Editing",
+      "photoEditing": "Photo Editing",
+      "smm": "Social Media Marketing",
+      "podcastMgmt": "Podcast Management",
+      "adminVA": "Admin & VA Tasks",
+      "contentCreation": "Content Creation"
+    }
+  },
+  "services": {
+    "label": "What I Offer",
+    "title": "Services that",
+    "titleHighlight": "convert.",
+    "items": [
+      {
+        "title": "Video Editing",
+        "desc": "Color grading, cuts, transitions, captions, and post-production that makes your content pop on any platform.",
+        "tags": ["Reels", "YouTube", "TikTok"]
+      },
+      {
+        "title": "Photo Editing",
+        "desc": "Retouching, color correction, and graphic design to create visuals that reflect your brand's identity.",
+        "tags": ["Canva", "Retouching", "Branding"]
+      },
+      {
+        "title": "Social Media Marketing",
+        "desc": "Strategy, content calendars, posting, engagement, and analytics to grow your audience and drive results.",
+        "tags": ["Instagram", "Facebook", "LinkedIn"]
+      },
+      {
+        "title": "Podcast & VA Support",
+        "desc": "Episode production, admin tasks, data entry, and operational support to keep your business running smoothly.",
+        "tags": ["Editing", "Admin", "Publishing"]
+      }
+    ]
+  },
+  "clients": {
+    "label": "Work Experience",
+    "title": "Clients I've",
+    "titleHighlight": "served.",
+    "items": [
+      {
+        "sub": "Real Estate Team",
+        "desc": "Social media management, content creation, and audience engagement for a real estate team leveraging technology.",
+        "tag": "Real Estate"
+      },
+      {
+        "sub": "Online Review & Video Services",
+        "desc": "Online review management and video editing services to enhance reputation and drive engagement.",
+        "tag": "Digital Marketing"
+      },
+      {
+        "sub": "Realtor – Your Home Sold Guaranteed",
+        "desc": "Digital marketing, social media presence, strategy development, content creation, and data analysis.",
+        "tag": "Real Estate"
+      },
+      {
+        "sub": "Notary Coach – California",
+        "desc": "Social media platforms management and captivating video content — curation, platform optimization, editing.",
+        "tag": "Coaching"
+      },
+      {
+        "sub": "Camping Business",
+        "desc": "Social media presence with engaging content and marketing strategies for the outdoor community.",
+        "tag": "E-Commerce"
+      },
+      {
+        "sub": "Podcast",
+        "desc": "Podcast production support — episode planning, editing, publishing, and audience engagement.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "HVAC Company",
+        "desc": "General VA — administrative support, data entry, and inbound/outbound call handling for daily operations.",
+        "tag": "HVAC / Services"
+      },
+      {
+        "sub": "Construction Tech",
+        "desc": "Admin tasks, data entry, and research to support business operations — organized, efficient, and digitally strong.",
+        "tag": "Tech / Construction"
+      }
+    ]
+  },
+  "works": {
+    "label": "My Work",
+    "title": "Watch.",
+    "titleHighlight": "Experience.",
+    "description": "A highlight reel of video edits, social media content, and creative projects delivered for real clients.",
+    "tabs": ["All Works", "Video Editing", "Social Media", "Podcast"],
+    "items": [
+      {
+        "title": "Real Estate Promo Reel",
+        "sub": "Robin Michael · Social Media",
+        "desc": "Video edit created for Robin Michael – social media promo reel for real estate listings."
+      },
+      {
+        "title": "Instagram Growth Campaign",
+        "sub": "BMP Network · Engagement",
+        "desc": "Social media marketing campaign for BMP Network — grew engagement by 3x in 60 days."
+      },
+      {
+        "title": "Podcast Episode Highlight",
+        "sub": "Talking Shift with Craig · Audio",
+        "desc": "Produced and edited a highlight clip from Talking Shift with Craig — clean cuts, captions, audiogram."
+      },
+      {
+        "title": "Short-Form Video Ad",
+        "sub": "Savage Sales · TikTok / Reels",
+        "desc": "Short-form video ad produced for Savage Sales — product showcase with transitions and captions."
+      },
+      {
+        "title": "Outdoor Brand Content",
+        "sub": "Outcamping UK · Instagram",
+        "desc": "Content strategy and post production for Outcamping UK — nature aesthetic, community feel."
+      },
+      {
+        "title": "Client Feedback Highlight",
+        "sub": "Multiple Clients · Testimonials",
+        "desc": "A compilation of client feedback and results — showing real impact across all services."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Efficiency at its finest. Let me be your virtual helping hand — I bring the organization, strategy, and execution so you can focus on what you do best.",
+    "attribution": "— Yong Benitez, Virtual Assistant"
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "title": "Ready to",
+    "titleHighlight": "collaborate?",
+    "description": "Whether you need scroll-stopping video edits, stunning photo content, or a full social media strategy — I'm ready. Let's talk!",
+    "info": {
+      "emailSub": "Email me anytime",
+      "locationSub": "Remote worldwide",
+      "availabilitySub": "Available now"
+    },
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "service": "Service Needed",
+      "servicePlaceholder": "e.g. Video Editing, Social Media",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project..."
+    },
+    "send": "Send Message →",
+    "sent": "Message Sent ✓"
+  },
+  "footer": {
+    "tagline": "Virtual Assistant · Video Editing · Photo Editing · Social Media Marketing",
+    "copyright": "© {{year}} Yong Benitez. All rights reserved.",
+    "developedBy": "developed by"
+  }
+}

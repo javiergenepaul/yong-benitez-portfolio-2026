@@ -1,0 +1,217 @@
+{
+  "nav": {
+    "about": "Sobre Mim",
+    "services": "Serviços",
+    "works": "Trabalhos",
+    "clients": "Clientes",
+    "contact": "Contato",
+    "hireMe": "Contrate-me"
+  },
+  "hero": {
+    "badge": "Disponível para Freelance",
+    "tagline1": "Criativo.",
+    "tagline2": "Visual.",
+    "tagline3": "Estratégico.",
+    "intro": "Eu sou",
+    "description": "Mais de 5 anos criando conteúdo envolvente, gerenciando crescimento nas redes sociais, editando vídeos e otimizando operações para clientes globais.",
+    "cta1": "Trabalhe Comigo →",
+    "cta2": "Ver Trabalhos ↓",
+    "stats": {
+      "yearsExp": "Anos de Exp.",
+      "clients": "Clientes",
+      "services": "Serviços",
+      "remote": "Remoto"
+    },
+    "avatarBadge": "Assistente Virtual · PH",
+    "chips": {
+      "videoEditing": "Edição de Vídeo",
+      "photoEditing": "Edição de Fotos",
+      "socialMedia": "Redes Sociais",
+      "podcasting": "Podcasting"
+    },
+    "roles": [
+      "Assistente Virtual Geral",
+      "Gerente de Redes Sociais",
+      "Gerente de Podcast",
+      "Assistente Executivo",
+      "Gerente de Marca",
+      "Agendador de Consultas"
+    ]
+  },
+  "ticker": {
+    "items": [
+      "Edição de Vídeo",
+      "Edição de Fotos",
+      "Marketing em Redes Sociais",
+      "Gestão de Podcast",
+      "Assistente Virtual",
+      "Criação de Conteúdo",
+      "Estratégia de Marca"
+    ]
+  },
+  "about": {
+    "label": "Sobre Mim",
+    "title1": "Sua mão",
+    "title2": "virtual de ajuda.",
+    "p1": "Tenho mais de cinco anos de experiência como freelancer e assistente virtual dedicado, especializado em ajudar empresas a otimizar suas operações e melhorar a eficiência.",
+    "p2": "Meu foco principal é",
+    "p2Highlight": "edição de vídeo, edição de fotos e marketing em redes sociais",
+    "p2After": "— criando conteúdo visual que prende a atenção e constrói marcas online.",
+    "p3": "Apoiei clientes globais em imóveis, coaching, podcasting, e-commerce e tecnologia — entregando resultados com rapidez e criatividade.",
+    "cta": "Vamos colaborar →",
+    "skillsTitle": "Habilidades & Proficiência",
+    "skills": {
+      "videoEditing": "Edição de Vídeo",
+      "photoEditing": "Edição de Fotos",
+      "smm": "Marketing em Redes Sociais",
+      "podcastMgmt": "Gestão de Podcast",
+      "adminVA": "Tarefas Admin & VA",
+      "contentCreation": "Criação de Conteúdo"
+    }
+  },
+  "services": {
+    "label": "O Que Ofereço",
+    "title": "Serviços que",
+    "titleHighlight": "convertem.",
+    "items": [
+      {
+        "title": "Edição de Vídeo",
+        "desc": "Gradação de cor, cortes, transições, legendas e pós-produção para destacar seu conteúdo em qualquer plataforma.",
+        "tags": ["Reels", "YouTube", "TikTok"]
+      },
+      {
+        "title": "Edição de Fotos",
+        "desc": "Retoque, correção de cor e design gráfico para criar visuais que refletem a identidade da sua marca.",
+        "tags": ["Canva", "Retoque", "Branding"]
+      },
+      {
+        "title": "Marketing em Redes Sociais",
+        "desc": "Estratégia, calendários de conteúdo, postagens, engajamento e análises para crescer sua audiência e gerar resultados.",
+        "tags": ["Instagram", "Facebook", "LinkedIn"]
+      },
+      {
+        "title": "Podcast & Suporte VA",
+        "desc": "Produção de episódios, tarefas administrativas, entrada de dados e suporte operacional para manter seu negócio funcionando.",
+        "tags": ["Edição", "Admin", "Publicação"]
+      }
+    ]
+  },
+  "clients": {
+    "label": "Experiência Profissional",
+    "title": "Clientes que",
+    "titleHighlight": "atendi.",
+    "items": [
+      {
+        "sub": "Equipe Imobiliária",
+        "desc": "Gerenciamento de redes sociais, criação de conteúdo e engajamento para uma equipe imobiliária que usa tecnologia.",
+        "tag": "Imóveis"
+      },
+      {
+        "sub": "Serviços de Avaliação e Vídeo Online",
+        "desc": "Gerenciamento de avaliações online e edição de vídeo para melhorar a reputação e aumentar o engajamento.",
+        "tag": "Marketing Digital"
+      },
+      {
+        "sub": "Corretor – Sua Casa Vendida Garantida",
+        "desc": "Marketing digital, presença nas redes sociais, desenvolvimento de estratégia, criação de conteúdo e análise de dados.",
+        "tag": "Imóveis"
+      },
+      {
+        "sub": "Coach de Cartório – Califórnia",
+        "desc": "Gerenciamento de plataformas de redes sociais e conteúdo de vídeo cativante — curadoria, otimização, edição.",
+        "tag": "Coaching"
+      },
+      {
+        "sub": "Empresa de Camping",
+        "desc": "Presença nas redes sociais com conteúdo envolvente e estratégias de marketing para a comunidade outdoor.",
+        "tag": "E-Commerce"
+      },
+      {
+        "sub": "Podcast",
+        "desc": "Suporte de produção de podcast — planejamento de episódios, edição, publicação e engajamento da audiência.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "Empresa de HVAC",
+        "desc": "Assistente virtual geral — suporte administrativo, entrada de dados e atendimento de chamadas para operações diárias.",
+        "tag": "HVAC / Serviços"
+      },
+      {
+        "sub": "Tecnologia de Construção",
+        "desc": "Tarefas administrativas, entrada de dados e pesquisa para apoiar as operações — organizado, eficiente e digital.",
+        "tag": "Tech / Construção"
+      }
+    ]
+  },
+  "works": {
+    "label": "Meu Trabalho",
+    "title": "Assista.",
+    "titleHighlight": "Experimente.",
+    "description": "Uma seleção de edições de vídeo, conteúdo de redes sociais e projetos criativos entregues para clientes reais.",
+    "tabs": ["Todos", "Edição de Vídeo", "Redes Sociais", "Podcast"],
+    "items": [
+      {
+        "title": "Reel Promo Imobiliário",
+        "sub": "Robin Michael · Redes Sociais",
+        "desc": "Edição de vídeo para Robin Michael – reel promocional de imóveis para redes sociais."
+      },
+      {
+        "title": "Campanha de Crescimento no Instagram",
+        "sub": "BMP Network · Engajamento",
+        "desc": "Campanha de marketing para BMP Network — triplicou o engajamento em 60 dias."
+      },
+      {
+        "title": "Destaque de Episódio de Podcast",
+        "sub": "Talking Shift with Craig · Áudio",
+        "desc": "Produção e edição de um clip do Talking Shift with Craig — cortes limpos, legendas, audiograma."
+      },
+      {
+        "title": "Anúncio em Vídeo Curto",
+        "sub": "Savage Sales · TikTok / Reels",
+        "desc": "Anúncio em vídeo curto para Savage Sales — apresentação de produto com transições e legendas."
+      },
+      {
+        "title": "Conteúdo de Marca Outdoor",
+        "sub": "Outcamping UK · Instagram",
+        "desc": "Estratégia de conteúdo para Outcamping UK — estética natural, sensação de comunidade."
+      },
+      {
+        "title": "Compilação de Feedback de Clientes",
+        "sub": "Vários Clientes · Depoimentos",
+        "desc": "Compilação de feedbacks e resultados de clientes — mostrando o impacto real em todos os serviços."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Eficiência em seu mais alto nível. Deixe-me ser sua mão virtual de ajuda — trago a organização, a estratégia e a execução para que você possa focar no que faz de melhor.",
+    "attribution": "— Yong Benitez, Assistente Virtual"
+  },
+  "contact": {
+    "label": "Entre em Contato",
+    "title": "Pronto para",
+    "titleHighlight": "colaborar?",
+    "description": "Seja para edições de vídeo impactantes, conteúdo fotográfico incrível ou uma estratégia completa de redes sociais — estou pronto. Vamos conversar!",
+    "info": {
+      "emailSub": "Me escreva a qualquer hora",
+      "locationSub": "Trabalho remoto mundial",
+      "availabilitySub": "Disponível agora"
+    },
+    "form": {
+      "name": "Seu Nome",
+      "namePlaceholder": "João Silva",
+      "email": "Endereço de E-mail",
+      "emailPlaceholder": "joao@exemplo.com",
+      "service": "Serviço Necessário",
+      "servicePlaceholder": "ex. Edição de Vídeo, Redes Sociais",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-me sobre seu projeto..."
+    },
+    "send": "Enviar Mensagem →",
+    "sent": "Mensagem Enviada ✓"
+  },
+  "footer": {
+    "tagline": "Assistente Virtual · Edição de Vídeo · Edição de Fotos · Marketing em Redes Sociais",
+    "copyright": "© {{year}} Yong Benitez. Todos os direitos reservados.",
+    "developedBy": "desenvolvido por"
+  }
+}

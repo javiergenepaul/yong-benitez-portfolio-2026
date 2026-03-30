@@ -1,28 +1,16 @@
 "use client"
 
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { Reveal } from "@/components/reveal"
 import { Button } from "@/components/ui/button"
 
-const contactInfo = [
-  {
-    icon: "✉",
-    label: "benitezyong@gmail.com",
-    sub: "Email me anytime",
-  },
-  {
-    icon: "📍",
-    label: "Philippines",
-    sub: "Remote worldwide",
-  },
-  {
-    icon: "🟢",
-    label: "Open to projects",
-    sub: "Available now",
-  },
-]
+const contactIcons = ["✉", "📍", "🟢"]
+const contactLabels = ["benitezyong@gmail.com", "Philippines", "Open to projects"]
+const contactSubKeys = ["emailSub", "locationSub", "availabilitySub"] as const
 
 export function Contact() {
+  const { t } = useTranslation()
   const [sent, setSent] = useState(false)
 
   return (
@@ -31,24 +19,23 @@ export function Contact() {
         {/* Left */}
         <Reveal>
           <p className="text-xs font-bold tracking-widest uppercase text-primary mb-3">
-            Get In Touch
+            {t("contact.label")}
           </p>
           <h2 className="text-4xl font-black text-foreground mb-6">
-            Ready to <span className="text-primary">collaborate?</span>
+            {t("contact.title")} <span className="text-primary">{t("contact.titleHighlight")}</span>
           </h2>
           <p className="text-base text-foreground/40 leading-relaxed mb-8">
-            Whether you need scroll-stopping video edits, stunning photo content, or a full
-            social media strategy — I&apos;m ready. Let&apos;s talk!
+            {t("contact.description")}
           </p>
           <div className="space-y-4">
-            {contactInfo.map((c) => (
-              <div key={c.label} className="flex items-center gap-4 group">
+            {contactSubKeys.map((subKey, i) => (
+              <div key={subKey} className="flex items-center gap-4 group">
                 <div className="w-10 h-10 bg-primary/10 border border-primary/20 rounded-xl flex items-center justify-center text-primary text-base group-hover:bg-primary group-hover:text-white transition-all shrink-0">
-                  {c.icon}
+                  {contactIcons[i]}
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-foreground">{c.label}</div>
-                  <div className="text-xs text-foreground/30">{c.sub}</div>
+                  <div className="text-sm font-bold text-foreground">{contactLabels[i]}</div>
+                  <div className="text-xs text-foreground/30">{t(`contact.info.${subKey}`)}</div>
                 </div>
               </div>
             ))}
@@ -60,41 +47,41 @@ export function Contact() {
           <div className="bg-card border border-border rounded-3xl p-8">
             <div className="mb-5">
               <label className="block text-xs font-bold text-foreground/40 uppercase tracking-widest mb-2">
-                Your Name
+                {t("contact.form.name")}
               </label>
               <input
                 type="text"
-                placeholder="John Smith"
+                placeholder={t("contact.form.namePlaceholder")}
                 className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
               />
             </div>
             <div className="mb-5">
               <label className="block text-xs font-bold text-foreground/40 uppercase tracking-widest mb-2">
-                Email Address
+                {t("contact.form.email")}
               </label>
               <input
                 type="email"
-                placeholder="john@example.com"
+                placeholder={t("contact.form.emailPlaceholder")}
                 className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
               />
             </div>
             <div className="mb-5">
               <label className="block text-xs font-bold text-foreground/40 uppercase tracking-widest mb-2">
-                Service Needed
+                {t("contact.form.service")}
               </label>
               <input
                 type="text"
-                placeholder="e.g. Video Editing, Social Media"
+                placeholder={t("contact.form.servicePlaceholder")}
                 className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
               />
             </div>
             <div className="mb-6">
               <label className="block text-xs font-bold text-foreground/40 uppercase tracking-widest mb-2">
-                Message
+                {t("contact.form.message")}
               </label>
               <textarea
                 rows={4}
-                placeholder="Tell me about your project..."
+                placeholder={t("contact.form.messagePlaceholder")}
                 className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors resize-y"
               />
             </div>
@@ -105,7 +92,7 @@ export function Contact() {
               }`}
               disabled={sent}
             >
-              {sent ? "Message Sent ✓" : "Send Message →"}
+              {sent ? t("contact.sent") : t("contact.send")}
             </Button>
           </div>
         </Reveal>

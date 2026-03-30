@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import { useTranslation } from "react-i18next"
 import { TypeAnimation } from "react-type-animation"
 import { Button } from "@/components/ui/button"
 
@@ -39,63 +40,65 @@ function StatCounter({ target, suffix = "+" }: { target: number; suffix?: string
   )
 }
 
-const floatingChips = [
-  {
-    emoji: "🎬",
-    label: "Video Editing",
-    color: "text-primary",
-    bg: "bg-primary/20",
-    pos: "top-8 left-4",
-    delay: "0s",
-  },
-  {
-    emoji: "📸",
-    label: "Photo Editing",
-    color: "text-purple-400",
-    bg: "bg-purple-500/20",
-    pos: "top-20 right-0",
-    delay: "0.7s",
-  },
-  {
-    emoji: "📱",
-    label: "Social Media",
-    color: "text-blue-400",
-    bg: "bg-blue-500/20",
-    pos: "bottom-24 left-0",
-    delay: "1.4s",
-  },
-  {
-    emoji: "🎙️",
-    label: "Podcasting",
-    color: "text-green-400",
-    bg: "bg-green-500/20",
-    pos: "bottom-10 right-4",
-    delay: "0s",
-  },
-]
-
 function scrollTo(id: string) {
   const el = document.getElementById(id)
   if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: "smooth" })
 }
 
-// Each role is shown for 2.5 s then deleted over 1 s before the next types in
-const ROLES_SEQUENCE: (string | number)[] = [
-  "General Virtual Assistant",   2500,
-  "Social Media Manager",        2500,
-  "Podcast Manager",             2500,
-  "Executive Assistant",         2500,
-  "Brand Manager",               2500,
-  "Appointment Setter",          2500,
-]
-
 export function Hero() {
+  const { t, i18n } = useTranslation()
+
+  const roles = t("hero.roles", { returnObjects: true }) as string[]
+  const rolesSequence: (string | number)[] = roles.flatMap((r) => [r, 2500])
+
+  const floatingChips = [
+    {
+      emoji: "🎬",
+      label: t("hero.chips.videoEditing"),
+      color: "text-primary",
+      bg: "bg-primary/20",
+      pos: "top-8 left-4",
+      delay: "0s",
+    },
+    {
+      emoji: "📸",
+      label: t("hero.chips.photoEditing"),
+      color: "text-purple-400",
+      bg: "bg-purple-500/20",
+      pos: "top-20 right-0",
+      delay: "0.7s",
+    },
+    {
+      emoji: "📱",
+      label: t("hero.chips.socialMedia"),
+      color: "text-blue-400",
+      bg: "bg-blue-500/20",
+      pos: "bottom-24 left-0",
+      delay: "1.4s",
+    },
+    {
+      emoji: "🎙️",
+      label: t("hero.chips.podcasting"),
+      color: "text-green-400",
+      bg: "bg-green-500/20",
+      pos: "bottom-10 right-4",
+      delay: "0s",
+    },
+  ]
+
+  const stats = [
+    { count: 5, suffix: "+", label: t("hero.stats.yearsExp") },
+    { count: 15, suffix: "+", label: t("hero.stats.clients") },
+    { count: 4, suffix: "+", label: t("hero.stats.services") },
+    { count: 100, suffix: "%", label: t("hero.stats.remote") },
+  ]
+
   return (
     <section
       id="home"
       className="min-h-screen flex items-center pt-16 px-6 relative overflow-hidden"
     >
-      {/* Grid bg — uses CSS var so it adapts to light/dark */}
+      {/* Grid bg */}
       <div
         className="absolute inset-0"
         style={{
@@ -114,29 +117,30 @@ export function Hero() {
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".1s" }}>
             <span className="inline-flex items-center gap-2 bg-foreground/5 border border-foreground/10 text-primary text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Available for Freelance
+              {t("hero.badge")}
             </span>
           </div>
 
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".25s" }}>
             <h1 className="text-5xl md:text-7xl font-black leading-[1.05] mb-2">
-              <span className="text-foreground">Creative.</span>
+              <span className="text-foreground">{t("hero.tagline1")}</span>
               <br />
-              <span className="shimmer-text">Visual.</span>
+              <span className="shimmer-text">{t("hero.tagline2")}</span>
               <br />
-              <span className="text-foreground/30">Strategic.</span>
+              <span className="text-foreground/30">{t("hero.tagline3")}</span>
             </h1>
           </div>
 
-          {/* Name (static) + animated role — single line */}
+          {/* Name + animated role */}
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".4s" }}>
             <div className="mt-4 mb-6 flex items-baseline flex-wrap gap-x-2">
-              <span className="text-lg text-foreground/40 whitespace-nowrap">I&apos;m</span>
+              <span className="text-lg text-foreground/40 whitespace-nowrap">{t("hero.intro")}</span>
               <span className="text-lg font-black text-foreground whitespace-nowrap">
                 Yong Benitez,
               </span>
               <TypeAnimation
-                sequence={ROLES_SEQUENCE}
+                key={i18n.language}
+                sequence={rolesSequence}
                 wrapper="span"
                 speed={55}
                 deletionSpeed={70}
@@ -146,8 +150,7 @@ export function Hero() {
               />
             </div>
             <p className="text-base text-foreground/50 max-w-md leading-relaxed mb-8">
-              5+ years crafting scroll-stopping content, managing social media growth,
-              editing videos, and streamlining operations for global clients.
+              {t("hero.description")}
             </p>
           </div>
 
@@ -159,13 +162,13 @@ export function Hero() {
               onClick={() => scrollTo("contact")}
               className="rounded-full px-8 py-3.5 h-auto font-bold text-sm"
             >
-              Work With Me →
+              {t("hero.cta1")}
             </Button>
             <button
               onClick={() => scrollTo("services")}
               className="border border-border text-foreground px-8 py-3.5 rounded-full font-bold text-sm hover:border-primary hover:text-primary transition-all duration-300"
             >
-              View Work ↓
+              {t("hero.cta2")}
             </button>
           </div>
 
@@ -174,12 +177,7 @@ export function Hero() {
             className="opacity-0 animate-fade-up flex gap-8 mt-10 pt-8 border-t border-border"
             style={{ animationDelay: ".7s" }}
           >
-            {[
-              { count: 5, suffix: "+", label: "Years Exp." },
-              { count: 15, suffix: "+", label: "Clients" },
-              { count: 4, suffix: "+", label: "Services" },
-              { count: 100, suffix: "%", label: "Remote" },
-            ].map((s) => (
+            {stats.map((s) => (
               <div key={s.label}>
                 <StatCounter target={s.count} suffix={s.suffix} />
                 <div className="text-xs text-foreground/30 mt-1">{s.label}</div>
@@ -208,7 +206,7 @@ export function Hero() {
           <div className="animate-blob relative w-52 h-52 bg-gradient-to-br from-navy to-[#1a1f2e] flex items-center justify-center z-10">
             <span className="text-8xl font-black text-white/10 select-none">Y</span>
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap z-20">
-              Virtual Assistant · PH
+              {t("hero.avatarBadge")}
             </div>
           </div>
 

@@ -1,0 +1,217 @@
+{
+  "nav": {
+    "about": "Über Mich",
+    "services": "Leistungen",
+    "works": "Arbeiten",
+    "clients": "Kunden",
+    "contact": "Kontakt",
+    "hireMe": "Beauftragen"
+  },
+  "hero": {
+    "badge": "Verfügbar als Freelancer",
+    "tagline1": "Kreativ.",
+    "tagline2": "Visuell.",
+    "tagline3": "Strategisch.",
+    "intro": "Ich bin",
+    "description": "Über 5 Jahre Erfahrung in der Erstellung ansprechender Inhalte, Social-Media-Wachstum, Videobearbeitung und Optimierung von Abläufen für globale Kunden.",
+    "cta1": "Mit Mir Arbeiten →",
+    "cta2": "Arbeiten Ansehen ↓",
+    "stats": {
+      "yearsExp": "Jahre Erf.",
+      "clients": "Kunden",
+      "services": "Leistungen",
+      "remote": "Remote"
+    },
+    "avatarBadge": "Virtual Assistant · PH",
+    "chips": {
+      "videoEditing": "Videobearbeitung",
+      "photoEditing": "Fotobearbeitung",
+      "socialMedia": "Social Media",
+      "podcasting": "Podcasting"
+    },
+    "roles": [
+      "Allgemeiner Virtual Assistant",
+      "Social-Media-Manager",
+      "Podcast-Manager",
+      "Führungsassistenz",
+      "Marken-Manager",
+      "Terminkoordinator"
+    ]
+  },
+  "ticker": {
+    "items": [
+      "Videobearbeitung",
+      "Fotobearbeitung",
+      "Social-Media-Marketing",
+      "Podcast-Management",
+      "Virtual Assistant",
+      "Content-Erstellung",
+      "Markenstrategie"
+    ]
+  },
+  "about": {
+    "label": "Über Mich",
+    "title1": "Ihre virtuelle",
+    "title2": "helfende Hand.",
+    "p1": "Ich verfüge über mehr als fünf Jahre Erfahrung als engagierter Freelancer und Virtual Assistant, spezialisiert auf die Optimierung von Geschäftsprozessen und Effizienzsteigerung.",
+    "p2": "Mein Kernbereich ist",
+    "p2Highlight": "Videobearbeitung, Fotobearbeitung und Social-Media-Marketing",
+    "p2After": "— visuelle Inhalte erstellen, die auffallen und Marken online aufbauen.",
+    "p3": "Ich habe globale Kunden in Immobilien, Coaching, Podcasting, E-Commerce und Technologie unterstützt — mit Schnelligkeit und Kreativität.",
+    "cta": "Zusammenarbeiten →",
+    "skillsTitle": "Fähigkeiten & Kenntnisse",
+    "skills": {
+      "videoEditing": "Videobearbeitung",
+      "photoEditing": "Fotobearbeitung",
+      "smm": "Social-Media-Marketing",
+      "podcastMgmt": "Podcast-Management",
+      "adminVA": "Admin & VA-Aufgaben",
+      "contentCreation": "Content-Erstellung"
+    }
+  },
+  "services": {
+    "label": "Mein Angebot",
+    "title": "Leistungen, die",
+    "titleHighlight": "überzeugen.",
+    "items": [
+      {
+        "title": "Videobearbeitung",
+        "desc": "Farbkorrektur, Schnitt, Übergänge, Untertitel und Postproduktion, damit Ihre Inhalte auf jeder Plattform hervorstechen.",
+        "tags": ["Reels", "YouTube", "TikTok"]
+      },
+      {
+        "title": "Fotobearbeitung",
+        "desc": "Retusche, Farbkorrektur und Grafikdesign für Visualisierungen, die die Identität Ihrer Marke widerspiegeln.",
+        "tags": ["Canva", "Retusche", "Branding"]
+      },
+      {
+        "title": "Social-Media-Marketing",
+        "desc": "Strategie, Redaktionspläne, Posting, Engagement und Analytics, um Ihre Reichweite zu steigern und Ergebnisse zu erzielen.",
+        "tags": ["Instagram", "Facebook", "LinkedIn"]
+      },
+      {
+        "title": "Podcast & VA-Support",
+        "desc": "Episodenproduktion, administrative Aufgaben, Dateneingabe und operativer Support, damit Ihr Unternehmen reibungslos läuft.",
+        "tags": ["Schnitt", "Admin", "Publishing"]
+      }
+    ]
+  },
+  "clients": {
+    "label": "Berufserfahrung",
+    "title": "Kunden, für die",
+    "titleHighlight": "ich gearbeitet habe.",
+    "items": [
+      {
+        "sub": "Immobilienteam",
+        "desc": "Social-Media-Management, Content-Erstellung und Publikumsinteraktion für ein technologieorientiertes Immobilienteam.",
+        "tag": "Immobilien"
+      },
+      {
+        "sub": "Online-Bewertungs- & Videodienste",
+        "desc": "Online-Bewertungsmanagement und Videobearbeitungsservices zur Steigerung von Reputation und Engagement.",
+        "tag": "Digitales Marketing"
+      },
+      {
+        "sub": "Makler – Ihr Haus garantiert verkauft",
+        "desc": "Digitales Marketing, Social-Media-Präsenz, Strategieentwicklung, Content-Erstellung und Datenanalyse.",
+        "tag": "Immobilien"
+      },
+      {
+        "sub": "Notar-Coach – Kalifornien",
+        "desc": "Social-Media-Plattformmanagement und fesselnder Video-Content — Kuration, Plattformoptimierung, Schnitt.",
+        "tag": "Coaching"
+      },
+      {
+        "sub": "Camping-Unternehmen",
+        "desc": "Social-Media-Präsenz mit ansprechendem Content und Marketingstrategien für die Outdoor-Community.",
+        "tag": "E-Commerce"
+      },
+      {
+        "sub": "Podcast",
+        "desc": "Podcast-Produktionsunterstützung — Episodenplanung, Schnitt, Veröffentlichung und Publikumsengagement.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "HLK-Unternehmen",
+        "desc": "Allgemeiner VA — administrativer Support, Dateneingabe und Anrufbearbeitung für den täglichen Betrieb.",
+        "tag": "HLK / Dienstleistungen"
+      },
+      {
+        "sub": "Bautechnologie",
+        "desc": "Administrative Aufgaben, Dateneingabe und Recherche — organisiert, effizient und digital stark.",
+        "tag": "Tech / Bau"
+      }
+    ]
+  },
+  "works": {
+    "label": "Meine Arbeiten",
+    "title": "Schauen.",
+    "titleHighlight": "Erleben.",
+    "description": "Eine Auswahl von Videoschnitten, Social-Media-Inhalten und kreativen Projekten für echte Kunden.",
+    "tabs": ["Alle", "Videobearbeitung", "Social Media", "Podcast"],
+    "items": [
+      {
+        "title": "Immobilien-Promo-Reel",
+        "sub": "Robin Michael · Social Media",
+        "desc": "Videoschnitt für Robin Michael – Social-Media-Promo-Reel für Immobilienangebote."
+      },
+      {
+        "title": "Instagram-Wachstumskampagne",
+        "sub": "BMP Network · Engagement",
+        "desc": "Social-Media-Kampagne für BMP Network — Engagement in 60 Tagen verdreifacht."
+      },
+      {
+        "title": "Podcast-Episoden-Highlight",
+        "sub": "Talking Shift with Craig · Audio",
+        "desc": "Produktion und Schnitt eines Highlights aus Talking Shift with Craig — saubere Schnitte, Untertitel, Audiogramm."
+      },
+      {
+        "title": "Kurzform-Videoanzeige",
+        "sub": "Savage Sales · TikTok / Reels",
+        "desc": "Kurzform-Videoanzeige für Savage Sales — Produktpräsentation mit Übergängen und Untertiteln."
+      },
+      {
+        "title": "Outdoor-Marken-Content",
+        "sub": "Outcamping UK · Instagram",
+        "desc": "Content-Strategie für Outcamping UK — Naturästhetik, Community-Gefühl."
+      },
+      {
+        "title": "Kundenfeedback-Highlight",
+        "sub": "Mehrere Kunden · Testimonials",
+        "desc": "Zusammenstellung von Kundenfeedback und Ergebnissen — echte Wirkung über alle Leistungen hinweg."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Effizienz auf höchstem Niveau. Lassen Sie mich Ihre virtuelle helfende Hand sein — ich bringe die Organisation, Strategie und Umsetzung, damit Sie sich auf das konzentrieren können, was Sie am besten können.",
+    "attribution": "— Yong Benitez, Virtual Assistant"
+  },
+  "contact": {
+    "label": "Kontakt Aufnehmen",
+    "title": "Bereit zur",
+    "titleHighlight": "Zusammenarbeit?",
+    "description": "Ob Sie ansprechende Videobearbeitung, beeindruckende Fotoinhalte oder eine vollständige Social-Media-Strategie benötigen — ich bin bereit. Sprechen wir!",
+    "info": {
+      "emailSub": "Schreiben Sie mir jederzeit",
+      "locationSub": "Remote weltweit",
+      "availabilitySub": "Jetzt verfügbar"
+    },
+    "form": {
+      "name": "Ihr Name",
+      "namePlaceholder": "Max Mustermann",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "max@beispiel.de",
+      "service": "Gewünschte Leistung",
+      "servicePlaceholder": "z.B. Videobearbeitung, Social Media",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt..."
+    },
+    "send": "Nachricht Senden →",
+    "sent": "Nachricht Gesendet ✓"
+  },
+  "footer": {
+    "tagline": "Virtual Assistant · Videobearbeitung · Fotobearbeitung · Social-Media-Marketing",
+    "copyright": "© {{year}} Yong Benitez. Alle Rechte vorbehalten.",
+    "developedBy": "entwickelt von"
+  }
+}

@@ -1,14 +1,10 @@
-const items = [
-  "Video Editing",
-  "Photo Editing",
-  "Social Media Marketing",
-  "Podcast Management",
-  "General VA",
-  "Content Creation",
-  "Brand Strategy",
-]
+"use client"
+
+import { useTranslation } from "react-i18next"
 
 export function Ticker() {
+  const { t } = useTranslation()
+  const items = t("ticker.items", { returnObjects: true }) as string[]
   const doubled = [...items, ...items]
 
   return (

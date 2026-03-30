@@ -15,7 +15,8 @@
       "WebFetch(domain:shadcnstudio.com)",
       "WebFetch(domain:shadcn.rlabs.art)",
       "WebFetch(domain:tweakcn.com)",
-      "Bash(npx shadcn@latest add theme)"
+      "Bash(npx shadcn@latest add theme)",
+      "Bash(pnpm build:*)"
     ]
   }
 }

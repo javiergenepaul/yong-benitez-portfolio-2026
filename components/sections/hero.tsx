@@ -95,12 +95,12 @@ export function Hero() {
       id="home"
       className="min-h-screen flex items-center pt-16 px-6 relative overflow-hidden"
     >
-      {/* Grid bg */}
+      {/* Grid bg — uses CSS var so it adapts to light/dark */}
       <div
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0"
         style={{
           backgroundImage:
-            "linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px)",
+            "linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
@@ -112,7 +112,7 @@ export function Hero() {
         {/* Left copy */}
         <div>
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".1s" }}>
-            <span className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-primary text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 bg-foreground/5 border border-foreground/10 text-primary text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               Available for Freelance
             </span>

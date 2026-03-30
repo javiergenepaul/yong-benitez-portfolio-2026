@@ -4,7 +4,7 @@ import { SparklesText } from "@/components/ui/sparkles-text"
 
 export function Footer() {
   return (
-    <footer className="bg-[#080808] border-t border-border py-10 px-6 text-center">
+    <footer className="bg-card border-t border-border py-10 px-6 text-center">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-center gap-2.5 mb-1">
           <LogoIcon variant="square" size={28} />

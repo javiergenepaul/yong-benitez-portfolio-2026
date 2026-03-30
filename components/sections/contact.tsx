@@ -65,7 +65,7 @@ export function Contact() {
               <input
                 type="text"
                 placeholder="John Smith"
-                className="w-full px-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
+                className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
               />
             </div>
             <div className="mb-5">
@@ -75,7 +75,7 @@ export function Contact() {
               <input
                 type="email"
                 placeholder="john@example.com"
-                className="w-full px-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
+                className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
               />
             </div>
             <div className="mb-5">
@@ -85,7 +85,7 @@ export function Contact() {
               <input
                 type="text"
                 placeholder="e.g. Video Editing, Social Media"
-                className="w-full px-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
+                className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors"
               />
             </div>
             <div className="mb-6">
@@ -95,7 +95,7 @@ export function Contact() {
               <textarea
                 rows={4}
                 placeholder="Tell me about your project..."
-                className="w-full px-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors resize-y"
+                className="w-full px-4 py-3 bg-foreground/5 border border-border rounded-xl text-sm text-foreground placeholder-foreground/20 outline-none focus:border-primary transition-colors resize-y"
               />
             </div>
             <Button

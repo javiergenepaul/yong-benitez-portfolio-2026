@@ -4,7 +4,18 @@
       "Bash(xargs grep:*)",
       "Bash(pnpm typecheck:*)",
       "Bash(pnpm lint:*)",
-      "Bash(pnpm add:*)"
+      "Bash(pnpm add:*)",
+      "Bash(npx shadcn@latest add \"@aceternity/link-preview\")",
+      "Bash(node -e \"require\\(''@radix-ui/react-hover-card''\\); require\\(''qss''\\); console.log\\(''ok''\\)\")",
+      "WebFetch(domain:ui.shadcn.com)",
+      "WebFetch(domain:registry.shadcn.com)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:shadcnstudio.com)",
+      "WebFetch(domain:shadcn.rlabs.art)",
+      "WebFetch(domain:tweakcn.com)",
+      "Bash(npx shadcn@latest add theme)"
     ]
   }
 }

@@ -1,4 +1,6 @@
 import { LogoIcon } from "@/components/logo"
+import { LinkPreview } from "@/components/ui/link-preview"
+import { SparklesText } from "@/components/ui/sparkles-text"
 
 export function Footer() {
   return (
@@ -39,6 +41,15 @@ export function Footer() {
         </div>
         <div className="text-xs text-foreground/15">
           © {new Date().getFullYear()} Yong Benitez. All rights reserved.
+        </div>
+        <div className="text-xs text-foreground/25 mt-3">
+          developed by{" "}
+          <LinkPreview
+            url="https://paul-javier-portfolio.netlify.app/"
+            className="inline-block text-foreground/40 hover:text-primary transition-colors duration-300"
+          >
+            <SparklesText text="Gene Paul Mar Javier" />
+          </LinkPreview>
         </div>
       </div>
     </footer>

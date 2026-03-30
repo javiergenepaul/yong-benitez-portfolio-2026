@@ -148,7 +148,7 @@
     "title": "Assista.",
     "titleHighlight": "Experimente.",
     "description": "Uma seleção de edições de vídeo, conteúdo de redes sociais e projetos criativos entregues para clientes reais.",
-    "tabs": ["Todos", "Edição de Vídeo", "Redes Sociais", "Podcast"],
+    "tabs": ["Todos", "Vídeos Exemplo", "Gráficos", "Longa Duração"],
     "items": [
       {
         "title": "Reel Promo Imobiliário",
@@ -208,6 +208,12 @@
     },
     "send": "Enviar Mensagem →",
     "sent": "Mensagem Enviada ✓"
+  },
+  "tools": {
+    "label": "Meu Stack Tecnológico",
+    "title": "Ferramentas que",
+    "titleHighlight": "impulsionam meu trabalho.",
+    "subtitle": "Software que uso em cada projeto — da criação de conteúdo ao gerenciamento de clientes."
   },
   "footer": {
     "tagline": "Assistente Virtual · Edição de Vídeo · Edição de Fotos · Marketing em Redes Sociais",

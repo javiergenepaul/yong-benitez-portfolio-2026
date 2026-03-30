@@ -7,6 +7,7 @@ import { About } from "@/components/sections/about"
 import { Services } from "@/components/sections/services"
 import { Clients } from "@/components/sections/clients"
 import { Works } from "@/components/sections/works"
+import { Tools } from "@/components/sections/tools"
 import { Quote } from "@/components/sections/quote"
 import { Contact } from "@/components/sections/contact"
 
@@ -22,6 +23,7 @@ export default function Page() {
         <Services />
         <Clients />
         <Works />
+        <Tools />
         <Quote />
         <Contact />
       </main>

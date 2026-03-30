@@ -21,6 +21,10 @@
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+@keyframes tickerReverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
 @keyframes glowPulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(192,38,211,0); }
   50%      { box-shadow: 0 0 20px 6px rgba(192,38,211,.35); }
@@ -93,7 +97,8 @@
   --animate-blob:       blobFloat  6s   ease-in-out infinite;
   --animate-float:      floatY     3s   ease-in-out infinite;
   --animate-shimmer:    shimmer    3s   linear      infinite;
-  --animate-ticker:     ticker     18s  linear      infinite;
+  --animate-ticker:         ticker        18s  linear  infinite;
+  --animate-ticker-reverse: tickerReverse 22s  linear  infinite;
   --animate-glow-pulse: glowPulse  2.5s ease-in-out infinite;
   --animate-ripple:     ripple     2.5s ease-out    infinite;
   --animate-spin-slow:  spin       8s   linear      infinite;

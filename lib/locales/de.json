@@ -148,7 +148,7 @@
     "title": "Schauen.",
     "titleHighlight": "Erleben.",
     "description": "Eine Auswahl von Videoschnitten, Social-Media-Inhalten und kreativen Projekten für echte Kunden.",
-    "tabs": ["Alle", "Videobearbeitung", "Social Media", "Podcast"],
+    "tabs": ["Alle", "Beispielvideos", "Grafiken", "Langformat"],
     "items": [
       {
         "title": "Immobilien-Promo-Reel",
@@ -208,6 +208,12 @@
     },
     "send": "Nachricht Senden →",
     "sent": "Nachricht Gesendet ✓"
+  },
+  "tools": {
+    "label": "Mein Tech-Stack",
+    "title": "Werkzeuge, die",
+    "titleHighlight": "meine Arbeit antreiben.",
+    "subtitle": "Software, die ich in jedem Projekt einsetze — von Content-Erstellung bis Kundenverwaltung."
   },
   "footer": {
     "tagline": "Virtual Assistant · Videobearbeitung · Fotobearbeitung · Social-Media-Marketing",

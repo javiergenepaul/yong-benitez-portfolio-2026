@@ -148,7 +148,7 @@
     "title": "Watch.",
     "titleHighlight": "Experience.",
     "description": "A highlight reel of video edits, social media content, and creative projects delivered for real clients.",
-    "tabs": ["All Works", "Video Editing", "Social Media", "Podcast"],
+    "tabs": ["All", "Sample Videos", "Graphics", "Long-Form"],
     "items": [
       {
         "title": "Real Estate Promo Reel",
@@ -208,6 +208,12 @@
     },
     "send": "Send Message →",
     "sent": "Message Sent ✓"
+  },
+  "tools": {
+    "label": "My Tech Stack",
+    "title": "Tools that",
+    "titleHighlight": "power my work.",
+    "subtitle": "Software I use across every project — from content creation to client management."
   },
   "footer": {
     "tagline": "Virtual Assistant · Video Editing · Photo Editing · Social Media Marketing",

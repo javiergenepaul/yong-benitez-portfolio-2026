@@ -148,7 +148,7 @@
     "title": "Mira.",
     "titleHighlight": "Experiencia.",
     "description": "Un resumen de ediciones de video, contenido de redes sociales y proyectos creativos entregados para clientes reales.",
-    "tabs": ["Todos", "Edición de Video", "Redes Sociales", "Podcast"],
+    "tabs": ["Todos", "Videos de Muestra", "Gráficos", "Formato Largo"],
     "items": [
       {
         "title": "Reel Promocional de Bienes Raíces",
@@ -208,6 +208,12 @@
     },
     "send": "Enviar Mensaje →",
     "sent": "Mensaje Enviado ✓"
+  },
+  "tools": {
+    "label": "Mi Stack Tecnológico",
+    "title": "Herramientas que",
+    "titleHighlight": "impulsan mi trabajo.",
+    "subtitle": "Software que uso en cada proyecto — desde creación de contenido hasta gestión de clientes."
   },
   "footer": {
     "tagline": "Asistente Virtual · Edición de Video · Edición de Fotos · Marketing en Redes Sociales",

@@ -148,7 +148,7 @@
     "title": "Regardez.",
     "titleHighlight": "Découvrez.",
     "description": "Une sélection de montages vidéo, contenus réseaux sociaux et projets créatifs réalisés pour de vrais clients.",
-    "tabs": ["Tous", "Montage Vidéo", "Réseaux Sociaux", "Podcast"],
+    "tabs": ["Tous", "Vidéos Exemples", "Graphiques", "Long Format"],
     "items": [
       {
         "title": "Reel Promo Immobilier",
@@ -208,6 +208,12 @@
     },
     "send": "Envoyer le Message →",
     "sent": "Message Envoyé ✓"
+  },
+  "tools": {
+    "label": "Ma Stack Technologique",
+    "title": "Outils qui",
+    "titleHighlight": "alimentent mon travail.",
+    "subtitle": "Logiciels que j'utilise sur chaque projet — de la création de contenu à la gestion des clients."
   },
   "footer": {
     "tagline": "Assistant Virtuel · Montage Vidéo · Retouche Photo · Marketing Réseaux Sociaux",

@@ -1,31 +1,26 @@
+import type { Metadata } from "next"
 import { Geist, Geist_Mono, Roboto_Slab } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
-const robotoSlab = Roboto_Slab({subsets:['latin'],variable:'--font-serif'});
+const fontSans = Geist({ subsets: ["latin"], variable: "--font-sans" })
+const fontMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
+const fontSerif = Roboto_Slab({ subsets: ["latin"], variable: "--font-serif" })
 
-const fontSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+export const metadata: Metadata = {
+  title: "Yong Benitez – Virtual Assistant",
+  description:
+    "5+ years crafting scroll-stopping content, managing social media growth, editing videos, and streamlining operations for global clients.",
+}
 
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontSans.variable, fontMono.variable, "font-serif", robotoSlab.variable)}
+      className={cn("antialiased", fontSans.variable, fontMono.variable, fontSerif.variable)}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>

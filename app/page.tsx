@@ -1,19 +1,31 @@
-import { Button } from "@/components/ui/button"
+import { Cursor } from "@/components/cursor"
+import { Nav } from "@/components/nav"
+import { Footer } from "@/components/footer"
+import { Hero } from "@/components/sections/hero"
+import { Ticker } from "@/components/sections/ticker"
+import { About } from "@/components/sections/about"
+import { Services } from "@/components/sections/services"
+import { Clients } from "@/components/sections/clients"
+import { Works } from "@/components/sections/works"
+import { Quote } from "@/components/sections/quote"
+import { Contact } from "@/components/sections/contact"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <>
+      <Cursor />
+      <Nav />
+      <main>
+        <Hero />
+        <Ticker />
+        <About />
+        <Services />
+        <Clients />
+        <Works />
+        <Quote />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   )
 }

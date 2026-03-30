@@ -43,7 +43,7 @@ function SkillBars() {
           </div>
           <div className="h-1.5 bg-white/5 rounded-full">
             <div
-              className="h-1.5 rounded-full bg-gradient-to-r from-primary to-[#e8a06a] transition-[width] duration-[1200ms] ease-out"
+              className="h-1.5 rounded-full bg-linear-to-r from-primary to-[#e879f9] transition-[width] duration-1200 ease-out"
               style={{ width: 0 }}
               data-w={s.pct}
             />

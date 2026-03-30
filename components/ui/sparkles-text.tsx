@@ -6,7 +6,7 @@
  *
  * Usage:
  *   <SparklesText text="Hello" />
- *   <SparklesText text="Hello" colors={{ first: "#C97D4A", second: "#fff" }} sparklesCount={8} />
+ *   <SparklesText text="Hello" colors={{ first: "#c026d3", second: "#fff" }} sparklesCount={8} />
  */
 
 import { useEffect, useState } from "react"
@@ -58,7 +58,7 @@ export function SparklesText({
   text,
   className,
   sparklesCount = 6,
-  colors = { first: "#C97D4A", second: "#ffffff" },
+  colors = { first: "#c026d3", second: "#ffffff" },
 }: SparklesTextProps) {
   const [sparkles, setSparkles] = useState<Sparkle[]>([])
 

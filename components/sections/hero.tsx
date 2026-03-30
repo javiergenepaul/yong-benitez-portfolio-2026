@@ -127,7 +127,7 @@ export function Hero() {
               <br />
               <span className="shimmer-text">{t("hero.tagline2")}</span>
               <br />
-              <span className="text-foreground/30">{t("hero.tagline3")}</span>
+              <span className="text-foreground/60">{t("hero.tagline3")}</span>
             </h1>
           </div>
 

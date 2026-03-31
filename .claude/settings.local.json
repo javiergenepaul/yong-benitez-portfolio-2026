@@ -18,7 +18,8 @@
       "Bash(npx shadcn@latest add theme)",
       "Bash(pnpm build:*)",
       "Bash(node -e \"const si = require\\(''./node_modules/@icons-pack/react-simple-icons''\\); const names = [''SiGoogle'',''SiGoogleworkspace'',''SiCanva'',''SiCapcut'',''SiNotion'',''SiHootsuite'',''SiZoom'',''SiLoom'',''SiAsana'',''SiAdobe'',''SiAdobepodcast'',''SiElevenlabs'']; names.forEach\\(n => console.log\\(n, !!si[n]\\)\\)\")",
-      "Bash(grep -l \"SiElevenlabs\\\\|SiCapcut\\\\|SiGoogleworkspace\\\\|SiAdobepodcast\" node_modules/@icons-pack/react-simple-icons/*.d.ts)"
+      "Bash(grep -l \"SiElevenlabs\\\\|SiCapcut\\\\|SiGoogleworkspace\\\\|SiAdobepodcast\" node_modules/@icons-pack/react-simple-icons/*.d.ts)",
+      "Bash(ls app/icon* app/favicon*)"
     ]
   }
 }

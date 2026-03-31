@@ -2,11 +2,11 @@
   <!-- Dark background fill so the icon reads on any browser chrome -->
   <rect width="32" height="32" rx="8" fill="#0D0D0D"/>
   <!-- Fuchsia-tinted rounded square border (square variant) -->
-  <rect x="2" y="2" width="28" height="28" rx="7" fill="#c026d3" fill-opacity="0.18" stroke="#c026d3" stroke-width="1.5"/>
+  <rect x="2" y="2" width="28" height="28" rx="7" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-width="1.5"/>
   <!-- Y — left arm -->
-  <path d="M9 8L16 17" stroke="#c026d3" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M9 8L16 17" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
   <!-- Y — right arm -->
-  <path d="M23 8L16 17" stroke="#c026d3" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M23 8L16 17" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
   <!-- Y — stem -->
-  <path d="M16 17L16 25" stroke="#c026d3" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M16 17L16 25" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

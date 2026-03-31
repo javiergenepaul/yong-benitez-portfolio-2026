@@ -313,7 +313,7 @@ export function SpaceBackground() {
 
     function initRocket(scattered = false): Rocket {
       const group = buildRocket()
-      group.scale.setScalar(0.7 + Math.random() * 1.6)
+      group.scale.setScalar(2.0 + Math.random() * 1.5)
       const speed = 0.06 + Math.random() * 0.09
       const vel   = new THREE.Vector3((Math.random() - 0.45) * speed * 0.5, speed * (0.65 + Math.random() * 0.35), 0)
       group.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), vel.clone().normalize())
@@ -332,6 +332,134 @@ export function SpaceBackground() {
     }
 
     const rockets: Rocket[] = Array.from({ length: 5 }, (_, i) => initRocket(i < 3))
+
+    // ── Satellites ────────────────────────────────────────────────────────────
+    function buildSatellite(): THREE.Group {
+      const g = new THREE.Group()
+
+      // Main body (rectangular box)
+      g.add(new THREE.Mesh(
+        new THREE.BoxGeometry(0.55, 0.4, 0.4),
+        new THREE.MeshBasicMaterial({ color: 0xccddee }),
+      ))
+
+      // Solar panel left
+      const panelMat = new THREE.MeshBasicMaterial({ color: 0x2255aa, side: THREE.DoubleSide })
+      const panelLeft = new THREE.Mesh(new THREE.BoxGeometry(1.2, 0.02, 0.5), panelMat)
+      panelLeft.position.x = -0.88
+      g.add(panelLeft)
+      // Panel grid lines (thin dark strips)
+      for (let i = -1; i <= 1; i++) {
+        const strip = new THREE.Mesh(
+          new THREE.BoxGeometry(1.2, 0.025, 0.04),
+          new THREE.MeshBasicMaterial({ color: 0x112244 }),
+        )
+        strip.position.set(-0.88, 0, i * 0.18)
+        g.add(strip)
+      }
+
+      // Solar panel right
+      const panelRight = new THREE.Mesh(new THREE.BoxGeometry(1.2, 0.02, 0.5), panelMat)
+      panelRight.position.x = 0.88
+      g.add(panelRight)
+      for (let i = -1; i <= 1; i++) {
+        const strip = new THREE.Mesh(
+          new THREE.BoxGeometry(1.2, 0.025, 0.04),
+          new THREE.MeshBasicMaterial({ color: 0x112244 }),
+        )
+        strip.position.set(0.88, 0, i * 0.18)
+        g.add(strip)
+      }
+
+      // Antenna dish (flat ring + stem)
+      const dish = new THREE.Mesh(
+        new THREE.RingGeometry(0.05, 0.18, 16),
+        new THREE.MeshBasicMaterial({ color: 0xddddcc, side: THREE.DoubleSide }),
+      )
+      dish.position.set(0, 0.32, 0.1)
+      dish.rotation.x = -Math.PI * 0.25
+      g.add(dish)
+
+      const stem = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.02, 0.02, 0.18, 6),
+        new THREE.MeshBasicMaterial({ color: 0xaabbcc }),
+      )
+      stem.position.set(0, 0.24, 0.06)
+      stem.rotation.x = Math.PI * 0.15
+      g.add(stem)
+
+      // Small thruster nozzle at the back
+      const nozzle = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.06, 0.09, 0.14, 8),
+        new THREE.MeshBasicMaterial({ color: 0x889999 }),
+      )
+      nozzle.rotation.z = Math.PI / 2
+      nozzle.position.x = 0.35
+      g.add(nozzle)
+
+      return g
+    }
+
+    interface Satellite {
+      group:    THREE.Group
+      vel:      THREE.Vector3
+      rotX:     number
+      rotY:     number
+      rotZ:     number
+    }
+
+    function initSatellite(scattered = false): Satellite {
+      const group = buildSatellite()
+      const scale = 1.8 + Math.random() * 0.8
+      group.scale.setScalar(scale)
+
+      // Slow diagonal drift
+      const speed = 0.02 + Math.random() * 0.03
+      const vel = new THREE.Vector3(
+        (Math.random() - 0.5) * speed,
+        (Math.random() - 0.6) * speed * 0.5,
+        (Math.random() - 0.5) * speed * 0.3,
+      )
+
+      group.rotation.set(
+        Math.random() * Math.PI * 2,
+        Math.random() * Math.PI * 2,
+        Math.random() * Math.PI * 2,
+      )
+      group.position.set(
+        (Math.random() - 0.5) * 280,
+        scattered ? (Math.random() - 0.5) * 220 : 180 + Math.random() * 80,
+        -10 - Math.random() * 60,
+      )
+      scene.add(group)
+
+      return {
+        group,
+        vel,
+        rotX: (Math.random() - 0.5) * 0.003,
+        rotY: (Math.random() - 0.5) * 0.004,
+        rotZ: (Math.random() - 0.5) * 0.002,
+      }
+    }
+
+    function respawnSatellite(s: Satellite) {
+      const speed = 0.02 + Math.random() * 0.03
+      s.vel.set(
+        (Math.random() - 0.5) * speed,
+        (Math.random() - 0.6) * speed * 0.5,
+        (Math.random() - 0.5) * speed * 0.3,
+      )
+      s.group.position.set(
+        (Math.random() - 0.5) * 280,
+        180 + Math.random() * 80,
+        -10 - Math.random() * 60,
+      )
+      s.rotX = (Math.random() - 0.5) * 0.003
+      s.rotY = (Math.random() - 0.5) * 0.004
+      s.rotZ = (Math.random() - 0.5) * 0.002
+    }
+
+    const satellites: Satellite[] = Array.from({ length: 3 }, (_, i) => initSatellite(i < 2))
 
     // ── Animation loop ────────────────────────────────────────────────────────
     let rafId: number
@@ -366,6 +494,17 @@ export function SpaceBackground() {
         mat.opacity = p < 0.12 ? (p / 0.12) * 0.88 : p > 0.72 ? ((1 - p) / 0.28) * 0.88 : 0.88
         m.line.position.addScaledVector(m.vel, 1)
         if (m.phase >= m.maxPhase) resetMeteor(m)
+      }
+
+      // ── Satellites ──────────────────────────────────────────────────────────
+      for (const s of satellites) {
+        s.group.position.addScaledVector(s.vel, 1)
+        s.group.rotation.x += s.rotX
+        s.group.rotation.y += s.rotY
+        s.group.rotation.z += s.rotZ
+        if (s.group.position.y < -220 || Math.abs(s.group.position.x) > 350) {
+          respawnSatellite(s)
+        }
       }
 
       // ── Rockets ─────────────────────────────────────────────────────────────

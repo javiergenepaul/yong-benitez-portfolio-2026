@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { useTheme } from "next-themes"
 import { useTranslation } from "react-i18next"
 import { Moon, Sun, Menu, X } from "lucide-react"
+import { AnimatePresence, motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { LogoIcon } from "@/components/logo"
 import { LanguageSelector } from "@/components/language-selector"
@@ -118,29 +119,61 @@ export function Nav() {
       </div>
 
       {/* Mobile dropdown menu */}
-      {menuOpen && (
-        <div
-          ref={menuRef}
-          className="lg:hidden border-t border-border bg-background/95 backdrop-blur-xl px-6 py-4 flex flex-col gap-1"
-        >
-          {links.map((l) => (
-            <button
-              key={l.href}
-              onClick={() => handleNavClick(l.href)}
-              className="text-sm text-foreground/60 hover:text-foreground py-2.5 text-start transition-colors duration-200 border-b border-border/40 last:border-0"
-            >
-              {l.label}
-            </button>
-          ))}
-          {/* Hire Me inside mobile menu */}
-          <Button
-            onClick={() => handleNavClick("#contact")}
-            className="mt-2 w-full rounded-full text-sm font-bold sm:hidden"
+      <AnimatePresence initial={false}>
+        {menuOpen && (
+          <motion.div
+            ref={menuRef}
+            key="mobile-menu"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.28, ease: [0.4, 0, 0.2, 1] }}
+            style={{ overflow: "hidden" }}
+            className="lg:hidden border-t border-border bg-background/95 backdrop-blur-xl"
           >
-            {t("nav.hireMe")}
-          </Button>
-        </div>
-      )}
+            <motion.div
+              className="px-6 py-4 flex flex-col gap-1"
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={{
+                open:   { transition: { staggerChildren: 0.055, delayChildren: 0.08 } },
+                closed: { transition: { staggerChildren: 0.03, staggerDirection: -1 } },
+              }}
+            >
+              {links.map((l) => (
+                <motion.button
+                  key={l.href}
+                  onClick={() => handleNavClick(l.href)}
+                  className="text-sm text-foreground/60 hover:text-foreground py-2.5 text-start transition-colors duration-200 border-b border-border/40 last:border-0"
+                  variants={{
+                    open:   { opacity: 1, x: 0 },
+                    closed: { opacity: 0, x: -14 },
+                  }}
+                  transition={{ duration: 0.22, ease: "easeOut" }}
+                >
+                  {l.label}
+                </motion.button>
+              ))}
+              {/* Hire Me inside mobile menu */}
+              <motion.div
+                variants={{
+                  open:   { opacity: 1, x: 0 },
+                  closed: { opacity: 0, x: -14 },
+                }}
+                transition={{ duration: 0.22, ease: "easeOut" }}
+              >
+                <Button
+                  onClick={() => handleNavClick("#contact")}
+                  className="mt-2 w-full rounded-full text-sm font-bold sm:hidden"
+                >
+                  {t("nav.hireMe")}
+                </Button>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   )
 }

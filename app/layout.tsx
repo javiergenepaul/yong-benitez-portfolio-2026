@@ -11,7 +11,7 @@ const fontSans  = Geist({ subsets: ["latin"], variable: "--font-sans" })
 const fontMono  = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 const fontSerif = Roboto_Slab({ subsets: ["latin"], variable: "--font-serif" })
 
-const BASE_URL   = "https://yongbenitez.com"
+const BASE_URL   = "https://yongbenitez.netlify.app"
 const FULL_NAME  = "Yong Benitez"
 const TITLE      = "Yong Benitez – Virtual Assistant & Content Creator"
 const DESCRIPTION =

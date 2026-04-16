@@ -13,7 +13,7 @@
     "tagline2": "Visual.",
     "tagline3": "Estratégico.",
     "intro": "Soy",
-    "description": "Más de 5 años creando contenido llamativo, gestionando el crecimiento en redes sociales, editando videos y optimizando operaciones para clientes globales.",
+    "description": "Más de 4 años impulsando el crecimiento de dueños de negocio, equipos ejecutivos y creativos a través de asistencia ejecutiva, gestión de podcasts y marketing digital.",
     "cta1": "Trabajar Conmigo →",
     "cta2": "Crear mi CV ↓",
     "stats": {
@@ -73,33 +73,33 @@
   },
   "ticker": {
     "items": [
-      "Edición de Video",
-      "Edición de Fotos",
-      "Marketing en Redes Sociales",
+      "Soporte Ejecutivo",
       "Gestión de Podcasts",
-      "Asistente Virtual",
-      "Creación de Contenido",
-      "Estrategia de Marca"
+      "Marketing Digital",
+      "Gestión de Proyectos",
+      "Generación de Leads",
+      "Automatización de Flujos",
+      "Estrategia de Contenido"
     ]
   },
   "about": {
     "label": "Sobre Mí",
-    "title1": "Tu asistente",
-    "title2": "virtual de confianza.",
-    "p1": "Tengo más de cinco años de experiencia como freelancer y asistente virtual dedicado, especializándome en ayudar a las empresas a optimizar sus operaciones y mejorar su eficiencia.",
-    "p2": "Mi enfoque principal es",
-    "p2Highlight": "edición de video, edición de fotos y marketing en redes sociales",
-    "p2After": "— creando contenido visual que detiene el scroll y construye marcas en línea.",
-    "p3": "He apoyado a clientes globales en bienes raíces, coaching, podcasting, e-commerce y tecnología — entregando resultados con rapidez y creatividad.",
+    "title1": "Soporte estructurado,",
+    "title2": "pensado para escalar.",
+    "p1": "Aporto más de 4 años de experiencia impulsando el crecimiento de dueños de negocio, equipos ejecutivos y visionarios creativos con soporte virtual confiable y ejecución constante.",
+    "p2": "Me especializo en",
+    "p2Highlight": "Soporte General y Ejecutivo, Gestión de Podcasts y Marketing Digital",
+    "p2After": "— tres pilares que convierten una lista caótica de tareas en un sistema claro para crecer.",
+    "p3": "Construyo la infraestructura que te permite escalar con confianza, creando armonía operativa para que tú te enfoques en la visión general mientras el día a día funciona con precisión.",
     "cta": "Colaboremos →",
     "skillsTitle": "Habilidades y Competencias",
     "skills": {
-      "videoEditing": "Edición de Video",
-      "photoEditing": "Edición de Fotos",
-      "smm": "Marketing en Redes Sociales",
-      "podcastMgmt": "Gestión de Podcasts",
-      "adminVA": "Tareas Admin y VA",
-      "contentCreation": "Creación de Contenido"
+      "videoEditing": "Soporte Ejecutivo",
+      "photoEditing": "Gestión de Podcasts",
+      "smm": "Marketing Digital",
+      "podcastMgmt": "Gestión de Proyectos",
+      "adminVA": "Gestión Operativa",
+      "contentCreation": "Edición de Video"
     }
   },
   "services": {
@@ -108,24 +108,24 @@
     "titleHighlight": "convierten.",
     "items": [
       {
-        "title": "Edición de Video",
-        "desc": "Corrección de color, cortes, transiciones, subtítulos y postproducción para que tu contenido destaque en cualquier plataforma.",
-        "tags": ["Reels", "YouTube", "TikTok"]
+        "title": "Asistencia Virtual Ejecutiva",
+        "desc": "Gestión de calendario e inbox, comunicación con clientes, coordinación de tareas, investigación y actualizaciones en CRM para proteger tu tiempo y mover prioridades.",
+        "tags": ["Calendario", "Inbox", "CRM"]
       },
       {
-        "title": "Edición de Fotos",
-        "desc": "Retoque, corrección de color y diseño gráfico para crear imágenes que reflejen la identidad de tu marca.",
-        "tags": ["Canva", "Retoque", "Branding"]
+        "title": "Asistencia Virtual General",
+        "desc": "Soporte administrativo, gestión de archivos, documentación de procesos y apoyo de flujos de trabajo para mantener tus operaciones ordenadas y confiables.",
+        "tags": ["Admin", "Sistemas", "Operaciones"]
       },
       {
-        "title": "Marketing en Redes Sociales",
-        "desc": "Estrategia, calendarios de contenido, publicaciones, engagement y analíticas para hacer crecer tu audiencia y generar resultados.",
-        "tags": ["Instagram", "Facebook", "LinkedIn"]
+        "title": "Gestión de Podcasts",
+        "desc": "Edición de episodios, redacción de show notes, publicación, distribución y reutilización en piezas cortas para convertir cada grabación en contenido constante.",
+        "tags": ["Edición", "Publicación", "Reutilización"]
       },
       {
-        "title": "Podcast y Soporte VA",
-        "desc": "Producción de episodios, tareas administrativas, entrada de datos y soporte operativo para mantener tu negocio en marcha.",
-        "tags": ["Edición", "Admin", "Publicación"]
+        "title": "Soporte de Marketing Digital",
+        "desc": "Gestión de redes sociales, creación de contenido, actualizaciones web, publicación de blogs, seguimiento de rendimiento y optimización para apoyar un crecimiento constante.",
+        "tags": ["Social", "Contenido", "Analítica"]
       }
     ]
   },
@@ -135,44 +135,44 @@
     "titleHighlight": "he servido.",
     "items": [
       {
-        "sub": "Equipo de Bienes Raíces",
-        "desc": "Gestión de redes sociales, creación de contenido e interacción con la audiencia para un equipo inmobiliario que aprovecha la tecnología.",
+        "sub": "Soporte de marketing inmobiliario",
+        "desc": "Brindé soporte de marketing de extremo a extremo para más de 10 agentes inmobiliarios, creando más de 50 activos personalizados al mes y lanzando sitios web de propiedades.",
         "tag": "Bienes Raíces"
       },
       {
-        "sub": "Servicios de Reseñas y Videos",
-        "desc": "Gestión de reseñas en línea y edición de video para mejorar la reputación e impulsar el engagement.",
-        "tag": "Marketing Digital"
+        "sub": "Soporte de cumplimiento y operaciones",
+        "desc": "Gestioné el cumplimiento de licitaciones gubernamentales y sistemas de archivo digital, asegurando 100% de precisión en datos técnicos enviados al Estado de Michigan.",
+        "tag": "Operaciones"
       },
       {
-        "sub": "Agente Inmobiliario – Tu Casa Vendida Garantizada",
-        "desc": "Marketing digital, presencia en redes sociales, desarrollo de estrategias, creación de contenido y análisis de datos.",
-        "tag": "Bienes Raíces"
-      },
-      {
-        "sub": "Coach Notarial – California",
-        "desc": "Gestión de plataformas de redes sociales y contenido de video — curación, optimización de plataformas, edición.",
-        "tag": "Coaching"
-      },
-      {
-        "sub": "Negocio de Camping",
-        "desc": "Presencia en redes sociales con contenido atractivo y estrategias de marketing para la comunidad al aire libre.",
-        "tag": "E-Commerce"
-      },
-      {
-        "sub": "Podcast",
-        "desc": "Soporte de producción de podcast — planificación de episodios, edición, publicación e interacción con la audiencia.",
+        "sub": "Producción de podcast",
+        "desc": "Supervisé el ciclo completo de producción del podcast, desde grabaciones remotas en Riverside hasta optimización SEO y distribución en Buzzsprout.",
         "tag": "Podcasting"
       },
       {
-        "sub": "Empresa de HVAC",
-        "desc": "Asistente virtual general — soporte administrativo, entrada de datos y manejo de llamadas para operaciones diarias.",
-        "tag": "HVAC / Servicios"
+        "sub": "Rebranding digital",
+        "desc": "Lideré un esfuerzo de rebranding digital y lancé un sitio web premium y centrado en el usuario para impulsar reservas directas de un servicio de transporte de lujo.",
+        "tag": "Branding"
       },
       {
-        "sub": "Tecnología para Construcción",
-        "desc": "Tareas administrativas, entrada de datos e investigación para apoyar operaciones comerciales — organizado, eficiente y digital.",
-        "tag": "Tech / Construcción"
+        "sub": "Estrategia de contenido y SEO",
+        "desc": "Desarrollé estrategias de contenido multiplataforma y gestioné blogs optimizados para SEO, logrando un aumento del 15% en el alcance total de la audiencia.",
+        "tag": "Marketing Digital"
+      },
+      {
+        "sub": "Producción creativa diaria",
+        "desc": "Diseñé y publiqué gráficos diarios y materiales promocionales alineados con la estética aventurera y outdoor de la marca.",
+        "tag": "Creación de Contenido"
+      },
+      {
+        "sub": "Dirección creativa y edición",
+        "desc": "Trabajé como Directora Creativa y Editora de Video, produciendo contenido largo y corto mientras reducía el tiempo de entrega en un 25%.",
+        "tag": "Edición de Video"
+      },
+      {
+        "sub": "Asistencia ejecutiva e investigación de leads",
+        "desc": "Brindé asistencia ejecutiva e investigación de leads, manteniendo 100% de integridad de datos dentro de sistemas CRM para acciones estratégicas.",
+        "tag": "Soporte Ejecutivo"
       }
     ]
   },
@@ -216,18 +216,18 @@
     ]
   },
   "quote": {
-    "text": "Eficiencia en su máxima expresión. Déjame ser tu asistente virtual de confianza — aporto la organización, la estrategia y la ejecución para que puedas enfocarte en lo que mejor haces.",
+    "text": "Te ayudo a reducir el ruido y eliminar la sobrecarga para que puedas liderar un negocio eficiente, sin estrés y de alto impacto.",
     "attribution": "— Yong Benitez, Asistente Virtual"
   },
   "contact": {
     "label": "Ponerse en Contacto",
     "title": "¿Listo para",
     "titleHighlight": "colaborar?",
-    "description": "Ya sea que necesites ediciones de video llamativas, contenido fotográfico impactante o una estrategia completa de redes sociales — estoy listo. ¡Hablemos!",
+    "description": "Ya sea que necesites soporte ejecutivo, gestión de podcasts, ejecución de marketing digital o una operación interna más estable — estoy lista para ayudarte. Hablemos.",
     "info": {
       "emailSub": "Escríbeme cuando quieras",
       "locationSub": "Trabajo remoto a nivel mundial",
-      "availabilitySub": "Disponible ahora"
+      "availabilitySub": "Disponible para soporte continuo"
     },
     "form": {
       "name": "Tu Nombre",
@@ -235,9 +235,9 @@
       "email": "Correo Electrónico",
       "emailPlaceholder": "juan@ejemplo.com",
       "service": "Servicio Necesario",
-      "servicePlaceholder": "ej. Edición de Video, Redes Sociales",
+      "servicePlaceholder": "ej. Soporte Ejecutivo, Gestión de Podcasts",
       "message": "Mensaje",
-      "messagePlaceholder": "Cuéntame sobre tu proyecto..."
+      "messagePlaceholder": "Cuéntame sobre tu flujo de trabajo, objetivos o necesidades de apoyo..."
     },
     "send": "Enviar Mensaje →",
     "sent": "Mensaje Enviado ✓"
@@ -249,7 +249,7 @@
     "subtitle": "Software que uso en cada proyecto — desde creación de contenido hasta gestión de clientes."
   },
   "footer": {
-    "tagline": "Asistente Virtual · Edición de Video · Edición de Fotos · Marketing en Redes Sociales",
+    "tagline": "Soporte Ejecutivo · Gestión de Podcasts · Marketing Digital · Soporte de Sistemas",
     "copyright": "© {{year}} Yong Benitez. Todos los derechos reservados.",
     "developedBy": "desarrollado por"
   }

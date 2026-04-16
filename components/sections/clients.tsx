@@ -1,33 +1,38 @@
 "use client"
 
 import { useTranslation } from "react-i18next"
+
+import siteContent from "@/lib/data/site-content.json"
 import { Reveal } from "@/components/reveal"
 
 const clientNames = [
   "BMP Network",
-  "Savage Sales",
-  "Robin Michael",
-  "Coach Me Laura",
-  "Outcamping UK",
-  "Talking Shift w/ Craig",
   "American Air HVAC",
+  "Talking Shift with Craig",
+  "MIOR Executive",
+  "Savage Sales",
+  "Outcamping",
+  "Allure Creatives",
   "Procore Inc",
 ]
 
 const clientStyles = [
   { initials: "BN", tagCls: "bg-primary/10 text-primary", avatarBg: "bg-navy" },
-  { initials: "SS", tagCls: "bg-purple-500/10 text-purple-400", avatarBg: "bg-purple-700" },
-  { initials: "RM", tagCls: "bg-teal-500/10 text-teal-400", avatarBg: "bg-teal-700" },
-  { initials: "CL", tagCls: "bg-primary/10 text-primary", avatarBg: "bg-primary" },
-  { initials: "OC", tagCls: "bg-blue-500/10 text-blue-400", avatarBg: "bg-blue-700" },
+  { initials: "AA", tagCls: "bg-purple-500/10 text-purple-400", avatarBg: "bg-purple-700" },
+  { initials: "TS", tagCls: "bg-teal-500/10 text-teal-400", avatarBg: "bg-teal-700" },
+  { initials: "ME", tagCls: "bg-primary/10 text-primary", avatarBg: "bg-primary" },
+  { initials: "SS", tagCls: "bg-blue-500/10 text-blue-400", avatarBg: "bg-blue-700" },
   { initials: "TS", tagCls: "bg-violet-500/10 text-violet-400", avatarBg: "bg-violet-700" },
-  { initials: "AH", tagCls: "bg-red-500/10 text-red-400", avatarBg: "bg-red-800" },
+  { initials: "AC", tagCls: "bg-red-500/10 text-red-400", avatarBg: "bg-red-800" },
   { initials: "PC", tagCls: "bg-slate-500/10 text-slate-400", avatarBg: "bg-slate-600" },
 ]
 
 export function Clients() {
-  const { t } = useTranslation()
-  const items = t("clients.items", { returnObjects: true }) as Array<{
+  const { t, i18n } = useTranslation()
+  const items = (i18n.language === "en"
+    ? siteContent.clients.items
+    : t("clients.items", { returnObjects: true })) as Array<{
+    name?: string
     sub: string
     desc: string
     tag: string
@@ -47,7 +52,8 @@ export function Clients() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((item, i) => {
-            const style = clientStyles[i]
+            const style = clientStyles[i % clientStyles.length]
+            const name = item.name ?? clientNames[i] ?? `Client ${i + 1}`
             return (
               <Reveal key={i} delay={i * 30}>
                 <div className="card-hover bg-card border border-border rounded-2xl p-6 group h-full">
@@ -58,7 +64,7 @@ export function Clients() {
                       {style.initials}
                     </div>
                     <div>
-                      <div className="text-sm font-bold text-foreground">{clientNames[i]}</div>
+                      <div className="text-sm font-bold text-foreground">{name}</div>
                       <div className="text-xs text-foreground/30">{item.sub}</div>
                     </div>
                   </div>

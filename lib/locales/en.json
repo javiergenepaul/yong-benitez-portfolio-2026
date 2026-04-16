@@ -13,7 +13,7 @@
     "tagline2": "Visual.",
     "tagline3": "Strategic.",
     "intro": "I'm",
-    "description": "5+ years crafting scroll-stopping content, managing social media growth, editing videos, and streamlining operations for global clients.",
+    "description": "4+ years supporting business owners, executive teams, and creative visionaries through executive assistance, podcast management, and digital marketing.",
     "cta1": "Work With Me →",
     "cta2": "Build My Resume ↓",
     "stats": {
@@ -73,33 +73,33 @@
   },
   "ticker": {
     "items": [
-      "Video Editing",
-      "Photo Editing",
-      "Social Media Marketing",
+      "Executive Support",
       "Podcast Management",
-      "General VA",
-      "Content Creation",
-      "Brand Strategy"
+      "Digital Marketing",
+      "Project Management",
+      "Lead Generation",
+      "Workflow Automation",
+      "Content Strategy"
     ]
   },
   "about": {
     "label": "About Me",
-    "title1": "Your virtual",
-    "title2": "helping hand.",
-    "p1": "I have over five years of experience as a dedicated freelancer and virtual assistant, specializing in helping businesses streamline their operations and improve efficiency.",
-    "p2": "My core focus is",
-    "p2Highlight": "video editing, photo editing, and social media marketing",
-    "p2After": "— crafting visual content that stops the scroll and builds brands online.",
-    "p3": "I've supported global clients across real estate, coaching, podcasting, e-commerce, and tech — delivering results with speed and creativity.",
+    "title1": "Structured support,",
+    "title2": "built for scale.",
+    "p1": "I bring 4+ years of experience fueling the growth of business owners, executive teams, and creative visionaries through dependable virtual support and execution.",
+    "p2": "I specialize in",
+    "p2Highlight": "General and Executive Support, Podcast Management, and Digital Marketing",
+    "p2After": "— the three pillars that turn a chaotic to-do list into a streamlined engine for success.",
+    "p3": "I build the infrastructure that allows you to scale with confidence, creating organizational harmony so the day-to-day runs with precision while you focus on the big picture.",
     "cta": "Let's collaborate →",
     "skillsTitle": "Skills & Proficiency",
     "skills": {
-      "videoEditing": "Video Editing",
-      "photoEditing": "Photo Editing",
-      "smm": "Social Media Marketing",
-      "podcastMgmt": "Podcast Management",
-      "adminVA": "Admin & VA Tasks",
-      "contentCreation": "Content Creation"
+      "videoEditing": "Executive Support",
+      "photoEditing": "Podcast Management",
+      "smm": "Digital Marketing",
+      "podcastMgmt": "Project Management",
+      "adminVA": "Operations Management",
+      "contentCreation": "Video Editing"
     }
   },
   "services": {
@@ -108,24 +108,24 @@
     "titleHighlight": "convert.",
     "items": [
       {
-        "title": "Video Editing",
-        "desc": "Color grading, cuts, transitions, captions, and post-production that makes your content pop on any platform.",
-        "tags": ["Reels", "YouTube", "TikTok"]
+        "title": "Executive Virtual Assistance",
+        "desc": "Calendar and inbox management, client communication, task coordination, research, and CRM updates that protect your time and keep priorities moving.",
+        "tags": ["Calendar", "Inbox", "CRM"]
       },
       {
-        "title": "Photo Editing",
-        "desc": "Retouching, color correction, and graphic design to create visuals that reflect your brand's identity.",
-        "tags": ["Canva", "Retouching", "Branding"]
+        "title": "General Virtual Assistance",
+        "desc": "Administrative support, file management, process documentation, and workflow support that keeps your operations organized and dependable.",
+        "tags": ["Admin", "Systems", "Operations"]
       },
       {
-        "title": "Social Media Marketing",
-        "desc": "Strategy, content calendars, posting, engagement, and analytics to grow your audience and drive results.",
-        "tags": ["Instagram", "Facebook", "LinkedIn"]
+        "title": "Podcast Management",
+        "desc": "Episode editing, show notes, publishing, distribution, and short-form repurposing to turn every recording into consistent multi-platform content.",
+        "tags": ["Editing", "Publishing", "Repurposing"]
       },
       {
-        "title": "Podcast & VA Support",
-        "desc": "Episode production, admin tasks, data entry, and operational support to keep your business running smoothly.",
-        "tags": ["Editing", "Admin", "Publishing"]
+        "title": "Digital Marketing Support",
+        "desc": "Social media management, content creation, website updates, blog publishing, performance tracking, and optimization built to support steady growth.",
+        "tags": ["Social", "Content", "Analytics"]
       }
     ]
   },
@@ -135,44 +135,44 @@
     "titleHighlight": "served.",
     "items": [
       {
-        "sub": "Real Estate Team",
-        "desc": "Social media management, content creation, and audience engagement for a real estate team leveraging technology.",
+        "sub": "Real Estate Marketing Support",
+        "desc": "Provided end-to-end marketing support for over 10 real estate agents by creating 50+ custom assets monthly and launching property websites.",
         "tag": "Real Estate"
       },
       {
-        "sub": "Online Review & Video Services",
-        "desc": "Online review management and video editing services to enhance reputation and drive engagement.",
-        "tag": "Digital Marketing"
+        "sub": "Compliance and Operations Support",
+        "desc": "Managed government bidding compliance and digital filing systems, ensuring 100% accuracy in technical data submitted to the State of Michigan.",
+        "tag": "Operations"
       },
       {
-        "sub": "Realtor – Your Home Sold Guaranteed",
-        "desc": "Digital marketing, social media presence, strategy development, content creation, and data analysis.",
-        "tag": "Real Estate"
-      },
-      {
-        "sub": "Notary Coach – California",
-        "desc": "Social media platforms management and captivating video content — curation, platform optimization, editing.",
-        "tag": "Coaching"
-      },
-      {
-        "sub": "Camping Business",
-        "desc": "Social media presence with engaging content and marketing strategies for the outdoor community.",
-        "tag": "E-Commerce"
-      },
-      {
-        "sub": "Podcast",
-        "desc": "Podcast production support — episode planning, editing, publishing, and audience engagement.",
+        "sub": "Podcast Production",
+        "desc": "Oversaw the full podcast production lifecycle, from remote Riverside recordings to SEO optimization and Buzzsprout distribution.",
         "tag": "Podcasting"
       },
       {
-        "sub": "HVAC Company",
-        "desc": "General VA — administrative support, data entry, and inbound/outbound call handling for daily operations.",
-        "tag": "HVAC / Services"
+        "sub": "Digital Rebrand",
+        "desc": "Spearheaded a digital rebranding effort and launched a high-end, user-centric website to drive direct bookings for luxury transportation services.",
+        "tag": "Branding"
       },
       {
-        "sub": "Construction Tech",
-        "desc": "Admin tasks, data entry, and research to support business operations — organized, efficient, and digitally strong.",
-        "tag": "Tech / Construction"
+        "sub": "Content Strategy and SEO",
+        "desc": "Developed multi-platform content strategies and managed SEO-focused blogs, resulting in a 15% increase in total audience reach.",
+        "tag": "Digital Marketing"
+      },
+      {
+        "sub": "Daily Creative Production",
+        "desc": "Designed and published visually compelling daily graphics and promotional materials aligned with the brand's outdoor and adventure aesthetic.",
+        "tag": "Content Creation"
+      },
+      {
+        "sub": "Creative Direction and Editing",
+        "desc": "Served as Creative Director and Video Editor, producing long-form and short-form content while reducing turnaround time by 25%.",
+        "tag": "Video Editing"
+      },
+      {
+        "sub": "Executive Assistance and Lead Research",
+        "desc": "Delivered executive assistance and lead research while maintaining 100% data integrity inside CRM systems for strategic outreach.",
+        "tag": "Executive Support"
       }
     ]
   },
@@ -216,18 +216,18 @@
     ]
   },
   "quote": {
-    "text": "Efficiency at its finest. Let me be your virtual helping hand — I bring the organization, strategy, and execution so you can focus on what you do best.",
+    "text": "I help you reduce the noise and eliminate the overwhelm, so you can lead an efficient, stress-free, and high-impact business.",
     "attribution": "— Yong Benitez, Virtual Assistant"
   },
   "contact": {
     "label": "Get In Touch",
     "title": "Ready to",
     "titleHighlight": "collaborate?",
-    "description": "Whether you need scroll-stopping video edits, stunning photo content, or a full social media strategy — I'm ready. Let's talk!",
+    "description": "Whether you need executive support, podcast management, digital marketing execution, or a steadier backend operation — I'm ready to help. Let's talk.",
     "info": {
       "emailSub": "Email me anytime",
       "locationSub": "Remote worldwide",
-      "availabilitySub": "Available now"
+      "availabilitySub": "Open to ongoing support"
     },
     "form": {
       "name": "Your Name",
@@ -235,9 +235,9 @@
       "email": "Email Address",
       "emailPlaceholder": "john@example.com",
       "service": "Service Needed",
-      "servicePlaceholder": "e.g. Video Editing, Social Media",
+      "servicePlaceholder": "e.g. Executive Support, Podcast Management",
       "message": "Message",
-      "messagePlaceholder": "Tell me about your project..."
+      "messagePlaceholder": "Tell me about your workflow, goals, or support needs..."
     },
     "send": "Send Message →",
     "sent": "Message Sent ✓"
@@ -249,7 +249,7 @@
     "subtitle": "Software I use across every project — from content creation to client management."
   },
   "footer": {
-    "tagline": "Virtual Assistant · Video Editing · Photo Editing · Social Media Marketing",
+    "tagline": "Executive Support · Podcast Management · Digital Marketing · Systems Support",
     "copyright": "© {{year}} Yong Benitez. All rights reserved.",
     "developedBy": "developed by"
   }

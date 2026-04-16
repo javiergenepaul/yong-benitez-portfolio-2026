@@ -1,0 +1,50 @@
+{
+  "summary": "4+ years of experience supporting business owners, executive teams, and creative visionaries through executive assistance, podcast management, digital marketing, and backend operations built for scale.",
+  "experience": [
+    {
+      "role": "Executive and General Virtual Assistance",
+      "company": "Operations and Executive Support",
+      "period": "2021 - Present",
+      "body": "Manage calendars, inboxes, client communication, research, task tracking, CRM updates, documentation, and the daily systems that keep leadership focused and responsive."
+    },
+    {
+      "role": "Podcast Management and Content Production",
+      "company": "Creator and Podcast Clients",
+      "period": "2021 - Present",
+      "body": "Handle episode editing, show notes, publishing, distribution, and short-form repurposing so each recording becomes a repeatable content engine across platforms."
+    },
+    {
+      "role": "Digital Marketing and Growth Support",
+      "company": "Marketing and Brand Operations",
+      "period": "2020 - Present",
+      "body": "Support social media management, content strategy, blog publishing, website updates, reporting, and campaign execution that helps brands grow consistently."
+    }
+  ],
+  "skills": [
+    "Executive Support",
+    "Podcast Management",
+    "Digital Marketing",
+    "Project Management",
+    "Operations Management",
+    "Client Communication",
+    "Content Strategy",
+    "Lead Generation",
+    "SOP Development",
+    "Workflow Automation"
+  ],
+  "tools": [
+    { "name": "Asana", "level": "Expert", "pct": 92 },
+    { "name": "ClickUp", "level": "Expert", "pct": 90 },
+    { "name": "Riverside", "level": "Advanced", "pct": 88 },
+    { "name": "Buzzsprout", "level": "Advanced", "pct": 86 },
+    { "name": "Descript", "level": "Advanced", "pct": 89 },
+    { "name": "Canva", "level": "Expert", "pct": 93 }
+  ],
+  "projects": [
+    "BMP Network - marketing support for 10+ real estate agents with 50+ custom assets each month.",
+    "Talking Shift with Craig - full podcast workflow from Riverside recording to SEO and distribution.",
+    "MIOR Executive - digital rebrand and premium website launch to drive direct bookings.",
+    "Savage Sales - multi-platform content strategy and SEO blog management with 15% audience growth.",
+    "Allure Creatives - creative direction and video editing that reduced turnaround time by 25%."
+  ]
+}

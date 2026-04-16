@@ -13,7 +13,7 @@
     "tagline2": "Visuell.",
     "tagline3": "Strategisch.",
     "intro": "Ich bin",
-    "description": "Über 5 Jahre Erfahrung in der Erstellung ansprechender Inhalte, Social-Media-Wachstum, Videobearbeitung und Optimierung von Abläufen für globale Kunden.",
+    "description": "Mehr als 4 Jahre Erfahrung in der Unterstützung von Unternehmern, Führungsteams und kreativen Köpfen durch Executive Assistance, Podcast-Management und digitales Marketing.",
     "cta1": "Mit Mir Arbeiten →",
     "cta2": "Meinen Lebenslauf erstellen ↓",
     "stats": {
@@ -73,13 +73,13 @@
   },
   "ticker": {
     "items": [
-      "Videobearbeitung",
-      "Fotobearbeitung",
-      "Social-Media-Marketing",
+      "Executive Support",
       "Podcast-Management",
-      "Virtual Assistant",
-      "Content-Erstellung",
-      "Markenstrategie"
+      "Digitales Marketing",
+      "Projektmanagement",
+      "Lead-Generierung",
+      "Workflow-Automatisierung",
+      "Content-Strategie"
     ]
   },
   "about": {
@@ -216,18 +216,18 @@
     ]
   },
   "quote": {
-    "text": "Effizienz auf höchstem Niveau. Lassen Sie mich Ihre virtuelle helfende Hand sein — ich bringe die Organisation, Strategie und Umsetzung, damit Sie sich auf das konzentrieren können, was Sie am besten können.",
+    "text": "Ich helfe Ihnen, Lärm und Überforderung zu reduzieren, damit Sie ein effizientes, stressfreies und wirkungsstarkes Geschäft führen können.",
     "attribution": "— Yong Benitez, Virtual Assistant"
   },
   "contact": {
     "label": "Kontakt Aufnehmen",
     "title": "Bereit zur",
     "titleHighlight": "Zusammenarbeit?",
-    "description": "Ob Sie ansprechende Videobearbeitung, beeindruckende Fotoinhalte oder eine vollständige Social-Media-Strategie benötigen — ich bin bereit. Sprechen wir!",
+    "description": "Ob Sie Executive Support, Podcast-Management, Marketing-Umsetzung oder stabilere interne Abläufe benötigen — ich bin bereit zu helfen. Sprechen wir darüber.",
     "info": {
       "emailSub": "Schreiben Sie mir jederzeit",
       "locationSub": "Remote weltweit",
-      "availabilitySub": "Jetzt verfügbar"
+      "availabilitySub": "Verfügbar für laufende Unterstützung"
     },
     "form": {
       "name": "Ihr Name",
@@ -235,9 +235,9 @@
       "email": "E-Mail-Adresse",
       "emailPlaceholder": "max@beispiel.de",
       "service": "Gewünschte Leistung",
-      "servicePlaceholder": "z.B. Videobearbeitung, Social Media",
+      "servicePlaceholder": "z.B. Executive Support, Podcast-Management",
       "message": "Nachricht",
-      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt..."
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Workflow, Ihren Zielen oder Ihrem Unterstützungsbedarf..."
     },
     "send": "Nachricht Senden →",
     "sent": "Nachricht Gesendet ✓"
@@ -249,7 +249,7 @@
     "subtitle": "Software, die ich in jedem Projekt einsetze — von Content-Erstellung bis Kundenverwaltung."
   },
   "footer": {
-    "tagline": "Virtual Assistant · Videobearbeitung · Fotobearbeitung · Social-Media-Marketing",
+    "tagline": "Executive Support · Podcast-Management · Digitales Marketing · System-Support",
     "copyright": "© {{year}} Yong Benitez. Alle Rechte vorbehalten.",
     "developedBy": "entwickelt von"
   }

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { TypeAnimation } from "react-type-animation"
 
+import siteContent from "@/lib/data/site-content.json"
 import { ResumeBuilderModal } from "@/components/resume-builder-modal"
 import { Button } from "@/components/ui/button"
 
@@ -50,6 +51,7 @@ function scrollTo(id: string) {
 export function Hero() {
   const { t, i18n } = useTranslation()
   const [isResumeBuilderOpen, setIsResumeBuilderOpen] = useState(false)
+  const description = i18n.language === "en" ? siteContent.hero.description : t("hero.description")
 
   const roles = t("hero.roles", { returnObjects: true }) as string[]
   const rolesSequence: (string | number)[] = roles.flatMap((r) => [r, 2500])
@@ -153,7 +155,7 @@ export function Hero() {
               />
             </div>
             <p className="text-base text-foreground/50 max-w-md leading-relaxed mb-8">
-              {t("hero.description")}
+              {description}
             </p>
           </div>
 

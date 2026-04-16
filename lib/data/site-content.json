@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "description": "4+ years of experience fueling the growth of business owners, executive teams, and creative visionaries through executive support, podcast management, and digital marketing."
+  },
+  "about": {
+    "title1": "Structured support,",
+    "title2": "built for scale.",
+    "paragraphs": [
+      "4+ years of experience fueling the growth of business owners, executive teams, and creative visionaries through a blend of general support, executive assistance, podcast management, and digital marketing.",
+      "I specialize in the three pillars that turn a chaotic to-do list into a streamlined engine for success: General and Executive Support, Podcast Management, and Digital Marketing.",
+      "I build the infrastructure that allows you to scale with confidence, creating organizational harmony so you can focus on the big picture while daily operations run with precision."
+    ],
+    "cta": "Let's collaborate ->",
+    "skills": [
+      { "label": "Executive Support", "pct": 97 },
+      { "label": "Podcast Management", "pct": 94 },
+      { "label": "Digital Marketing", "pct": 92 },
+      { "label": "Project Management", "pct": 95 },
+      { "label": "Operations Management", "pct": 94 },
+      { "label": "Video Editing", "pct": 90 }
+    ]
+  },
+  "services": {
+    "items": [
+      {
+        "title": "Executive Virtual Assistance",
+        "desc": "Calendar and inbox management, client communication, project coordination, research, CRM updates, and high-level support that protects your time.",
+        "tags": ["Calendar", "Inbox", "CRM"]
+      },
+      {
+        "title": "General Virtual Assistance",
+        "desc": "Administrative support, file organization, process documentation, workflow support, and day-to-day operations that keep the backend running cleanly.",
+        "tags": ["Admin", "Systems", "Operations"]
+      },
+      {
+        "title": "Podcast Management",
+        "desc": "Episode editing, show notes, publishing, platform distribution, and content repurposing into short-form assets for consistent audience growth.",
+        "tags": ["Editing", "Publishing", "Repurposing"]
+      },
+      {
+        "title": "Digital Marketing Support",
+        "desc": "Social media management, content creation, scheduling, website updates, blog publishing, and performance tracking built to convert attention into action.",
+        "tags": ["Social", "Content", "Analytics"]
+      }
+    ]
+  },
+  "clients": {
+    "items": [
+      {
+        "name": "BMP Network",
+        "sub": "Real Estate Marketing Support",
+        "desc": "Provided end-to-end marketing support for over 10 real estate agents by creating 50+ custom assets monthly and launching property websites.",
+        "tag": "Real Estate"
+      },
+      {
+        "name": "American Air HVAC",
+        "sub": "Compliance and Operations Support",
+        "desc": "Managed government bidding compliance and digital filing systems, ensuring 100% accuracy in technical data submitted to the State of Michigan.",
+        "tag": "Operations"
+      },
+      {
+        "name": "Talking Shift with Craig",
+        "sub": "Podcast Production",
+        "desc": "Oversaw the full podcast production lifecycle, from remote Riverside recordings to SEO optimization and Buzzsprout distribution.",
+        "tag": "Podcasting"
+      },
+      {
+        "name": "MIOR Executive",
+        "sub": "Digital Rebrand",
+        "desc": "Spearheaded a digital rebranding effort and launched a high-end, user-centric website to drive direct bookings for luxury transportation services.",
+        "tag": "Branding"
+      },
+      {
+        "name": "Savage Sales",
+        "sub": "Content Strategy and SEO",
+        "desc": "Developed multi-platform content strategies and managed SEO-focused blogs, resulting in a 15% increase in total audience reach.",
+        "tag": "Digital Marketing"
+      },
+      {
+        "name": "Outcamping",
+        "sub": "Daily Creative Production",
+        "desc": "Designed and published visually compelling daily graphics and promotional materials aligned with the brand's outdoor and adventure aesthetic.",
+        "tag": "Content Creation"
+      },
+      {
+        "name": "Allure Creatives",
+        "sub": "Creative Direction and Editing",
+        "desc": "Served as Creative Director and Video Editor, producing long-form and short-form content while reducing turnaround time by 25%.",
+        "tag": "Video Editing"
+      },
+      {
+        "name": "Procore",
+        "sub": "Executive Assistance and Lead Research",
+        "desc": "Delivered executive assistance and lead research while maintaining 100% data integrity inside CRM systems for strategic outreach.",
+        "tag": "Executive Support"
+      }
+    ]
+  },
+  "quote": {
+    "text": "I help you reduce the noise and eliminate the overwhelm, so you can lead an efficient, stress-free, and high-impact business.",
+    "attribution": "- Yong Benitez, Virtual Assistant"
+  }
+}

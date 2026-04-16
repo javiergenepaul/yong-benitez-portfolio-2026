@@ -1,6 +1,8 @@
 "use client"
 
 import { useTranslation } from "react-i18next"
+
+import siteContent from "@/lib/data/site-content.json"
 import { Reveal } from "@/components/reveal"
 
 const serviceStyles = [
@@ -35,8 +37,10 @@ const serviceStyles = [
 ]
 
 export function Services() {
-  const { t } = useTranslation()
-  const items = t("services.items", { returnObjects: true }) as Array<{
+  const { t, i18n } = useTranslation()
+  const items = (i18n.language === "en"
+    ? siteContent.services.items
+    : t("services.items", { returnObjects: true })) as Array<{
     title: string
     desc: string
     tags: string[]

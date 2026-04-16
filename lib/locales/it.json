@@ -13,7 +13,7 @@
     "tagline2": "Visivo.",
     "tagline3": "Strategico.",
     "intro": "Sono",
-    "description": "Oltre 5 anni a creare contenuti accattivanti, gestire la crescita sui social media, montare video e ottimizzare le operazioni per clienti globali.",
+    "description": "Da oltre 4 anni supporto la crescita di imprenditori, team esecutivi e professionisti creativi attraverso assistenza esecutiva, gestione podcast e marketing digitale.",
     "cta1": "Lavora con Me →",
     "cta2": "Crea il mio curriculum ↓",
     "stats": {
@@ -73,13 +73,13 @@
   },
   "ticker": {
     "items": [
-      "Montaggio Video",
-      "Editing Foto",
-      "Marketing Social Media",
+      "Supporto Esecutivo",
       "Gestione Podcast",
-      "Assistente Virtuale",
-      "Creazione Contenuti",
-      "Strategia di Brand"
+      "Marketing Digitale",
+      "Project Management",
+      "Lead Generation",
+      "Automazione Workflow",
+      "Strategia dei Contenuti"
     ]
   },
   "about": {
@@ -216,18 +216,18 @@
     ]
   },
   "quote": {
-    "text": "Efficienza al massimo livello. Lasciami essere il tuo assistente virtuale di fiducia — porto organizzazione, strategia ed esecuzione così puoi concentrarti su ciò che sai fare meglio.",
+    "text": "Ti aiuto a ridurre il rumore e a eliminare il sovraccarico, così puoi guidare un business efficiente, sereno e ad alto impatto.",
     "attribution": "— Yong Benitez, Assistente Virtuale"
   },
   "contact": {
     "label": "Contattami",
     "title": "Pronto a",
     "titleHighlight": "collaborare?",
-    "description": "Che tu abbia bisogno di montaggi video accattivanti, contenuti fotografici straordinari o una strategia social completa — sono pronto. Parliamone!",
+    "description": "Se hai bisogno di supporto esecutivo, gestione podcast, esecuzione marketing o di un'operatività interna più stabile, sono pronta ad aiutarti. Parliamone.",
     "info": {
       "emailSub": "Scrivimi quando vuoi",
       "locationSub": "Lavoro da remoto in tutto il mondo",
-      "availabilitySub": "Disponibile ora"
+      "availabilitySub": "Disponibile per supporto continuativo"
     },
     "form": {
       "name": "Il Tuo Nome",
@@ -235,9 +235,9 @@
       "email": "Indirizzo Email",
       "emailPlaceholder": "mario@esempio.it",
       "service": "Servizio Richiesto",
-      "servicePlaceholder": "es. Montaggio Video, Social Media",
+      "servicePlaceholder": "es. Supporto Esecutivo, Gestione Podcast",
       "message": "Messaggio",
-      "messagePlaceholder": "Raccontami del tuo progetto..."
+      "messagePlaceholder": "Parlami del tuo workflow, dei tuoi obiettivi o del supporto di cui hai bisogno..."
     },
     "send": "Invia Messaggio →",
     "sent": "Messaggio Inviato ✓"
@@ -249,7 +249,7 @@
     "subtitle": "Software che uso in ogni progetto — dalla creazione di contenuti alla gestione dei clienti."
   },
   "footer": {
-    "tagline": "Assistente Virtuale · Montaggio Video · Editing Foto · Marketing Social Media",
+    "tagline": "Supporto Esecutivo · Gestione Podcast · Marketing Digitale · Supporto ai Sistemi",
     "copyright": "© {{year}} Yong Benitez. Tutti i diritti riservati.",
     "developedBy": "sviluppato da"
   }

@@ -13,7 +13,7 @@
     "tagline2": "Visuel.",
     "tagline3": "Stratégique.",
     "intro": "Je suis",
-    "description": "Plus de 5 ans à créer du contenu accrocheur, gérer la croissance des réseaux sociaux, monter des vidéos et optimiser les opérations pour des clients mondiaux.",
+    "description": "Plus de 4 ans à soutenir la croissance de dirigeants, d'équipes exécutives et de profils créatifs grâce à l'assistance exécutive, la gestion de podcasts et le marketing digital.",
     "cta1": "Travaillons Ensemble →",
     "cta2": "Créer mon CV ↓",
     "stats": {
@@ -73,33 +73,33 @@
   },
   "ticker": {
     "items": [
-      "Montage Vidéo",
-      "Retouche Photo",
-      "Marketing Réseaux Sociaux",
+      "Support Exécutif",
       "Gestion de Podcast",
-      "Assistant Virtuel",
-      "Création de Contenu",
-      "Stratégie de Marque"
+      "Marketing Digital",
+      "Gestion de Projet",
+      "Génération de Leads",
+      "Automatisation des Flux",
+      "Stratégie de Contenu"
     ]
   },
   "about": {
     "label": "À Propos",
-    "title1": "Votre assistant",
-    "title2": "virtuel de confiance.",
-    "p1": "J'ai plus de cinq ans d'expérience en tant que freelancer et assistant virtuel dévoué, spécialisé dans l'optimisation des opérations et l'amélioration de l'efficacité des entreprises.",
-    "p2": "Mon cœur de métier est",
-    "p2Highlight": "le montage vidéo, la retouche photo et le marketing sur les réseaux sociaux",
-    "p2After": "— créer du contenu visuel qui accroche le regard et construit des marques en ligne.",
-    "p3": "J'ai soutenu des clients mondiaux dans l'immobilier, le coaching, le podcasting, l'e-commerce et la tech — en livrant des résultats avec rapidité et créativité.",
+    "title1": "Un support structuré,",
+    "title2": "pensé pour évoluer.",
+    "p1": "J'apporte plus de 4 ans d'expérience au service de dirigeants, d'équipes exécutives et de visionnaires créatifs grâce à un support virtuel fiable et une exécution constante.",
+    "p2": "Je me spécialise dans",
+    "p2Highlight": "le support général et exécutif, la gestion de podcasts et le marketing digital",
+    "p2After": "— trois piliers qui transforment une liste de tâches chaotique en moteur clair de croissance.",
+    "p3": "Je mets en place l'infrastructure qui vous permet d'évoluer avec confiance, afin que le quotidien fonctionne avec précision pendant que vous vous concentrez sur la vision d'ensemble.",
     "cta": "Collaborons →",
     "skillsTitle": "Compétences & Maîtrise",
     "skills": {
-      "videoEditing": "Montage Vidéo",
-      "photoEditing": "Retouche Photo",
-      "smm": "Marketing Réseaux Sociaux",
-      "podcastMgmt": "Gestion de Podcast",
-      "adminVA": "Tâches Admin & VA",
-      "contentCreation": "Création de Contenu"
+      "videoEditing": "Support Exécutif",
+      "photoEditing": "Gestion de Podcast",
+      "smm": "Marketing Digital",
+      "podcastMgmt": "Gestion de Projet",
+      "adminVA": "Gestion Opérationnelle",
+      "contentCreation": "Montage Vidéo"
     }
   },
   "services": {
@@ -108,24 +108,24 @@
     "titleHighlight": "convertissent.",
     "items": [
       {
-        "title": "Montage Vidéo",
-        "desc": "Étalonnage, coupes, transitions, sous-titres et post-production pour que votre contenu se démarque sur toutes les plateformes.",
-        "tags": ["Reels", "YouTube", "TikTok"]
+        "title": "Assistance Virtuelle Exécutive",
+        "desc": "Gestion d'agenda et d'e-mails, communication client, coordination des tâches, recherche et mises à jour CRM pour protéger votre temps et faire avancer les priorités.",
+        "tags": ["Agenda", "Inbox", "CRM"]
       },
       {
-        "title": "Retouche Photo",
-        "desc": "Retouche, correction colorimétrique et design graphique pour créer des visuels qui reflètent l'identité de votre marque.",
-        "tags": ["Canva", "Retouche", "Branding"]
+        "title": "Assistance Virtuelle Générale",
+        "desc": "Support administratif, gestion documentaire, documentation des processus et appui aux workflows pour garder des opérations fiables et organisées.",
+        "tags": ["Admin", "Systèmes", "Opérations"]
       },
       {
-        "title": "Marketing Réseaux Sociaux",
-        "desc": "Stratégie, calendriers de contenu, publications, engagement et analytics pour développer votre audience et générer des résultats.",
-        "tags": ["Instagram", "Facebook", "LinkedIn"]
+        "title": "Gestion de Podcast",
+        "desc": "Montage des épisodes, rédaction des notes d'émission, publication, distribution et réutilisation en formats courts pour transformer chaque enregistrement en contenu régulier.",
+        "tags": ["Montage", "Publication", "Réutilisation"]
       },
       {
-        "title": "Podcast & Support VA",
-        "desc": "Production d'épisodes, tâches administratives, saisie de données et support opérationnel pour faire tourner votre activité en douceur.",
-        "tags": ["Montage", "Admin", "Publication"]
+        "title": "Support en Marketing Digital",
+        "desc": "Gestion des réseaux sociaux, création de contenu, mises à jour du site, publication d'articles, suivi des performances et optimisation pour une croissance régulière.",
+        "tags": ["Social", "Contenu", "Analytics"]
       }
     ]
   },
@@ -135,44 +135,44 @@
     "titleHighlight": "accompagnés.",
     "items": [
       {
-        "sub": "Équipe Immobilière",
-        "desc": "Gestion des réseaux sociaux, création de contenu et engagement pour une équipe immobilière innovante.",
+        "sub": "Support marketing immobilier",
+        "desc": "Accompagnement marketing complet pour plus de 10 agents immobiliers avec plus de 50 assets créés par mois et des sites de biens mis en ligne.",
         "tag": "Immobilier"
       },
       {
-        "sub": "Services d'Avis et Vidéos en Ligne",
-        "desc": "Gestion des avis en ligne et montage vidéo pour améliorer la réputation et stimuler l'engagement.",
-        "tag": "Marketing Digital"
+        "sub": "Conformité et opérations",
+        "desc": "Gestion de la conformité aux appels d'offres publics et des systèmes de classement numérique avec 100% de précision sur les données techniques soumises à l'État du Michigan.",
+        "tag": "Opérations"
       },
       {
-        "sub": "Agent Immobilier – Votre Maison Vendue Garantie",
-        "desc": "Marketing digital, présence sur les réseaux sociaux, développement de stratégie, création de contenu et analyse de données.",
-        "tag": "Immobilier"
-      },
-      {
-        "sub": "Coach Notaire – Californie",
-        "desc": "Gestion des plateformes sociales et contenu vidéo captivant — curation, optimisation de plateforme, montage.",
-        "tag": "Coaching"
-      },
-      {
-        "sub": "Entreprise de Camping",
-        "desc": "Présence sur les réseaux sociaux avec du contenu engageant et des stratégies marketing pour la communauté outdoor.",
-        "tag": "E-Commerce"
-      },
-      {
-        "sub": "Podcast",
-        "desc": "Support de production podcast — planification d'épisodes, montage, publication et engagement de l'audience.",
+        "sub": "Production de podcast",
+        "desc": "Supervision du cycle complet de production du podcast, des enregistrements à distance sur Riverside à l'optimisation SEO et à la distribution sur Buzzsprout.",
         "tag": "Podcasting"
       },
       {
-        "sub": "Entreprise CVC",
-        "desc": "Assistant virtuel général — support administratif, saisie de données et gestion des appels pour les opérations quotidiennes.",
-        "tag": "CVC / Services"
+        "sub": "Rebranding digital",
+        "desc": "Pilotage d'un repositionnement digital avec lancement d'un site premium centré utilisateur pour générer des réservations directes dans le transport de luxe.",
+        "tag": "Branding"
       },
       {
-        "sub": "Tech Construction",
-        "desc": "Tâches administratives, saisie de données et recherches pour soutenir les opérations — organisé, efficace et numérique.",
-        "tag": "Tech / Construction"
+        "sub": "Stratégie de contenu et SEO",
+        "desc": "Développement de stratégies de contenu multi-plateformes et gestion de blogs optimisés SEO avec une hausse de 15% de la portée totale.",
+        "tag": "Marketing Digital"
+      },
+      {
+        "sub": "Production créative quotidienne",
+        "desc": "Conception et publication de visuels quotidiens et de supports promotionnels alignés sur l'esthétique outdoor et aventure de la marque.",
+        "tag": "Création de Contenu"
+      },
+      {
+        "sub": "Direction créative et montage",
+        "desc": "Rôle de Creative Director et monteuse vidéo, avec production de formats longs et courts tout en réduisant les délais de livraison de 25%.",
+        "tag": "Montage Vidéo"
+      },
+      {
+        "sub": "Assistance exécutive et recherche de leads",
+        "desc": "Assistance exécutive et recherche de prospects avec 100% d'intégrité des données dans les CRM pour l'outreach stratégique.",
+        "tag": "Support Exécutif"
       }
     ]
   },
@@ -216,18 +216,18 @@
     ]
   },
   "quote": {
-    "text": "L'efficacité à son meilleur. Laissez-moi être votre assistant virtuel de confiance — j'apporte l'organisation, la stratégie et l'exécution pour que vous puissiez vous concentrer sur ce que vous faites le mieux.",
+    "text": "Je vous aide à réduire le bruit et à éliminer la surcharge afin que vous puissiez diriger une activité efficace, sereine et à fort impact.",
     "attribution": "— Yong Benitez, Assistant Virtuel"
   },
   "contact": {
     "label": "Prendre Contact",
     "title": "Prêt à",
     "titleHighlight": "collaborer ?",
-    "description": "Que vous ayez besoin de montages vidéo accrocheurs, de superbes photos ou d'une stratégie complète sur les réseaux sociaux — je suis prêt. Parlons-en !",
+    "description": "Que vous ayez besoin de support exécutif, de gestion de podcast, d'exécution marketing ou d'une organisation interne plus stable — je suis prête à vous aider. Parlons-en.",
     "info": {
       "emailSub": "Écrivez-moi à tout moment",
       "locationSub": "Travail à distance mondial",
-      "availabilitySub": "Disponible maintenant"
+      "availabilitySub": "Disponible pour un accompagnement continu"
     },
     "form": {
       "name": "Votre Nom",
@@ -235,9 +235,9 @@
       "email": "Adresse E-mail",
       "emailPlaceholder": "jean@exemple.com",
       "service": "Service Souhaité",
-      "servicePlaceholder": "ex. Montage Vidéo, Réseaux Sociaux",
+      "servicePlaceholder": "ex. Support Exécutif, Gestion de Podcast",
       "message": "Message",
-      "messagePlaceholder": "Parlez-moi de votre projet..."
+      "messagePlaceholder": "Parlez-moi de votre workflow, de vos objectifs ou de votre besoin de support..."
     },
     "send": "Envoyer le Message →",
     "sent": "Message Envoyé ✓"
@@ -249,7 +249,7 @@
     "subtitle": "Logiciels que j'utilise sur chaque projet — de la création de contenu à la gestion des clients."
   },
   "footer": {
-    "tagline": "Assistant Virtuel · Montage Vidéo · Retouche Photo · Marketing Réseaux Sociaux",
+    "tagline": "Support Exécutif · Gestion de Podcast · Marketing Digital · Support Systèmes",
     "copyright": "© {{year}} Yong Benitez. Tous droits réservés.",
     "developedBy": "développé par"
   }

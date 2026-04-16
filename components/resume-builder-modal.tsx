@@ -4,6 +4,8 @@ import { type RefObject, useEffect, useMemo, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { Download, Mail, MapPin, Minus, MoonStar, Plus, Search, SunMedium, X } from "lucide-react"
 
+import clientDetails from "@/lib/data/client-details.json"
+import resumeBuilderData from "@/lib/data/resume-builder.json"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -26,55 +28,6 @@ const COLOR_THEMES = [
   { name: "Orange", value: "#ff6b00" },
   { name: "Slate", value: "#71717a" },
 ] as const
-
-const RESUME_DATA = {
-  name: "Yong Benitez",
-  title: "Virtual Assistant & Content Creator",
-  email: "benitezyong@gmail.com",
-  phone: "+63 917 000 0000",
-  location: "Philippines",
-  linkedin: "linkedin.com/in/virtualassistbyyong",
-  website: "yongbenitez.netlify.app",
-  summary:
-    "Remote-first creative operator with 5+ years helping founders and teams stay visible, organized, and consistent across content, client delivery, and day-to-day operations.",
-  experience: [
-    {
-      role: "Virtual Assistant & Social Media Manager",
-      company: "Global Freelance Clients",
-      period: "2021 - Present",
-      body:
-        "Manage calendars, create content systems, edit short-form videos, publish across social channels, and keep client workflows moving without friction.",
-    },
-    {
-      role: "Podcast & Content Support",
-      company: "Coaches and Creators",
-      period: "2022 - Present",
-      body:
-        "Handled episode prep, asset organization, social cutdowns, and publishing support for creators who needed repeatable post-production and promotion.",
-    },
-    {
-      role: "Creative Operations Partner",
-      company: "Real Estate and Service Businesses",
-      period: "2019 - 2021",
-      body:
-        "Delivered graphics, edited promotional videos, managed audience engagement, and supported fast-turn campaigns for teams building consistent online presence.",
-    },
-  ],
-  strengths: [
-    "Video editing",
-    "Photo editing",
-    "Social media strategy",
-    "Content scheduling",
-    "Executive support",
-    "Podcast management",
-  ],
-  tools: ["Canva", "CapCut", "Adobe Premiere Pro", "Meta Suite", "Google Workspace", "Notion"],
-  projects: [
-    "Built content workflows for real estate, podcast, and coaching clients",
-    "Produced short-form edits designed for reach, retention, and repurposing",
-    "Supported remote teams with admin systems, publishing, and follow-through",
-  ],
-} as const
 
 function getPalette(background: ResumeBackground, accent: string) {
   if (background === "light") {
@@ -135,13 +88,13 @@ function ResumePreview({
         style={{ backgroundColor: palette.paper, color: palette.text }}
       >
         <div className="px-12 py-10" style={{ backgroundColor: palette.accent, color: "#fff7f1" }}>
-          <h2 className="text-[42px] font-black leading-none">{RESUME_DATA.name}</h2>
-          <p className="mt-3 text-[18px] font-semibold opacity-95">{RESUME_DATA.title}</p>
+          <h2 className="text-[42px] font-black leading-none">{clientDetails.name}</h2>
+          <p className="mt-3 text-[18px] font-semibold opacity-95">{clientDetails.headline}</p>
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-[12px] font-medium md:grid-cols-4">
-            <span className="flex items-center gap-2"><Mail className="size-3.5" /> {RESUME_DATA.email}</span>
-            <span>{RESUME_DATA.phone}</span>
-            <span className="flex items-center gap-2"><MapPin className="size-3.5" /> {RESUME_DATA.location}</span>
-            <span>{RESUME_DATA.linkedin}</span>
+            <span className="flex items-center gap-2"><Mail className="size-3.5" /> {clientDetails.email}</span>
+            <span>{clientDetails.phone}</span>
+            <span className="flex items-center gap-2"><MapPin className="size-3.5" /> {clientDetails.location}</span>
+            <span>{clientDetails.linkedin}</span>
           </div>
         </div>
 
@@ -149,13 +102,13 @@ function ResumePreview({
           <div className="px-12 py-10">
             <SectionTitle label={t("resumeBuilder.profile")} accent={palette.accent} line={palette.line} />
             <p className="text-[14px] leading-7" style={{ color: palette.muted }}>
-              {RESUME_DATA.summary}
+              {resumeBuilderData.summary}
             </p>
 
             <div className="mt-8">
               <SectionTitle label={t("resumeBuilder.experience")} accent={palette.accent} line={palette.line} />
               <div className="space-y-6">
-                {RESUME_DATA.experience.map((item) => (
+                {resumeBuilderData.experience.map((item) => (
                   <div key={`${item.role}-${item.company}`}>
                     <div className="flex items-start justify-between gap-6">
                       <div>
@@ -182,7 +135,7 @@ function ResumePreview({
             <div className="mt-8">
               <SectionTitle label={t("resumeBuilder.selectedProjects")} accent={palette.accent} line={palette.line} />
               <div className="space-y-3 text-[14px] leading-7" style={{ color: palette.muted }}>
-                {RESUME_DATA.projects.map((project) => (
+                {resumeBuilderData.projects.map((project) => (
                   <div key={project} className="flex gap-3">
                     <span className="mt-2 size-1.5 rounded-full shrink-0" style={{ backgroundColor: palette.accent }} />
                     <span>{project}</span>
@@ -195,7 +148,7 @@ function ResumePreview({
           <aside className="px-10 py-10" style={{ backgroundColor: palette.panel }}>
             <SectionTitle label={t("resumeBuilder.skills")} accent={palette.accent} line={palette.line} />
             <div className="flex flex-wrap gap-2">
-              {RESUME_DATA.strengths.map((strength) => (
+              {resumeBuilderData.skills.map((strength) => (
                 <span
                   key={strength}
                   className="rounded-full border px-3 py-1.5 text-[11px] font-bold"
@@ -209,14 +162,14 @@ function ResumePreview({
             <div className="mt-8">
               <SectionTitle label={t("resumeBuilder.toolsLabel")} accent={palette.accent} line={palette.line} />
               <div className="space-y-3">
-                {RESUME_DATA.tools.map((tool) => (
-                  <div key={tool}>
+                {resumeBuilderData.tools.map((tool) => (
+                  <div key={tool.name}>
                     <div className="flex items-center justify-between text-[12px] font-semibold">
-                      <span>{tool}</span>
-                      <span style={{ color: palette.muted }}>Advanced</span>
+                      <span>{tool.name}</span>
+                      <span style={{ color: palette.muted }}>{tool.level}</span>
                     </div>
                     <div className="mt-1.5 h-1.5 rounded-full" style={{ backgroundColor: palette.soft }}>
-                      <div className="h-full rounded-full" style={{ width: "82%", backgroundColor: palette.accent }} />
+                      <div className="h-full rounded-full" style={{ width: `${tool.pct}%`, backgroundColor: palette.accent }} />
                     </div>
                   </div>
                 ))}
@@ -228,9 +181,9 @@ function ResumePreview({
                 {t("resumeBuilder.contact")}
               </p>
               <div className="mt-4 space-y-3 text-[12px] font-semibold" style={{ color: palette.muted }}>
-                <p>{RESUME_DATA.email}</p>
-                <p>{RESUME_DATA.website}</p>
-                <p>{RESUME_DATA.linkedin}</p>
+                <p>{clientDetails.email}</p>
+                <p>{clientDetails.website}</p>
+                <p>{clientDetails.linkedin}</p>
               </div>
             </div>
           </aside>
@@ -248,25 +201,25 @@ function ResumePreview({
       <aside className="px-8 py-10" style={{ backgroundColor: palette.panel }}>
         <div className="rounded-[28px] p-6" style={{ backgroundColor: palette.accent, color: "#fff7f1" }}>
           <p className="text-[13px] font-semibold uppercase tracking-[0.18em] opacity-85">Resume</p>
-          <h2 className="mt-5 text-[34px] font-black leading-none">{RESUME_DATA.name}</h2>
-          <p className="mt-3 text-[14px] font-semibold leading-6 opacity-95">{RESUME_DATA.title}</p>
+          <h2 className="mt-5 text-[34px] font-black leading-none">{clientDetails.name}</h2>
+          <p className="mt-3 text-[14px] font-semibold leading-6 opacity-95">{clientDetails.headline}</p>
         </div>
 
         <div className="mt-8">
           <SectionTitle label={t("resumeBuilder.contact")} accent={palette.accent} line={palette.line} />
           <div className="space-y-4 text-[12px] leading-6" style={{ color: palette.muted }}>
-            <p>{RESUME_DATA.email}</p>
-            <p>{RESUME_DATA.phone}</p>
-            <p>{RESUME_DATA.location}</p>
-            <p>{RESUME_DATA.website}</p>
-            <p>{RESUME_DATA.linkedin}</p>
+            <p>{clientDetails.email}</p>
+            <p>{clientDetails.phone}</p>
+            <p>{clientDetails.location}</p>
+            <p>{clientDetails.website}</p>
+            <p>{clientDetails.linkedin}</p>
           </div>
         </div>
 
         <div className="mt-8">
           <SectionTitle label={t("resumeBuilder.skills")} accent={palette.accent} line={palette.line} />
           <div className="space-y-2 text-[12px] font-semibold" style={{ color: palette.muted }}>
-            {RESUME_DATA.strengths.map((strength) => (
+            {resumeBuilderData.skills.map((strength) => (
               <div key={strength} className="rounded-2xl px-3 py-2" style={{ backgroundColor: palette.soft }}>
                 {strength}
               </div>
@@ -277,13 +230,13 @@ function ResumePreview({
         <div className="mt-8">
           <SectionTitle label={t("resumeBuilder.toolsLabel")} accent={palette.accent} line={palette.line} />
           <div className="flex flex-wrap gap-2">
-            {RESUME_DATA.tools.map((tool) => (
+            {resumeBuilderData.tools.map((tool) => (
               <span
-                key={tool}
+                key={tool.name}
                 className="rounded-full border px-3 py-1 text-[11px] font-bold"
                 style={{ borderColor: palette.line, color: palette.text }}
               >
-                {tool}
+                {tool.name}
               </span>
             ))}
           </div>
@@ -293,13 +246,13 @@ function ResumePreview({
       <div className="px-10 py-10">
         <SectionTitle label={t("resumeBuilder.profile")} accent={palette.accent} line={palette.line} />
         <p className="text-[14px] leading-7" style={{ color: palette.muted }}>
-          {RESUME_DATA.summary}
+          {resumeBuilderData.summary}
         </p>
 
         <div className="mt-8">
           <SectionTitle label={t("resumeBuilder.experience")} accent={palette.accent} line={palette.line} />
           <div className="space-y-7">
-            {RESUME_DATA.experience.map((item) => (
+            {resumeBuilderData.experience.map((item) => (
               <div key={`${item.role}-${item.company}`} className="grid grid-cols-[90px_1fr] gap-5">
                 <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: palette.accent }}>
                   {item.period}
@@ -321,7 +274,7 @@ function ResumePreview({
         <div className="mt-8">
           <SectionTitle label={t("resumeBuilder.selectedProjects")} accent={palette.accent} line={palette.line} />
           <div className="grid gap-3 text-[14px] leading-7" style={{ color: palette.muted }}>
-            {RESUME_DATA.projects.map((project) => (
+            {resumeBuilderData.projects.map((project) => (
               <div key={project} className="rounded-[22px] border px-4 py-4" style={{ borderColor: palette.line, backgroundColor: palette.soft }}>
                 {project}
               </div>
@@ -383,7 +336,7 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
       const imageHeight = (canvas.height * pageWidth) / canvas.width
 
       pdf.addImage(image, "PNG", 0, 0, pageWidth, Math.min(pageHeight, imageHeight), undefined, "FAST")
-      pdf.save(`yong-benitez-resume-${template}.pdf`)
+      pdf.save(`${clientDetails.name.toLowerCase().replace(/\s+/g, "-")}-resume-${template}.pdf`)
     } finally {
       setIsExporting(false)
     }

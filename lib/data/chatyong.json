@@ -1,0 +1,73 @@
+{
+  "assistantName": "chatYONG",
+  "assistantTitle": "AI Portfolio Agent",
+  "welcomeMessage": "Hi, I'm chatYONG. I can answer questions about Yong's services, experience, workflow, and resume.",
+  "placeholder": "Ask about services or availability...",
+  "emptyState": "Try one of the prompt suggestions below.",
+  "relatedPrompts": [
+    "What services does Yong offer?",
+    "What kind of executive support can Yong handle?",
+    "Can Yong manage podcasts from editing to publishing?",
+    "Which tools does Yong use most?",
+    "What industries has Yong worked with?",
+    "How can I contact Yong for ongoing support?"
+  ],
+  "replies": [
+    {
+      "id": "services",
+      "keywords": ["service", "services", "offer", "offers", "help", "support", "do"],
+      "answer": "Yong supports clients across four main areas: Executive Virtual Assistance, General Virtual Assistance, Podcast Management, and Digital Marketing Support. That includes calendar and inbox management, client coordination, CRM updates, episode editing and publishing, content repurposing, social media support, blog updates, and performance tracking."
+    },
+    {
+      "id": "executive-support",
+      "keywords": ["executive", "assistant", "assistance", "calendar", "inbox", "admin", "crm"],
+      "answer": "For executive support, Yong handles calendar and inbox management, client communication, task and project coordination, research, CRM updates, file organization, and process documentation. The focus is protecting leadership time while keeping operations responsive and organized."
+    },
+    {
+      "id": "podcast",
+      "keywords": ["podcast", "episode", "show", "buzzsprout", "riverside", "descript", "publishing"],
+      "answer": "Yes. Yong can support the full podcast workflow: remote recording coordination, episode editing, show notes, publishing, distribution, and short-form repurposing for channels like Instagram Reels and YouTube Shorts."
+    },
+    {
+      "id": "marketing",
+      "keywords": ["marketing", "social", "content", "seo", "blog", "audience", "campaign"],
+      "answer": "Yong's marketing support covers social media management, content creation, scheduling, website updates, blog publishing, SEO-aware content support, audience growth, and performance tracking. The work is aimed at helping brands grow consistently rather than posting for the sake of posting."
+    },
+    {
+      "id": "skills",
+      "keywords": ["skill", "skills", "strength", "strengths", "expertise"],
+      "answer": "Core strengths include Executive Support, Podcast Management, Digital Marketing, Project Management, Operations Management, Client Communication, Content Strategy, Lead Generation, SOP Development, Workflow Automation, and Video Editing."
+    },
+    {
+      "id": "tools",
+      "keywords": ["tool", "tools", "software", "stack", "platform", "asana", "clickup", "canva"],
+      "answer": "Yong regularly works with Asana, ClickUp, Riverside, Buzzsprout, Descript, Canva, CapCut, Notion, Google Workspace, and CRM systems. The workflow is built around organized delivery, repeatable systems, and clean handoff processes."
+    },
+    {
+      "id": "clients",
+      "keywords": ["client", "clients", "industry", "industries", "experience", "worked", "brands"],
+      "answer": "Yong has supported clients across real estate, HVAC, podcasting, luxury transportation, legal services, sales, outdoor brands, tech, logistics, and community-focused brands. Recent experience includes BMP Network, American Air HVAC, Talking Shift with Craig, MIOR Executive, Savage Sales, Outcamping, Allure Creatives, and Procore."
+    },
+    {
+      "id": "results",
+      "keywords": ["result", "results", "impact", "outcome", "growth", "performance"],
+      "answer": "Examples of measurable impact include producing 50+ custom assets monthly for real estate marketing, increasing audience reach by 15% for Savage Sales, reducing turnaround time by 25% at Allure Creatives, and maintaining 100% CRM data integrity for executive support and outreach work."
+    },
+    {
+      "id": "resume",
+      "keywords": ["resume", "cv", "builder", "download", "pdf"],
+      "answer": "The portfolio includes a resume builder where visitors can preview Yong's resume, switch templates and themes, adjust accent colors, zoom in or out, and export a PDF version directly from the site."
+    },
+    {
+      "id": "contact",
+      "keywords": ["contact", "email", "reach", "hire", "book", "availability"],
+      "answer": "You can reach Yong at benitezyong@gmail.com. Yong is based in the Philippines, works remotely, and is open to ongoing support across executive assistance, podcast management, digital marketing, and operations-focused roles."
+    },
+    {
+      "id": "mission",
+      "keywords": ["mission", "approach", "why", "value", "philosophy"],
+      "answer": "Yong's mission is to reduce noise and eliminate overwhelm so clients can lead an efficient, stress-free, and high-impact business. The approach is systems-minded, proactive, and built around reliable execution."
+    }
+  ],
+  "fallbackReply": "I can help with services, executive support, podcast management, marketing support, tools, client experience, resume details, and contact info. Try one of the suggested prompts."
+}

@@ -1,4 +1,5 @@
 import { Cursor } from "@/components/cursor"
+import { ChatYong } from "@/components/chatyong"
 import { Nav } from "@/components/nav"
 import { Footer } from "@/components/footer"
 import { Hero } from "@/components/sections/hero"
@@ -27,6 +28,7 @@ export default function Page() {
         <Quote />
         <Contact />
       </main>
+      <ChatYong />
       <Footer />
     </>
   )

@@ -15,7 +15,7 @@
     "intro": "I'm",
     "description": "5+ years crafting scroll-stopping content, managing social media growth, editing videos, and streamlining operations for global clients.",
     "cta1": "Work With Me →",
-    "cta2": "View Work ↓",
+    "cta2": "Build My Resume ↓",
     "stats": {
       "yearsExp": "Years Exp.",
       "clients": "Clients",
@@ -37,6 +37,39 @@
       "Brand Manager",
       "Appointment Setter"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "Resume Builder",
+    "subtitle": "Choose a template and background, tune the accent color, then export a polished PDF.",
+    "template": "Template",
+    "template1": "Template 1",
+    "template1Desc": "Clean single-column layout",
+    "template2": "Template 2",
+    "template2Desc": "Modern split layout",
+    "background": "Background",
+    "light": "Light",
+    "lightDesc": "Bright paper style",
+    "dark": "Dark",
+    "darkDesc": "Dark portfolio style",
+    "colorTheme": "Color Theme",
+    "preview": "Preview",
+    "previewHint": "Inspect the page, adjust zoom, and export when it looks right.",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "export": "Export PDF",
+    "exporting": "Exporting PDF...",
+    "exportTips": "Export tips",
+    "tip1": "Use the color theme controls to match your personal brand before exporting.",
+    "tip2": "Zoom controls affect the preview only, not the final PDF output.",
+    "tip3": "Template 1 is cleaner for formal roles, while Template 2 gives more visual weight to your skills.",
+    "close": "Close resume builder",
+    "profile": "Profile",
+    "experience": "Experience",
+    "skills": "Skills",
+    "toolsLabel": "Tools",
+    "selectedProjects": "Selected Projects",
+    "contact": "Contact"
   },
   "ticker": {
     "items": [

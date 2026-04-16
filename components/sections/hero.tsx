@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { TypeAnimation } from "react-type-animation"
+
+import { ResumeBuilderModal } from "@/components/resume-builder-modal"
 import { Button } from "@/components/ui/button"
 
 function StatCounter({ target, suffix = "+" }: { target: number; suffix?: string }) {
@@ -47,6 +49,7 @@ function scrollTo(id: string) {
 
 export function Hero() {
   const { t, i18n } = useTranslation()
+  const [isResumeBuilderOpen, setIsResumeBuilderOpen] = useState(false)
 
   const roles = t("hero.roles", { returnObjects: true }) as string[]
   const rolesSequence: (string | number)[] = roles.flatMap((r) => [r, 2500])
@@ -165,7 +168,7 @@ export function Hero() {
               {t("hero.cta1")}
             </Button>
             <button
-              onClick={() => scrollTo("services")}
+              onClick={() => setIsResumeBuilderOpen(true)}
               className="border border-border text-foreground px-8 py-3.5 rounded-full font-bold text-sm hover:border-primary hover:text-primary transition-all duration-300"
             >
               {t("hero.cta2")}
@@ -188,7 +191,7 @@ export function Hero() {
 
         {/* Right visual */}
         <div
-          className="opacity-0 animate-slide-left hidden md:flex relative justify-center items-center h-[500px]"
+          className="opacity-0 animate-slide-left hidden md:flex relative justify-center items-center h-125"
           style={{ animationDelay: ".3s" }}
         >
           {/* Ripple rings */}
@@ -203,7 +206,7 @@ export function Hero() {
           </div>
 
           {/* Blob avatar */}
-          <div className="animate-blob relative w-52 h-52 bg-gradient-to-br from-navy to-[#1a1f2e] flex items-center justify-center z-10">
+          <div className="animate-blob relative w-52 h-52 bg-linear-to-br from-navy to-[#1a1f2e] flex items-center justify-center z-10">
             <span className="text-8xl font-black text-white/10 select-none">Y</span>
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap z-20">
               {t("hero.avatarBadge")}
@@ -230,6 +233,8 @@ export function Hero() {
           <div className="animate-spin-slow absolute w-80 h-80 rounded-full border border-dashed border-white/5 pointer-events-none" />
         </div>
       </div>
+
+      <ResumeBuilderModal open={isResumeBuilderOpen} onClose={() => setIsResumeBuilderOpen(false)} />
     </section>
   )
 }

@@ -15,7 +15,7 @@
     "intro": "저는",
     "description": "5년 이상 주목받는 콘텐츠 제작, SNS 성장 관리, 영상 편집, 글로벌 클라이언트 업무 효율화를 전문으로 합니다.",
     "cta1": "함께 일해요 →",
-    "cta2": "작업물 보기 ↓",
+    "cta2": "이력서 만들기 ↓",
     "stats": {
       "yearsExp": "년 경력",
       "clients": "클라이언트",
@@ -37,6 +37,39 @@
       "브랜드 매니저",
       "예약 담당자"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "이력서 빌더",
+    "subtitle": "템플릿과 배경을 고르고, 포인트 색상을 조정한 뒤, 완성된 PDF로 내보내세요.",
+    "template": "템플릿",
+    "template1": "템플릿 1",
+    "template1Desc": "깔끔한 단일 컬럼 레이아웃",
+    "template2": "템플릿 2",
+    "template2Desc": "모던한 분할 레이아웃",
+    "background": "배경",
+    "light": "라이트",
+    "lightDesc": "밝은 종이 스타일",
+    "dark": "다크",
+    "darkDesc": "어두운 포트폴리오 스타일",
+    "colorTheme": "컬러 테마",
+    "preview": "미리보기",
+    "previewHint": "페이지를 확인하고 확대 비율을 조정한 뒤, 원하는 상태에서 내보내세요.",
+    "zoomIn": "확대",
+    "zoomOut": "축소",
+    "export": "PDF 내보내기",
+    "exporting": "PDF 내보내는 중...",
+    "exportTips": "내보내기 팁",
+    "tip1": "내보내기 전에 색상 테마를 개인 브랜드에 맞게 조정하세요.",
+    "tip2": "확대 비율은 미리보기에만 적용되고 최종 PDF에는 영향을 주지 않습니다.",
+    "tip3": "템플릿 1은 정형화된 역할에 더 깔끔하고, 템플릿 2는 기술을 더 강하게 보여줍니다.",
+    "close": "이력서 빌더 닫기",
+    "profile": "프로필",
+    "experience": "경험",
+    "skills": "기술",
+    "toolsLabel": "도구",
+    "selectedProjects": "주요 프로젝트",
+    "contact": "연락처"
   },
   "ticker": {
     "items": [

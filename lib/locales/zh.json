@@ -15,7 +15,7 @@
     "intro": "我是",
     "description": "拥有5年以上经验，专注于创作吸引眼球的内容、管理社交媒体增长、视频剪辑及优化全球客户的业务流程。",
     "cta1": "与我合作 →",
-    "cta2": "查看作品 ↓",
+    "cta2": "制作我的简历 ↓",
     "stats": {
       "yearsExp": "年经验",
       "clients": "客户",
@@ -37,6 +37,39 @@
       "品牌经理",
       "预约专员"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "简历生成器",
+    "subtitle": "选择模板和背景，调整主题色，然后导出为精美的 PDF。",
+    "template": "模板",
+    "template1": "模板 1",
+    "template1Desc": "简洁的单栏布局",
+    "template2": "模板 2",
+    "template2Desc": "现代分栏布局",
+    "background": "背景",
+    "light": "浅色",
+    "lightDesc": "明亮纸张风格",
+    "dark": "深色",
+    "darkDesc": "深色作品集风格",
+    "colorTheme": "颜色主题",
+    "preview": "预览",
+    "previewHint": "检查页面，调整缩放，满意后再导出。",
+    "zoomIn": "放大",
+    "zoomOut": "缩小",
+    "export": "导出 PDF",
+    "exporting": "正在导出 PDF...",
+    "exportTips": "导出提示",
+    "tip1": "导出前先用颜色主题控制项匹配你的个人品牌风格。",
+    "tip2": "缩放只影响预览，不影响最终 PDF。",
+    "tip3": "模板 1 更适合正式岗位，模板 2 会更突出你的技能展示。",
+    "close": "关闭简历生成器",
+    "profile": "简介",
+    "experience": "经历",
+    "skills": "技能",
+    "toolsLabel": "工具",
+    "selectedProjects": "精选项目",
+    "contact": "联系方式"
   },
   "ticker": {
     "items": [

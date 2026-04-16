@@ -15,7 +15,7 @@
     "intro": "Eu sou",
     "description": "Mais de 5 anos criando conteúdo envolvente, gerenciando crescimento nas redes sociais, editando vídeos e otimizando operações para clientes globais.",
     "cta1": "Trabalhe Comigo →",
-    "cta2": "Ver Trabalhos ↓",
+    "cta2": "Criar meu currículo ↓",
     "stats": {
       "yearsExp": "Anos de Exp.",
       "clients": "Clientes",
@@ -37,6 +37,39 @@
       "Gerente de Marca",
       "Agendador de Consultas"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "Criador de Currículo",
+    "subtitle": "Escolha um modelo e um fundo, ajuste a cor de destaque e depois exporte um PDF profissional.",
+    "template": "Modelo",
+    "template1": "Modelo 1",
+    "template1Desc": "Layout limpo de uma coluna",
+    "template2": "Modelo 2",
+    "template2Desc": "Layout moderno dividido",
+    "background": "Fundo",
+    "light": "Claro",
+    "lightDesc": "Estilo papel claro",
+    "dark": "Escuro",
+    "darkDesc": "Estilo portfólio escuro",
+    "colorTheme": "Tema de cor",
+    "preview": "Pré-visualização",
+    "previewHint": "Revise a página, ajuste o zoom e exporte quando estiver tudo certo.",
+    "zoomIn": "Ampliar",
+    "zoomOut": "Reduzir",
+    "export": "Exportar PDF",
+    "exporting": "Exportando PDF...",
+    "exportTips": "Dicas de exportação",
+    "tip1": "Use os controles de cor para combinar com sua marca pessoal antes de exportar.",
+    "tip2": "O zoom afeta apenas a pré-visualização, não o PDF final.",
+    "tip3": "O Modelo 1 é mais limpo para funções formais, enquanto o Modelo 2 dá mais destaque visual às suas habilidades.",
+    "close": "Fechar criador de currículo",
+    "profile": "Perfil",
+    "experience": "Experiência",
+    "skills": "Habilidades",
+    "toolsLabel": "Ferramentas",
+    "selectedProjects": "Projetos selecionados",
+    "contact": "Contato"
   },
   "ticker": {
     "items": [

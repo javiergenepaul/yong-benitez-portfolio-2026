@@ -146,6 +146,10 @@
   --navy: #39425E;
   --surface-alt: oklch(0.915 0.025 328);
   --grid-line: oklch(0 0 0 / 5%);
+  --scrollbar-track: color-mix(in oklab, var(--surface-alt) 82%, white 18%);
+  --scrollbar-thumb: color-mix(in oklab, var(--primary) 78%, var(--navy) 22%);
+  --scrollbar-thumb-hover: color-mix(in oklab, var(--primary) 88%, var(--navy) 12%);
+  --scrollbar-thumb-border: color-mix(in oklab, white 62%, transparent 38%);
 }
 
 /* Dark mode */
@@ -184,6 +188,44 @@
   --navy: #39425E;
   --surface-alt: rgb(14 16 28 / 80%);
   --grid-line: oklch(1 0 0 / 5%);
+  --scrollbar-track: color-mix(in oklab, #09101f 78%, var(--navy) 22%);
+  --scrollbar-thumb: color-mix(in oklab, var(--primary) 76%, #ff4d7a 24%);
+  --scrollbar-thumb-hover: color-mix(in oklab, var(--primary) 64%, #ff6c92 36%);
+  --scrollbar-thumb-border: color-mix(in oklab, white 18%, transparent 82%);
+}
+
+html {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+* {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--scrollbar-thumb), color-mix(in oklab, var(--scrollbar-thumb) 55%, var(--navy) 45%));
+  border: 3px solid var(--scrollbar-track);
+  border-radius: 999px;
+  min-height: 56px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--scrollbar-thumb-hover), var(--scrollbar-thumb));
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track);
 }
 
 /* ── Shared utility classes ──────────────────────────── */

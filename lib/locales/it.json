@@ -15,7 +15,7 @@
     "intro": "Sono",
     "description": "Oltre 5 anni a creare contenuti accattivanti, gestire la crescita sui social media, montare video e ottimizzare le operazioni per clienti globali.",
     "cta1": "Lavora con Me →",
-    "cta2": "Vedi i Lavori ↓",
+    "cta2": "Crea il mio curriculum ↓",
     "stats": {
       "yearsExp": "Anni di Esp.",
       "clients": "Clienti",
@@ -37,6 +37,39 @@
       "Brand Manager",
       "Coordinatore Appuntamenti"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "Creatore di Curriculum",
+    "subtitle": "Scegli un modello e uno sfondo, regola il colore di accento e poi esporta un PDF curato.",
+    "template": "Modello",
+    "template1": "Modello 1",
+    "template1Desc": "Layout pulito a una colonna",
+    "template2": "Modello 2",
+    "template2Desc": "Layout moderno diviso",
+    "background": "Sfondo",
+    "light": "Chiaro",
+    "lightDesc": "Stile carta chiara",
+    "dark": "Scuro",
+    "darkDesc": "Stile portfolio scuro",
+    "colorTheme": "Tema colore",
+    "preview": "Anteprima",
+    "previewHint": "Controlla la pagina, regola lo zoom ed esporta quando va bene.",
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci",
+    "export": "Esporta PDF",
+    "exporting": "Esportazione PDF...",
+    "exportTips": "Suggerimenti per l'esportazione",
+    "tip1": "Usa i controlli del colore per allineare il CV al tuo brand personale prima di esportarlo.",
+    "tip2": "Lo zoom influisce solo sull'anteprima, non sul PDF finale.",
+    "tip3": "Il Modello 1 è più pulito per ruoli formali, mentre il Modello 2 dà più peso visivo alle tue competenze.",
+    "close": "Chiudi creatore di curriculum",
+    "profile": "Profilo",
+    "experience": "Esperienza",
+    "skills": "Competenze",
+    "toolsLabel": "Strumenti",
+    "selectedProjects": "Progetti selezionati",
+    "contact": "Contatto"
   },
   "ticker": {
     "items": [

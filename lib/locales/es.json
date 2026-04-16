@@ -15,7 +15,7 @@
     "intro": "Soy",
     "description": "Más de 5 años creando contenido llamativo, gestionando el crecimiento en redes sociales, editando videos y optimizando operaciones para clientes globales.",
     "cta1": "Trabajar Conmigo →",
-    "cta2": "Ver Trabajos ↓",
+    "cta2": "Crear mi CV ↓",
     "stats": {
       "yearsExp": "Años Exp.",
       "clients": "Clientes",
@@ -37,6 +37,39 @@
       "Gestor de Marca",
       "Coordinador de Citas"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "Constructor de CV",
+    "subtitle": "Elige una plantilla y un fondo, ajusta el color de acento y luego exporta un PDF profesional.",
+    "template": "Plantilla",
+    "template1": "Plantilla 1",
+    "template1Desc": "Diseño limpio de una columna",
+    "template2": "Plantilla 2",
+    "template2Desc": "Diseño moderno dividido",
+    "background": "Fondo",
+    "light": "Claro",
+    "lightDesc": "Estilo papel claro",
+    "dark": "Oscuro",
+    "darkDesc": "Estilo portafolio oscuro",
+    "colorTheme": "Tema de color",
+    "preview": "Vista previa",
+    "previewHint": "Revisa la página, ajusta el zoom y exporta cuando se vea bien.",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "export": "Exportar PDF",
+    "exporting": "Exportando PDF...",
+    "exportTips": "Consejos de exportación",
+    "tip1": "Usa los controles de color para que combine con tu marca personal antes de exportar.",
+    "tip2": "El zoom solo afecta la vista previa, no el PDF final.",
+    "tip3": "La Plantilla 1 es más limpia para roles formales, mientras que la Plantilla 2 da más peso visual a tus habilidades.",
+    "close": "Cerrar constructor de CV",
+    "profile": "Perfil",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "toolsLabel": "Herramientas",
+    "selectedProjects": "Proyectos destacados",
+    "contact": "Contacto"
   },
   "ticker": {
     "items": [

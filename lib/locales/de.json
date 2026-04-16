@@ -15,7 +15,7 @@
     "intro": "Ich bin",
     "description": "Über 5 Jahre Erfahrung in der Erstellung ansprechender Inhalte, Social-Media-Wachstum, Videobearbeitung und Optimierung von Abläufen für globale Kunden.",
     "cta1": "Mit Mir Arbeiten →",
-    "cta2": "Arbeiten Ansehen ↓",
+    "cta2": "Meinen Lebenslauf erstellen ↓",
     "stats": {
       "yearsExp": "Jahre Erf.",
       "clients": "Kunden",
@@ -37,6 +37,39 @@
       "Marken-Manager",
       "Terminkoordinator"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "Lebenslauf-Builder",
+    "subtitle": "Wähle eine Vorlage und einen Hintergrund, passe die Akzentfarbe an und exportiere dann ein sauberes PDF.",
+    "template": "Vorlage",
+    "template1": "Vorlage 1",
+    "template1Desc": "Klares einspaltiges Layout",
+    "template2": "Vorlage 2",
+    "template2Desc": "Modernes geteiltes Layout",
+    "background": "Hintergrund",
+    "light": "Hell",
+    "lightDesc": "Heller Papierstil",
+    "dark": "Dunkel",
+    "darkDesc": "Dunkler Portfolio-Stil",
+    "colorTheme": "Farbthema",
+    "preview": "Vorschau",
+    "previewHint": "Prüfe die Seite, passe den Zoom an und exportiere, wenn alles passt.",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern",
+    "export": "PDF exportieren",
+    "exporting": "PDF wird exportiert...",
+    "exportTips": "Exporttipps",
+    "tip1": "Passe das Farbthema vor dem Export an deine persönliche Marke an.",
+    "tip2": "Der Zoom wirkt sich nur auf die Vorschau aus, nicht auf das finale PDF.",
+    "tip3": "Vorlage 1 ist klarer für formelle Rollen, während Vorlage 2 deinen Fähigkeiten mehr visuelles Gewicht gibt.",
+    "close": "Lebenslauf-Builder schließen",
+    "profile": "Profil",
+    "experience": "Erfahrung",
+    "skills": "Fähigkeiten",
+    "toolsLabel": "Tools",
+    "selectedProjects": "Ausgewählte Projekte",
+    "contact": "Kontakt"
   },
   "ticker": {
     "items": [

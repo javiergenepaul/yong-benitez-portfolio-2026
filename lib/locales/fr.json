@@ -15,7 +15,7 @@
     "intro": "Je suis",
     "description": "Plus de 5 ans à créer du contenu accrocheur, gérer la croissance des réseaux sociaux, monter des vidéos et optimiser les opérations pour des clients mondiaux.",
     "cta1": "Travaillons Ensemble →",
-    "cta2": "Voir les Travaux ↓",
+    "cta2": "Créer mon CV ↓",
     "stats": {
       "yearsExp": "Ans d'Exp.",
       "clients": "Clients",
@@ -37,6 +37,39 @@
       "Gestionnaire de Marque",
       "Coordinateur de Rendez-vous"
     ]
+  },
+  "resumeBuilder": {
+    "badge": "2026",
+    "title": "Créateur de CV",
+    "subtitle": "Choisissez un modèle et un fond, ajustez la couleur d'accent, puis exportez un PDF soigné.",
+    "template": "Modèle",
+    "template1": "Modèle 1",
+    "template1Desc": "Mise en page simple en une colonne",
+    "template2": "Modèle 2",
+    "template2Desc": "Mise en page moderne en deux parties",
+    "background": "Fond",
+    "light": "Clair",
+    "lightDesc": "Style papier clair",
+    "dark": "Sombre",
+    "darkDesc": "Style portfolio sombre",
+    "colorTheme": "Thème de couleur",
+    "preview": "Aperçu",
+    "previewHint": "Vérifiez la page, ajustez le zoom, puis exportez quand tout est prêt.",
+    "zoomIn": "Zoom avant",
+    "zoomOut": "Zoom arrière",
+    "export": "Exporter en PDF",
+    "exporting": "Export du PDF...",
+    "exportTips": "Conseils d'export",
+    "tip1": "Utilisez les couleurs pour faire correspondre le CV à votre identité visuelle avant l'export.",
+    "tip2": "Le zoom affecte uniquement l'aperçu, pas le PDF final.",
+    "tip3": "Le Modèle 1 convient mieux aux rôles formels, tandis que le Modèle 2 met davantage vos compétences en avant.",
+    "close": "Fermer le créateur de CV",
+    "profile": "Profil",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "toolsLabel": "Outils",
+    "selectedProjects": "Projets sélectionnés",
+    "contact": "Contact"
   },
   "ticker": {
     "items": [

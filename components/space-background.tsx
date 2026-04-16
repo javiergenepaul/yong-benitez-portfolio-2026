@@ -21,6 +21,18 @@ export function SpaceBackground() {
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 3000)
     camera.position.z = 80
 
+    // ── Lighting (for 3-D shading on asteroids) ───────────────────────────────
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.18)
+    scene.add(ambientLight)
+    // Primary sun-like directional key light
+    const keyLight = new THREE.DirectionalLight(0xffd6a0, 1.6)
+    keyLight.position.set(80, 60, 40)
+    scene.add(keyLight)
+    // Soft blue fill from opposite side
+    const fillLight = new THREE.DirectionalLight(0x8ab4ff, 0.4)
+    fillLight.position.set(-60, -30, -20)
+    scene.add(fillLight)
+
     // ── Star texture ──────────────────────────────────────────────────────────
     const starCanvas = document.createElement("canvas")
     starCanvas.width = 32; starCanvas.height = 32
@@ -461,6 +473,90 @@ export function SpaceBackground() {
 
     const satellites: Satellite[] = Array.from({ length: 3 }, (_, i) => initSatellite(i < 2))
 
+    // ── Asteroids ─────────────────────────────────────────────────────────────
+    function buildAsteroid(): THREE.Mesh {
+      // Detail 4 = enough vertices for smooth deformation without faceted look
+      const geo = new THREE.IcosahedronGeometry(1, 4)
+      const pos = geo.attributes.position
+      // Very mild radial nudge per vertex — keeps the sphere silhouette, just
+      // adds slight surface bumpiness instead of collapsing into a crumpled shape
+      for (let i = 0; i < pos.count; i++) {
+        const r = 0.92 + Math.random() * 0.16   // 0.92 – 1.08
+        pos.setXYZ(i, pos.getX(i) * r, pos.getY(i) * r, pos.getZ(i) * r)
+      }
+      pos.needsUpdate = true
+      geo.computeVertexNormals()
+
+      // Gray / charcoal tones — realistic asteroid colours
+      const grays = [0x888888, 0x999999, 0x777777, 0xaaaaaa, 0x666666, 0x909090, 0x7a7a7a]
+      const mat = new THREE.MeshStandardMaterial({
+        color: grays[Math.floor(Math.random() * grays.length)],
+        roughness: 0.85,
+        metalness: 0.08,
+      })
+      return new THREE.Mesh(geo, mat)
+    }
+
+    interface Asteroid {
+      mesh:   THREE.Mesh
+      vel:    THREE.Vector3
+      rotX:   number
+      rotY:   number
+      rotZ:   number
+    }
+
+    function initAsteroid(scattered = false): Asteroid {
+      const mesh = buildAsteroid()
+      const scale = 0.3 + Math.random() * 1.7
+      mesh.scale.setScalar(scale)
+      mesh.rotation.set(
+        Math.random() * Math.PI * 2,
+        Math.random() * Math.PI * 2,
+        Math.random() * Math.PI * 2,
+      )
+
+      const speed = 0.015 + Math.random() * 0.025
+      const vel = new THREE.Vector3(
+        (Math.random() - 0.5) * speed * 0.8,
+        -(Math.random() * 0.4 + 0.1) * speed * 2,
+        (Math.random() - 0.5) * speed * 0.3,
+      )
+
+      mesh.position.set(
+        (Math.random() - 0.5) * 320,
+        scattered ? (Math.random() - 0.5) * 260 : 200 + Math.random() * 100,
+        -5 - Math.random() * 70,
+      )
+      scene.add(mesh)
+
+      return {
+        mesh,
+        vel,
+        rotX: (Math.random() - 0.5) * 0.006,
+        rotY: (Math.random() - 0.5) * 0.008,
+        rotZ: (Math.random() - 0.5) * 0.005,
+      }
+    }
+
+    function respawnAsteroid(a: Asteroid) {
+      const speed = 0.015 + Math.random() * 0.025
+      a.vel.set(
+        (Math.random() - 0.5) * speed * 0.8,
+        -(Math.random() * 0.4 + 0.1) * speed * 2,
+        (Math.random() - 0.5) * speed * 0.3,
+      )
+      a.mesh.position.set(
+        (Math.random() - 0.5) * 320,
+        200 + Math.random() * 100,
+        -5 - Math.random() * 70,
+      )
+      a.rotX = (Math.random() - 0.5) * 0.006
+      a.rotY = (Math.random() - 0.5) * 0.008
+      a.rotZ = (Math.random() - 0.5) * 0.005
+    }
+
+    const asteroids: Asteroid[] = Array.from({ length: 18 }, (_, i) => initAsteroid(i < 14))
+
     // ── Animation loop ────────────────────────────────────────────────────────
     let rafId: number
     let tick = 0
@@ -494,6 +590,17 @@ export function SpaceBackground() {
         mat.opacity = p < 0.12 ? (p / 0.12) * 0.88 : p > 0.72 ? ((1 - p) / 0.28) * 0.88 : 0.88
         m.line.position.addScaledVector(m.vel, 1)
         if (m.phase >= m.maxPhase) resetMeteor(m)
+      }
+
+      // ── Asteroids ───────────────────────────────────────────────────────────
+      for (const a of asteroids) {
+        a.mesh.position.addScaledVector(a.vel, 1)
+        a.mesh.rotation.x += a.rotX
+        a.mesh.rotation.y += a.rotY
+        a.mesh.rotation.z += a.rotZ
+        if (a.mesh.position.y < -220 || Math.abs(a.mesh.position.x) > 350) {
+          respawnAsteroid(a)
+        }
       }
 
       // ── Satellites ──────────────────────────────────────────────────────────

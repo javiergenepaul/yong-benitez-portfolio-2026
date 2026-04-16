@@ -25,7 +25,7 @@
     "avatarBadge": "Assistente Virtuale · PH",
     "chips": {
       "videoEditing": "Montaggio Video",
-      "photoEditing": "Editing Foto",
+      "photoEditing": "Creazione Contenuti",
       "socialMedia": "Social Media",
       "podcasting": "Podcasting"
     },
@@ -34,8 +34,8 @@
       "Social Media Manager",
       "Podcast Manager",
       "Assistente Esecutivo",
-      "Brand Manager",
-      "Coordinatore Appuntamenti"
+      "Digital Marketer",
+      "Content Strategist"
     ]
   },
   "resumeBuilder": {
@@ -173,6 +173,51 @@
         "sub": "Tech per l'Edilizia",
         "desc": "Compiti admin, inserimento dati e ricerca per supportare le operazioni aziendali — organizzato, efficiente e digitale.",
         "tag": "Tech / Edilizia"
+      },
+      {
+        "sub": "Branding digitale e sviluppo web",
+        "desc": "Progettazione di un gateway digitale professionale e identità visiva per lo studio legale, garantendo un'esperienza di navigazione fluida ai potenziali clienti.",
+        "tag": "Branding"
+      },
+      {
+        "sub": "Strategia social media",
+        "desc": "Eseguita una strategia social quotidiana con 5–15 contenuti originali a settimana, generando un aumento del 30% dell'interazione totale.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Produzione podcast",
+        "desc": "Gestione del workflow podcast completo, incluso il montaggio audio con Descript e il repurposing per Instagram Reels e YouTube Shorts.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "Generazione lead e gestione pipeline",
+        "desc": "Identificazione e qualificazione dei lead tramite ricerca e outreach, gestione della pipeline per convertire i prospect in clienti in modo costante.",
+        "tag": "Lead Generation"
+      },
+      {
+        "sub": "Social media e comunicazioni digitali",
+        "desc": "Gestione della presenza social per aumentare la visibilità del brand e ottimizzazione delle comunicazioni digitali per le operazioni logistiche e di trasporto.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Gestione social media",
+        "desc": "Guida delle iniziative di social media management con focus sull'engagement della community e storytelling del brand coerente su tutte le piattaforme.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Gestione social media comunitaria",
+        "desc": "Ruolo di Social Media Manager: curation di contenuti locali e gestione delle interazioni digitali per far crescere il pubblico della community.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Strategia social media",
+        "desc": "Gestione di strategia ed esecuzione sui social, rafforzando la presenza online del brand attraverso contenuti mirati.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Marketing e outreach",
+        "desc": "Utilizzo di strumenti AI per progettare felpe personalizzate e gestione del ciclo di produzione completo, con outreach alle scuole tramite chiamate a freddo ed email.",
+        "tag": "Marketing"
       }
     ]
   },

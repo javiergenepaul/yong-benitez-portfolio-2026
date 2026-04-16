@@ -25,7 +25,7 @@
     "avatarBadge": "Assistant Virtuel · PH",
     "chips": {
       "videoEditing": "Montage Vidéo",
-      "photoEditing": "Retouche Photo",
+      "photoEditing": "Création de Contenu",
       "socialMedia": "Réseaux Sociaux",
       "podcasting": "Podcasting"
     },
@@ -34,8 +34,8 @@
       "Gestionnaire Réseaux Sociaux",
       "Gestionnaire de Podcast",
       "Assistant Exécutif",
-      "Gestionnaire de Marque",
-      "Coordinateur de Rendez-vous"
+      "Spécialiste Marketing Digital",
+      "Stratège de Contenu"
     ]
   },
   "resumeBuilder": {
@@ -173,6 +173,51 @@
         "sub": "Assistance exécutive et recherche de leads",
         "desc": "Assistance exécutive et recherche de prospects avec 100% d'intégrité des données dans les CRM pour l'outreach stratégique.",
         "tag": "Support Exécutif"
+      },
+      {
+        "sub": "Branding digital et développement web",
+        "desc": "Conception d'une passerelle digitale professionnelle et d'une identité visuelle pour le cabinet, garantissant une navigation fluide aux clients juridiques potentiels.",
+        "tag": "Branding"
+      },
+      {
+        "sub": "Stratégie réseaux sociaux",
+        "desc": "Mise en œuvre d'une stratégie quotidienne avec 5 à 15 contenus originaux par semaine, générant une hausse de 30% des interactions totales.",
+        "tag": "Réseaux Sociaux"
+      },
+      {
+        "sub": "Production de podcast",
+        "desc": "Gestion du workflow podcast complet incluant le montage audio via Descript et la déclinaison de contenu pour Instagram Reels et YouTube Shorts.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "Génération de leads et gestion du pipeline",
+        "desc": "Identification et qualification des leads par la recherche et l'outreach, gestion du pipeline pour convertir régulièrement les prospects en clients.",
+        "tag": "Génération de Leads"
+      },
+      {
+        "sub": "Réseaux sociaux et communications digitales",
+        "desc": "Gestion de la présence sur les réseaux sociaux pour accroître la visibilité de la marque et optimisation des communications digitales pour les opérations logistiques.",
+        "tag": "Réseaux Sociaux"
+      },
+      {
+        "sub": "Gestion des réseaux sociaux",
+        "desc": "Pilotage des actions de gestion des réseaux sociaux axées sur l'engagement communautaire et un storytelling de marque cohérent sur toutes les plateformes.",
+        "tag": "Réseaux Sociaux"
+      },
+      {
+        "sub": "Gestion communautaire des réseaux sociaux",
+        "desc": "Rôle de Social Media Manager, curation de contenu local et gestion des interactions digitales pour développer l'audience communautaire.",
+        "tag": "Réseaux Sociaux"
+      },
+      {
+        "sub": "Stratégie réseaux sociaux",
+        "desc": "Gestion de la stratégie et de l'exécution sur les réseaux sociaux, renforçant la présence en ligne de la marque via un contenu ciblé.",
+        "tag": "Réseaux Sociaux"
+      },
+      {
+        "sub": "Marketing et outreach",
+        "desc": "Utilisation d'outils IA pour concevoir des pulls personnalisés et gestion du cycle de production complet tout en menant des campagnes d'outreach vers les écoles.",
+        "tag": "Marketing"
       }
     ]
   },

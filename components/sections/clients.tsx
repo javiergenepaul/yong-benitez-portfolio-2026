@@ -14,6 +14,15 @@ const clientNames = [
   "Outcamping",
   "Allure Creatives",
   "Procore Inc",
+  "Del Rosario and Zamora Law",
+  "Coach Me Laura",
+  "Life is the Game",
+  "Inside Sales",
+  "D'Freight VA",
+  "Bird-Dog Solutions",
+  "FAMILY-FRIENDLY Tampa Bay",
+  "IFLYFLAT",
+  "Varsity Sweater",
 ]
 
 const clientStyles = [
@@ -25,6 +34,15 @@ const clientStyles = [
   { initials: "TS", tagCls: "bg-violet-500/10 text-violet-400", avatarBg: "bg-violet-700" },
   { initials: "AC", tagCls: "bg-red-500/10 text-red-400", avatarBg: "bg-red-800" },
   { initials: "PC", tagCls: "bg-slate-500/10 text-slate-400", avatarBg: "bg-slate-600" },
+  { initials: "DZ", tagCls: "bg-orange-500/10 text-orange-400", avatarBg: "bg-orange-700" },
+  { initials: "CL", tagCls: "bg-pink-500/10 text-pink-400", avatarBg: "bg-pink-700" },
+  { initials: "LG", tagCls: "bg-emerald-500/10 text-emerald-400", avatarBg: "bg-emerald-700" },
+  { initials: "IS", tagCls: "bg-yellow-500/10 text-yellow-400", avatarBg: "bg-yellow-700" },
+  { initials: "DF", tagCls: "bg-cyan-500/10 text-cyan-400", avatarBg: "bg-cyan-700" },
+  { initials: "BD", tagCls: "bg-indigo-500/10 text-indigo-400", avatarBg: "bg-indigo-700" },
+  { initials: "FF", tagCls: "bg-rose-500/10 text-rose-400", avatarBg: "bg-rose-700" },
+  { initials: "IF", tagCls: "bg-amber-500/10 text-amber-400", avatarBg: "bg-amber-700" },
+  { initials: "VS", tagCls: "bg-lime-500/10 text-lime-400", avatarBg: "bg-lime-700" },
 ]
 
 export function Clients() {

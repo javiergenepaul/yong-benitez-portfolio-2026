@@ -25,7 +25,7 @@
     "avatarBadge": "Virtual Assistant · PH",
     "chips": {
       "videoEditing": "Videobearbeitung",
-      "photoEditing": "Fotobearbeitung",
+      "photoEditing": "Content-Erstellung",
       "socialMedia": "Social Media",
       "podcasting": "Podcasting"
     },
@@ -34,8 +34,8 @@
       "Social-Media-Manager",
       "Podcast-Manager",
       "Führungsassistenz",
-      "Marken-Manager",
-      "Terminkoordinator"
+      "Digital-Marketer",
+      "Content-Stratege"
     ]
   },
   "resumeBuilder": {
@@ -173,6 +173,51 @@
         "sub": "Bautechnologie",
         "desc": "Administrative Aufgaben, Dateneingabe und Recherche — organisiert, effizient und digital stark.",
         "tag": "Tech / Bau"
+      },
+      {
+        "sub": "Digitales Branding und Webentwicklung",
+        "desc": "Entwicklung eines professionellen digitalen Auftritts und einer visuellen Identität für die Kanzlei, um potenziellen Mandanten eine nahtlose Navigation zu ermöglichen.",
+        "tag": "Branding"
+      },
+      {
+        "sub": "Social-Media-Strategie",
+        "desc": "Tägliche Social-Media-Strategie mit 5–15 originellen Inhalten pro Woche umgesetzt, was zu einer 30%igen Steigerung der Gesamtinteraktion führte.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Podcast-Produktion",
+        "desc": "End-to-End-Podcast-Workflow verwaltet, einschließlich Audiobearbeitung mit Descript und Content-Repurposing für Instagram Reels und YouTube Shorts.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "Lead-Generierung und Pipeline-Management",
+        "desc": "Leads durch Recherche und Outreach identifiziert und qualifiziert, Pipeline verwaltet, um Interessenten konsistent in Kunden umzuwandeln.",
+        "tag": "Lead-Generierung"
+      },
+      {
+        "sub": "Social Media und digitale Kommunikation",
+        "desc": "Social-Media-Präsenz verwaltet, um die Markenbekanntheit zu steigern, und digitale Kommunikation für Logistik- und Frachtbetriebe optimiert.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Social-Media-Management",
+        "desc": "Social-Media-Initiativen geleitet mit Fokus auf Community-Engagement und konsistentes Marken-Storytelling auf allen Plattformen.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Community-Social-Media-Management",
+        "desc": "Als Social Media Managerin lokale Inhalte kuratiert und digitale Interaktionen verwaltet, um das Community-Publikum zu vergrößern.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Social-Media-Strategie",
+        "desc": "Social-Media-Strategie und -Umsetzung verwaltet, um die Online-Präsenz der Marke durch gezielten Content zu stärken.",
+        "tag": "Social Media"
+      },
+      {
+        "sub": "Marketing und Outreach",
+        "desc": "KI-Tools zur Gestaltung individueller Sweatshirts genutzt und vollständigen Produktions-Lifecycle verwaltet, während Schulen per Cold Calling und E-Mail angesprochen wurden.",
+        "tag": "Marketing"
       }
     ]
   },

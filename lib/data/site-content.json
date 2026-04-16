@@ -93,6 +93,60 @@
         "sub": "Executive Assistance and Lead Research",
         "desc": "Delivered executive assistance and lead research while maintaining 100% data integrity inside CRM systems for strategic outreach.",
         "tag": "Executive Support"
+      },
+      {
+        "name": "Del Rosario and Zamora Law",
+        "sub": "Digital Branding and Web Development",
+        "desc": "Engineered a professional digital gateway and visual identity for the firm, ensuring a seamless navigation experience for potential legal clients.",
+        "tag": "Branding"
+      },
+      {
+        "name": "Coach Me Laura",
+        "sub": "Social Media Strategy",
+        "desc": "Executed a daily social media strategy with 5–15 original content pieces per week, leading to a 30% increase in total audience interaction.",
+        "tag": "Social Media"
+      },
+      {
+        "name": "Life is the Game",
+        "sub": "Podcast Production",
+        "desc": "Managed end-to-end podcast workflow including audio editing via Descript and repurposing content for Instagram Reels and YouTube Shorts.",
+        "tag": "Podcasting"
+      },
+      {
+        "name": "Inside Sales",
+        "sub": "Lead Generation and Pipeline Management",
+        "desc": "Identified and qualified leads through research and outreach, managing the pipeline to consistently convert prospects into customers.",
+        "tag": "Lead Generation"
+      },
+      {
+        "name": "D'Freight VA",
+        "sub": "Social Media and Digital Communications",
+        "desc": "Managed social media presence to increase brand visibility and streamlined digital communications for logistics and freight operations.",
+        "tag": "Social Media"
+      },
+      {
+        "name": "Bird-Dog Solutions",
+        "sub": "Social Media Management",
+        "desc": "Led social media management initiatives focusing on community engagement and consistent brand storytelling across platforms.",
+        "tag": "Social Media"
+      },
+      {
+        "name": "FAMILY-FRIENDLY Tampa Bay",
+        "sub": "Community Social Media Management",
+        "desc": "Served as Social Media Manager, curating local-centric content and managing digital interactions to grow the community audience.",
+        "tag": "Social Media"
+      },
+      {
+        "name": "IFLYFLAT",
+        "sub": "Social Media Strategy",
+        "desc": "Managed social media strategy and execution, enhancing the brand's online presence through targeted content and engagement.",
+        "tag": "Social Media"
+      },
+      {
+        "name": "Varsity Sweater",
+        "sub": "Marketing and Outreach",
+        "desc": "Leveraged AI tools to design custom sweaters and managed full production lifecycle while spearheading outreach to schools through cold calling and email campaigns.",
+        "tag": "Marketing"
       }
     ]
   },

@@ -25,7 +25,7 @@
     "avatarBadge": "Asistente Virtual · PH",
     "chips": {
       "videoEditing": "Edición de Video",
-      "photoEditing": "Edición de Fotos",
+      "photoEditing": "Creación de Contenido",
       "socialMedia": "Redes Sociales",
       "podcasting": "Podcasting"
     },
@@ -34,8 +34,8 @@
       "Gestor de Redes Sociales",
       "Gestor de Podcasts",
       "Asistente Ejecutivo",
-      "Gestor de Marca",
-      "Coordinador de Citas"
+      "Especialista en Marketing Digital",
+      "Estratega de Contenido"
     ]
   },
   "resumeBuilder": {
@@ -173,6 +173,51 @@
         "sub": "Asistencia ejecutiva e investigación de leads",
         "desc": "Brindé asistencia ejecutiva e investigación de leads, manteniendo 100% de integridad de datos dentro de sistemas CRM para acciones estratégicas.",
         "tag": "Soporte Ejecutivo"
+      },
+      {
+        "sub": "Branding digital y desarrollo web",
+        "desc": "Desarrollé una puerta de entrada digital profesional e identidad visual para el bufete, asegurando una experiencia de navegación fluida para los clientes legales potenciales.",
+        "tag": "Branding"
+      },
+      {
+        "sub": "Estrategia de redes sociales",
+        "desc": "Ejecuté una estrategia diaria de redes sociales con 5–15 piezas de contenido original por semana, logrando un aumento del 30% en la interacción total.",
+        "tag": "Redes Sociales"
+      },
+      {
+        "sub": "Producción de podcast",
+        "desc": "Gestioné el flujo de trabajo completo del podcast, incluyendo edición de audio con Descript y reutilización de contenido para Instagram Reels y YouTube Shorts.",
+        "tag": "Podcasting"
+      },
+      {
+        "sub": "Generación de leads y gestión del pipeline",
+        "desc": "Identifiqué y califiqué leads mediante investigación y outreach, gestionando el pipeline para convertir prospectos en clientes de forma consistente.",
+        "tag": "Generación de Leads"
+      },
+      {
+        "sub": "Redes sociales y comunicaciones digitales",
+        "desc": "Gestioné la presencia en redes sociales para aumentar la visibilidad de la marca y optimicé las comunicaciones digitales para operaciones de logística y transporte.",
+        "tag": "Redes Sociales"
+      },
+      {
+        "sub": "Gestión de redes sociales",
+        "desc": "Lideré iniciativas de gestión de redes sociales enfocadas en el engagement comunitario y la narración de marca consistente en todas las plataformas.",
+        "tag": "Redes Sociales"
+      },
+      {
+        "sub": "Gestión comunitaria en redes sociales",
+        "desc": "Trabajé como Social Media Manager, curando contenido local y gestionando interacciones digitales para hacer crecer la audiencia comunitaria.",
+        "tag": "Redes Sociales"
+      },
+      {
+        "sub": "Estrategia de redes sociales",
+        "desc": "Gestioné la estrategia y ejecución de redes sociales, mejorando la presencia online de la marca a través de contenido segmentado.",
+        "tag": "Redes Sociales"
+      },
+      {
+        "sub": "Marketing y outreach",
+        "desc": "Usé herramientas de IA para diseñar suéteres personalizados y gestioné el ciclo completo de producción mientras lideraba el alcance a escuelas mediante llamadas en frío y campañas de email.",
+        "tag": "Marketing"
       }
     ]
   },

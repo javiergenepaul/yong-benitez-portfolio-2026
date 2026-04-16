@@ -66,7 +66,7 @@ export function Hero() {
       delay: "0s",
     },
     {
-      emoji: "📸",
+      emoji: "✍️",
       label: t("hero.chips.photoEditing"),
       color: "text-purple-400",
       bg: "bg-purple-500/20",
@@ -92,8 +92,8 @@ export function Hero() {
   ]
 
   const stats = [
-    { count: 5, suffix: "+", label: t("hero.stats.yearsExp") },
-    { count: 15, suffix: "+", label: t("hero.stats.clients") },
+    { count: 4, suffix: "+", label: t("hero.stats.yearsExp") },
+    { count: 17, suffix: "+", label: t("hero.stats.clients") },
     { count: 4, suffix: "+", label: t("hero.stats.services") },
     { count: 100, suffix: "%", label: t("hero.stats.remote") },
   ]

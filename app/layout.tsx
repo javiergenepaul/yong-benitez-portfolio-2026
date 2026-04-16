@@ -15,7 +15,7 @@ const BASE_URL   = "https://yongbenitez.netlify.app"
 const FULL_NAME  = "Yong Benitez"
 const TITLE      = "Yong Benitez – Virtual Assistant & Content Creator"
 const DESCRIPTION =
-  "Freelance Virtual Assistant with 5+ years of experience. Specializing in video editing, photo editing, social media marketing, and podcast management for global clients."
+  "Freelance virtual assistant offering video editing, social media support, podcast management, and admin systems for global clients."
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

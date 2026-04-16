@@ -58,9 +58,9 @@ function getPalette(background: ResumeBackground, accent: string) {
 function SectionTitle({ label, accent, line }: { label: string; accent: string; line: string }) {
   return (
     <div className="mb-3">
-      <h4 className="text-[10px] font-black tracking-[0.18em] uppercase" style={{ color: accent }}>
+      <h3 className="text-[10px] font-black tracking-[0.18em] uppercase" style={{ color: accent }}>
         {label}
-      </h4>
+      </h3>
       <div className="mt-2 h-px w-full" style={{ backgroundColor: line }} />
     </div>
   )
@@ -112,7 +112,7 @@ function ResumePreview({
                   <div key={`${item.role}-${item.company}`}>
                     <div className="flex items-start justify-between gap-6">
                       <div>
-                        <h5 className="text-[20px] font-black leading-tight">{item.role}</h5>
+                        <h4 className="text-[20px] font-black leading-tight">{item.role}</h4>
                         <p className="mt-1 text-[13px] font-semibold" style={{ color: palette.accent }}>
                           {item.company}
                         </p>
@@ -258,7 +258,7 @@ function ResumePreview({
                   {item.period}
                 </div>
                 <div>
-                  <h5 className="text-[20px] font-black leading-tight">{item.role}</h5>
+                  <h4 className="text-[20px] font-black leading-tight">{item.role}</h4>
                   <p className="mt-1 text-[13px] font-semibold" style={{ color: palette.muted }}>
                     {item.company}
                   </p>

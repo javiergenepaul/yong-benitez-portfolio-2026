@@ -260,7 +260,7 @@ export function Works() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <h4 className="text-sm font-bold text-foreground mb-1">{w.title}</h4>
+                    <h3 className="text-sm font-bold text-foreground mb-1">{w.title}</h3>
                     <p className="text-xs text-foreground/40">{w.sub}</p>
                   </div>
                 </div>
@@ -294,7 +294,7 @@ export function Works() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <h4 className="text-sm font-bold text-foreground mb-1">{w.title}</h4>
+                    <h3 className="text-sm font-bold text-foreground mb-1">{w.title}</h3>
                     <p className="text-xs text-foreground/40">{w.sub}</p>
                   </div>
                 </div>

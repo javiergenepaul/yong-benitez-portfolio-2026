@@ -4,6 +4,7 @@ import { type RefObject, useEffect, useMemo, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import {
   Download,
+  Globe,
   Mail,
   MapPin,
   Minus,
@@ -38,6 +39,14 @@ const COLOR_THEMES = [
   { name: "Orange", value: "#ff6b00" },
   { name: "Slate", value: "#71717a" },
 ] as const
+
+function normalizeExternalUrl(value: string) {
+  if (/^https?:\/\//i.test(value)) {
+    return value
+  }
+
+  return `https://${value}`
+}
 
 function getPalette(background: ResumeBackground, accent: string) {
   if (background === "light") {
@@ -121,15 +130,32 @@ function ResumePreview({
           <p className="mt-3 text-[18px] font-semibold opacity-95">
             {clientDetails.headline}
           </p>
-          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-[12px] font-medium md:grid-cols-4">
-            <span className="flex items-center gap-2">
+          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 text-[11px] font-medium md:grid-cols-5">
+            <span className="flex items-start gap-2 break-all">
               <Mail className="size-3.5" /> {clientDetails.email}
             </span>
             <span>{clientDetails.phone}</span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-start gap-2">
               <MapPin className="size-3.5" /> {clientDetails.location}
             </span>
-            <span>{clientDetails.linkedin}</span>
+            <a
+              href={normalizeExternalUrl(clientDetails.website)}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-start gap-2 break-all transition hover:opacity-85"
+            >
+              <Globe className="size-3.5 shrink-0" />
+              <span>{clientDetails.website}</span>
+            </a>
+            <a
+              href={normalizeExternalUrl(clientDetails.linkedin)}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-start gap-2 break-all transition hover:opacity-85"
+            >
+              <Globe className="size-3.5 shrink-0" />
+              <span>{clientDetails.linkedin}</span>
+            </a>
           </div>
         </div>
 
@@ -285,8 +311,22 @@ function ResumePreview({
                 style={{ color: palette.muted }}
               >
                 <p>{clientDetails.email}</p>
-                <p>{clientDetails.website}</p>
-                <p>{clientDetails.linkedin}</p>
+                <a
+                  href={normalizeExternalUrl(clientDetails.website)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block break-all transition hover:text-current hover:opacity-85"
+                >
+                  {clientDetails.website}
+                </a>
+                <a
+                  href={normalizeExternalUrl(clientDetails.linkedin)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block break-all transition hover:text-current hover:opacity-85"
+                >
+                  {clientDetails.linkedin}
+                </a>
               </div>
             </div>
           </aside>
@@ -330,8 +370,22 @@ function ResumePreview({
             <p>{clientDetails.email}</p>
             <p>{clientDetails.phone}</p>
             <p>{clientDetails.location}</p>
-            <p>{clientDetails.website}</p>
-            <p>{clientDetails.linkedin}</p>
+            <a
+              href={normalizeExternalUrl(clientDetails.website)}
+              target="_blank"
+              rel="noreferrer"
+              className="block break-all transition hover:text-current hover:opacity-85"
+            >
+              {clientDetails.website}
+            </a>
+            <a
+              href={normalizeExternalUrl(clientDetails.linkedin)}
+              target="_blank"
+              rel="noreferrer"
+              className="block break-all transition hover:text-current hover:opacity-85"
+            >
+              {clientDetails.linkedin}
+            </a>
           </div>
         </div>
 
@@ -492,16 +546,11 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
 
     setIsExporting(true)
     try {
-      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
-        import("html2canvas"),
+      const [{ toCanvas }, { jsPDF }] = await Promise.all([
+        import("html-to-image"),
         import("jspdf"),
       ])
-      const canvas = await html2canvas(resumeRef.current, {
-        scale: 2,
-        backgroundColor: null,
-        logging: false,
-        useCORS: true,
-      })
+      const canvas = await toCanvas(resumeRef.current, { pixelRatio: 2 })
 
       const image = canvas.toDataURL("image/png")
       const pdf = new jsPDF({

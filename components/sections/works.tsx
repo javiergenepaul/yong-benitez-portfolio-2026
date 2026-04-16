@@ -175,7 +175,13 @@ const galleryGradients = [
 type AnyWork = (typeof allWorks)[number]
 type ModalState =
   | { kind: "video"; url: string; title: string; desc: string }
-  | { kind: "gallery"; thumb: string; title: string; desc: string; gradientIdx: number }
+  | {
+      kind: "gallery"
+      thumb: string
+      title: string
+      desc: string
+      gradientIdx: number
+    }
 
 export function Works() {
   const { t } = useTranslation()
@@ -189,33 +195,49 @@ export function Works() {
 
   function openCard(w: AnyWork, idx: number) {
     if (w.type === "gallery") {
-      setModal({ kind: "gallery", thumb: w.thumb, title: w.title, desc: w.desc, gradientIdx: idx % galleryGradients.length })
+      setModal({
+        kind: "gallery",
+        thumb: w.thumb,
+        title: w.title,
+        desc: w.desc,
+        gradientIdx: idx % galleryGradients.length,
+      })
     } else {
-      setModal({ kind: "video", url: `${w.embedUrl}?autoplay=1`, title: w.title, desc: w.desc })
+      setModal({
+        kind: "video",
+        url: `${w.embedUrl}?autoplay=1`,
+        title: w.title,
+        desc: w.desc,
+      })
     }
   }
 
   return (
-    <section id="works" className="py-24 px-6 bg-surface-alt">
-      <div className="max-w-6xl mx-auto">
+    <section id="works" className="bg-surface-alt px-6 py-24">
+      <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="text-xs font-bold tracking-widest uppercase text-primary mb-3">{t("works.label")}</p>
+          <p className="mb-3 text-xs font-bold tracking-widest text-primary uppercase">
+            {t("works.label")}
+          </p>
           <h2 className="text-4xl font-black text-foreground">
-            {t("works.title")} <span className="shimmer-text">{t("works.titleHighlight")}</span>
+            {t("works.title")}{" "}
+            <span className="shimmer-text">{t("works.titleHighlight")}</span>
           </h2>
-          <p className="text-foreground/40 text-sm mt-2 max-w-lg">{t("works.description")}</p>
+          <p className="mt-2 max-w-lg text-sm text-foreground/40">
+            {t("works.description")}
+          </p>
         </Reveal>
 
         {/* Tabs */}
-        <div className="flex gap-3 flex-wrap mt-8 mb-10">
+        <div className="mt-8 mb-10 flex flex-wrap gap-3">
           {tabIds.map((id, i) => (
             <button
               key={id}
               onClick={() => setActiveTab(id)}
               className={cn(
-                "text-xs font-bold px-4 py-2 rounded-full border transition-all",
+                "rounded-full border px-4 py-2 text-xs font-bold transition-all",
                 activeTab === id
-                  ? "border-primary text-primary bg-primary/10"
+                  ? "border-primary bg-primary/10 text-primary"
                   : "border-border text-foreground/40 hover:border-primary hover:text-primary"
               )}
             >
@@ -225,76 +247,87 @@ export function Works() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((w, i) => (
             <Reveal key={`${w.title}-${i}`} delay={i * 50}>
               {w.type === "gallery" ? (
                 // ── Gallery card ────────────────────────────────────────────
                 <div
-                  className="card-hover bg-card border border-border rounded-2xl overflow-hidden cursor-pointer group"
+                  className="card-hover group cursor-pointer overflow-hidden rounded-2xl border border-border bg-card"
                   onClick={() => openCard(w, i)}
                 >
-                  <div className={cn(
-                    "relative aspect-video flex items-center justify-center overflow-hidden",
-                    "bg-linear-to-br",
-                    galleryGradients[i % galleryGradients.length]
-                  )}>
+                  <div
+                    className={cn(
+                      "relative flex aspect-video items-center justify-center overflow-hidden",
+                      "bg-linear-to-br",
+                      galleryGradients[i % galleryGradients.length]
+                    )}
+                  >
                     {w.thumb ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={w.thumb}
                         alt={w.title}
-                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                        className="h-full w-full object-cover opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
                       />
                     ) : (
-                      <ImageIcon className="w-12 h-12 text-foreground/15" />
+                      <ImageIcon className="h-12 w-12 text-foreground/15" />
                     )}
                     {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
-                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-xs font-bold">
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/30">
+                      <div className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
                         View
                       </div>
                     </div>
-                    <div className="absolute top-3 left-3 bg-purple-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
+                    <div className="absolute top-3 left-3 rounded-md bg-purple-500 px-2 py-0.5 text-[10px] font-bold text-white">
                       🎨 Graphics
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-sm font-bold text-foreground mb-1">{w.title}</h3>
+                    <h3 className="mb-1 text-sm font-bold text-foreground">
+                      {w.title}
+                    </h3>
                     <p className="text-xs text-foreground/40">{w.sub}</p>
                   </div>
                 </div>
               ) : (
                 // ── Video / YouTube card ────────────────────────────────────
                 <div
-                  className="card-hover bg-card border border-border rounded-2xl overflow-hidden cursor-pointer group"
+                  className="card-hover group cursor-pointer overflow-hidden rounded-2xl border border-border bg-card"
                   onClick={() => openCard(w, i)}
                 >
-                  <div className="relative aspect-video bg-card overflow-hidden">
+                  <div className="relative aspect-video overflow-hidden bg-card">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={w.thumb}
                       alt={w.title}
-                      className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                      className="h-full w-full object-cover opacity-70 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div
-                        className={`w-14 h-14 rounded-full ${w.playBg} flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg`}
+                        className={`h-14 w-14 rounded-full ${w.playBg} flex items-center justify-center shadow-lg transition-transform group-hover:scale-110`}
                       >
-                        <svg className="fill-white w-5 h-5 ml-1" viewBox="0 0 24 24">
+                        <svg
+                          className="ml-1 h-5 w-5 fill-white"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M8 5v14l11-7z" />
                         </svg>
                       </div>
                     </div>
-                    <div className={`absolute top-3 left-3 ${w.badgeCls} text-[10px] font-bold px-2 py-0.5 rounded-md`}>
+                    <div
+                      className={`absolute top-3 left-3 ${w.badgeCls} rounded-md px-2 py-0.5 text-[10px] font-bold`}
+                    >
                       {w.badgeLabel}
                     </div>
-                    <div className="absolute bottom-3 right-3 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded-md">
+                    <div className="absolute right-3 bottom-3 rounded-md bg-black/60 px-2 py-0.5 text-[10px] text-white">
                       {w.duration}
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-sm font-bold text-foreground mb-1">{w.title}</h3>
+                    <h3 className="mb-1 text-sm font-bold text-foreground">
+                      {w.title}
+                    </h3>
                     <p className="text-xs text-foreground/40">{w.sub}</p>
                   </div>
                 </div>
@@ -307,22 +340,26 @@ export function Works() {
       {/* Modal */}
       {modal && (
         <div
-          className="fixed inset-0 z-200 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-200 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
           onClick={() => setModal(null)}
         >
           <div
-            className="relative w-full max-w-3xl bg-card rounded-2xl overflow-hidden border border-border"
+            className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-border bg-card"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-5 py-4 border-b border-border">
+            <div className="flex items-center justify-between border-b border-border px-5 py-4">
               <div>
-                <h3 className="text-sm font-bold text-foreground">{modal.title}</h3>
-                <p className="text-xs text-foreground/40 mt-0.5">{modal.desc}</p>
+                <h3 className="text-sm font-bold text-foreground">
+                  {modal.title}
+                </h3>
+                <p className="mt-0.5 text-xs text-foreground/40">
+                  {modal.desc}
+                </p>
               </div>
               <button
                 onClick={() => setModal(null)}
-                className="w-8 h-8 rounded-full bg-white/5 hover:bg-white/15 flex items-center justify-center text-foreground/60 hover:text-foreground transition-all text-lg leading-none shrink-0"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/5 text-lg leading-none text-foreground/60 transition-all hover:bg-white/15 hover:text-foreground"
               >
                 ×
               </button>
@@ -333,22 +370,28 @@ export function Works() {
               <div className="aspect-video w-full bg-black">
                 <iframe
                   src={modal.url}
-                  className="w-full h-full"
+                  className="h-full w-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
               </div>
             ) : (
-              <div className={cn(
-                "aspect-video w-full flex items-center justify-center bg-linear-to-br",
-                galleryGradients[modal.gradientIdx]
-              )}>
+              <div
+                className={cn(
+                  "flex aspect-video w-full items-center justify-center bg-linear-to-br",
+                  galleryGradients[modal.gradientIdx]
+                )}
+              >
                 {modal.thumb ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={modal.thumb} alt={modal.title} className="w-full h-full object-contain" />
+                  <img
+                    src={modal.thumb}
+                    alt={modal.title}
+                    className="h-full w-full object-contain"
+                  />
                 ) : (
                   <div className="text-center text-foreground/30">
-                    <ImageIcon className="w-16 h-16 mx-auto mb-3" />
+                    <ImageIcon className="mx-auto mb-3 h-16 w-16" />
                     <p className="text-sm font-semibold">Image coming soon</p>
                   </div>
                 )}

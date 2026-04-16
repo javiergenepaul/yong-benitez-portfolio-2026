@@ -12,7 +12,18 @@ import zh from "./locales/zh.json"
 import ar from "./locales/ar.json"
 import it from "./locales/it.json"
 
-const SUPPORTED = ["en", "es", "fr", "de", "pt", "ja", "ko", "zh", "ar", "it"] as const
+const SUPPORTED = [
+  "en",
+  "es",
+  "fr",
+  "de",
+  "pt",
+  "ja",
+  "ko",
+  "zh",
+  "ar",
+  "it",
+] as const
 export type SupportedLang = (typeof SUPPORTED)[number]
 
 if (!i18n.isInitialized) {

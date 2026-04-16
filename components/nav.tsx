@@ -24,7 +24,7 @@ function ThemeToggle() {
 
   useEffect(() => setMounted(true), [])
 
-  if (!mounted) return <div className="w-9 h-9" />
+  if (!mounted) return <div className="h-9 w-9" />
 
   const isDark = resolvedTheme === "dark"
 
@@ -32,7 +32,7 @@ function ThemeToggle() {
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label="Toggle theme"
-      className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-foreground/60 hover:text-primary hover:border-primary transition-all duration-300"
+      className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground/60 transition-all duration-300 hover:border-primary hover:text-primary"
     >
       {isDark ? <Sun size={16} /> : <Moon size={16} />}
     </button>
@@ -56,7 +56,8 @@ export function Nav() {
   useEffect(() => {
     if (!menuOpen) return
     function handler(e: MouseEvent) {
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) setMenuOpen(false)
+      if (menuRef.current && !menuRef.current.contains(e.target as Node))
+        setMenuOpen(false)
     }
     document.addEventListener("mousedown", handler)
     return () => document.removeEventListener("mousedown", handler)
@@ -68,27 +69,26 @@ export function Nav() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-
+    <nav className="fixed top-0 right-0 left-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         {/* Logo */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-2.5 group shrink-0"
+          className="group flex shrink-0 items-center gap-2.5"
         >
           <LogoIcon variant="square" size={32} />
-          <span className="text-lg font-black tracking-widest text-foreground group-hover:text-primary transition-colors duration-300">
+          <span className="text-lg font-black tracking-widest text-foreground transition-colors duration-300 group-hover:text-primary">
             YONG<span className="text-primary">.</span>
           </span>
         </button>
 
         {/* Desktop nav links — visible at lg+ */}
-        <ul className="hidden lg:flex gap-8 list-none">
+        <ul className="hidden list-none gap-8 lg:flex">
           {links.map((l) => (
             <li key={l.href}>
               <button
                 onClick={() => scrollTo(l.href)}
-                className="text-sm text-foreground/50 hover:text-foreground transition-colors duration-300 cursor-pointer"
+                className="cursor-pointer text-sm text-foreground/50 transition-colors duration-300 hover:text-foreground"
               >
                 {l.label}
               </button>
@@ -103,7 +103,7 @@ export function Nav() {
           {/* Hire Me — hidden on small screens */}
           <Button
             onClick={() => scrollTo("#contact")}
-            className="hidden sm:inline-flex animate-glow-pulse rounded-full text-sm font-bold px-5"
+            className="hidden animate-glow-pulse rounded-full px-5 text-sm font-bold sm:inline-flex"
           >
             {t("nav.hireMe")}
           </Button>
@@ -111,7 +111,7 @@ export function Nav() {
           <button
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Toggle menu"
-            className="lg:hidden w-9 h-9 rounded-full border border-border flex items-center justify-center text-foreground/60 hover:text-primary hover:border-primary transition-all duration-300"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground/60 transition-all duration-300 hover:border-primary hover:text-primary lg:hidden"
           >
             {menuOpen ? <X size={16} /> : <Menu size={16} />}
           </button>
@@ -129,25 +129,29 @@ export function Nav() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.28, ease: [0.4, 0, 0.2, 1] }}
             style={{ overflow: "hidden" }}
-            className="lg:hidden border-t border-border bg-background/95 backdrop-blur-xl"
+            className="border-t border-border bg-background/95 backdrop-blur-xl lg:hidden"
           >
             <motion.div
-              className="px-6 py-4 flex flex-col gap-1"
+              className="flex flex-col gap-1 px-6 py-4"
               initial="closed"
               animate="open"
               exit="closed"
               variants={{
-                open:   { transition: { staggerChildren: 0.055, delayChildren: 0.08 } },
-                closed: { transition: { staggerChildren: 0.03, staggerDirection: -1 } },
+                open: {
+                  transition: { staggerChildren: 0.055, delayChildren: 0.08 },
+                },
+                closed: {
+                  transition: { staggerChildren: 0.03, staggerDirection: -1 },
+                },
               }}
             >
               {links.map((l) => (
                 <motion.button
                   key={l.href}
                   onClick={() => handleNavClick(l.href)}
-                  className="text-sm text-foreground/60 hover:text-foreground py-2.5 text-start transition-colors duration-200 border-b border-border/40 last:border-0"
+                  className="border-b border-border/40 py-2.5 text-start text-sm text-foreground/60 transition-colors duration-200 last:border-0 hover:text-foreground"
                   variants={{
-                    open:   { opacity: 1, x: 0 },
+                    open: { opacity: 1, x: 0 },
                     closed: { opacity: 0, x: -14 },
                   }}
                   transition={{ duration: 0.22, ease: "easeOut" }}
@@ -158,7 +162,7 @@ export function Nav() {
               {/* Hire Me inside mobile menu */}
               <motion.div
                 variants={{
-                  open:   { opacity: 1, x: 0 },
+                  open: { opacity: 1, x: 0 },
                   closed: { opacity: 0, x: -14 },
                 }}
                 transition={{ duration: 0.22, ease: "easeOut" }}

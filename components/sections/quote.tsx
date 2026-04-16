@@ -7,10 +7,13 @@ import siteContent from "@/lib/data/site-content.json"
 export function Quote() {
   const { t, i18n } = useTranslation()
   const text = i18n.language === "en" ? siteContent.quote.text : t("quote.text")
-  const attribution = i18n.language === "en" ? siteContent.quote.attribution : t("quote.attribution")
+  const attribution =
+    i18n.language === "en"
+      ? siteContent.quote.attribution
+      : t("quote.attribution")
 
   return (
-    <section className="py-20 px-6 bg-primary relative overflow-hidden">
+    <section className="relative overflow-hidden bg-primary px-6 py-20">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -19,12 +22,16 @@ export function Quote() {
           backgroundSize: "40px 40px",
         }}
       />
-      <div className="max-w-3xl mx-auto text-center relative z-10">
-        <p className="text-5xl font-black text-white/20 mb-4 leading-none">&ldquo;</p>
-        <p className="text-xl md:text-2xl font-bold text-white leading-relaxed">
+      <div className="relative z-10 mx-auto max-w-3xl text-center">
+        <p className="mb-4 text-5xl leading-none font-black text-white/20">
+          &ldquo;
+        </p>
+        <p className="text-xl leading-relaxed font-bold text-white md:text-2xl">
           {text}&rdquo;
         </p>
-        <p className="mt-6 text-sm text-white/60 font-semibold">{attribution}</p>
+        <p className="mt-6 text-sm font-semibold text-white/60">
+          {attribution}
+        </p>
       </div>
     </section>
   )

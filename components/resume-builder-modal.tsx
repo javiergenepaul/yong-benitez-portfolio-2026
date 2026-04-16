@@ -2,7 +2,17 @@
 
 import { type RefObject, useEffect, useMemo, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
-import { Download, Mail, MapPin, Minus, MoonStar, Plus, Search, SunMedium, X } from "lucide-react"
+import {
+  Download,
+  Mail,
+  MapPin,
+  Minus,
+  MoonStar,
+  Plus,
+  Search,
+  SunMedium,
+  X,
+} from "lucide-react"
 
 import clientDetails from "@/lib/data/client-details.json"
 import resumeBuilderData from "@/lib/data/resume-builder.json"
@@ -55,10 +65,21 @@ function getPalette(background: ResumeBackground, accent: string) {
   }
 }
 
-function SectionTitle({ label, accent, line }: { label: string; accent: string; line: string }) {
+function SectionTitle({
+  label,
+  accent,
+  line,
+}: {
+  label: string
+  accent: string
+  line: string
+}) {
   return (
     <div className="mb-3">
-      <h3 className="text-[10px] font-black tracking-[0.18em] uppercase" style={{ color: accent }}>
+      <h3
+        className="text-[10px] font-black tracking-[0.18em] uppercase"
+        style={{ color: accent }}
+      >
         {label}
       </h3>
       <div className="mt-2 h-px w-full" style={{ backgroundColor: line }} />
@@ -78,53 +99,89 @@ function ResumePreview({
   resumeRef: RefObject<HTMLDivElement | null>
 }) {
   const { t } = useTranslation()
-  const palette = useMemo(() => getPalette(background, accent), [background, accent])
+  const palette = useMemo(
+    () => getPalette(background, accent),
+    [background, accent]
+  )
 
   if (template === "template1") {
     return (
       <div
         ref={resumeRef}
-        className="w-198.5 min-h-280.75 overflow-hidden shadow-2xl"
+        className="min-h-280.75 w-198.5 overflow-hidden shadow-2xl"
         style={{ backgroundColor: palette.paper, color: palette.text }}
       >
-        <div className="px-12 py-10" style={{ backgroundColor: palette.accent, color: "#fff7f1" }}>
-          <h2 className="text-[42px] font-black leading-none">{clientDetails.name}</h2>
-          <p className="mt-3 text-[18px] font-semibold opacity-95">{clientDetails.headline}</p>
+        <div
+          className="px-12 py-10"
+          style={{ backgroundColor: palette.accent, color: "#fff7f1" }}
+        >
+          <h2 className="text-[42px] leading-none font-black">
+            {clientDetails.name}
+          </h2>
+          <p className="mt-3 text-[18px] font-semibold opacity-95">
+            {clientDetails.headline}
+          </p>
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-[12px] font-medium md:grid-cols-4">
-            <span className="flex items-center gap-2"><Mail className="size-3.5" /> {clientDetails.email}</span>
+            <span className="flex items-center gap-2">
+              <Mail className="size-3.5" /> {clientDetails.email}
+            </span>
             <span>{clientDetails.phone}</span>
-            <span className="flex items-center gap-2"><MapPin className="size-3.5" /> {clientDetails.location}</span>
+            <span className="flex items-center gap-2">
+              <MapPin className="size-3.5" /> {clientDetails.location}
+            </span>
             <span>{clientDetails.linkedin}</span>
           </div>
         </div>
 
         <div className="grid grid-cols-[1.45fr_0.8fr] gap-0">
           <div className="px-12 py-10">
-            <SectionTitle label={t("resumeBuilder.profile")} accent={palette.accent} line={palette.line} />
-            <p className="text-[14px] leading-7" style={{ color: palette.muted }}>
+            <SectionTitle
+              label={t("resumeBuilder.profile")}
+              accent={palette.accent}
+              line={palette.line}
+            />
+            <p
+              className="text-[14px] leading-7"
+              style={{ color: palette.muted }}
+            >
               {resumeBuilderData.summary}
             </p>
 
             <div className="mt-8">
-              <SectionTitle label={t("resumeBuilder.experience")} accent={palette.accent} line={palette.line} />
+              <SectionTitle
+                label={t("resumeBuilder.experience")}
+                accent={palette.accent}
+                line={palette.line}
+              />
               <div className="space-y-6">
                 {resumeBuilderData.experience.map((item) => (
                   <div key={`${item.role}-${item.company}`}>
                     <div className="flex items-start justify-between gap-6">
                       <div>
-                        <h4 className="text-[20px] font-black leading-tight">{item.role}</h4>
-                        <p className="mt-1 text-[13px] font-semibold" style={{ color: palette.accent }}>
+                        <h4 className="text-[20px] leading-tight font-black">
+                          {item.role}
+                        </h4>
+                        <p
+                          className="mt-1 text-[13px] font-semibold"
+                          style={{ color: palette.accent }}
+                        >
                           {item.company}
                         </p>
                       </div>
                       <span
                         className="rounded-full px-3 py-1 text-[11px] font-semibold whitespace-nowrap"
-                        style={{ backgroundColor: palette.soft, color: palette.accent }}
+                        style={{
+                          backgroundColor: palette.soft,
+                          color: palette.accent,
+                        }}
                       >
                         {item.period}
                       </span>
                     </div>
-                    <p className="mt-3 text-[14px] leading-7" style={{ color: palette.muted }}>
+                    <p
+                      className="mt-3 text-[14px] leading-7"
+                      style={{ color: palette.muted }}
+                    >
                       {item.body}
                     </p>
                   </div>
@@ -133,11 +190,21 @@ function ResumePreview({
             </div>
 
             <div className="mt-8">
-              <SectionTitle label={t("resumeBuilder.selectedProjects")} accent={palette.accent} line={palette.line} />
-              <div className="space-y-3 text-[14px] leading-7" style={{ color: palette.muted }}>
+              <SectionTitle
+                label={t("resumeBuilder.selectedProjects")}
+                accent={palette.accent}
+                line={palette.line}
+              />
+              <div
+                className="space-y-3 text-[14px] leading-7"
+                style={{ color: palette.muted }}
+              >
                 {resumeBuilderData.projects.map((project) => (
                   <div key={project} className="flex gap-3">
-                    <span className="mt-2 size-1.5 rounded-full shrink-0" style={{ backgroundColor: palette.accent }} />
+                    <span
+                      className="mt-2 size-1.5 shrink-0 rounded-full"
+                      style={{ backgroundColor: palette.accent }}
+                    />
                     <span>{project}</span>
                   </div>
                 ))}
@@ -145,14 +212,25 @@ function ResumePreview({
             </div>
           </div>
 
-          <aside className="px-10 py-10" style={{ backgroundColor: palette.panel }}>
-            <SectionTitle label={t("resumeBuilder.skills")} accent={palette.accent} line={palette.line} />
+          <aside
+            className="px-10 py-10"
+            style={{ backgroundColor: palette.panel }}
+          >
+            <SectionTitle
+              label={t("resumeBuilder.skills")}
+              accent={palette.accent}
+              line={palette.line}
+            />
             <div className="flex flex-wrap gap-2">
               {resumeBuilderData.skills.map((strength) => (
                 <span
                   key={strength}
                   className="rounded-full border px-3 py-1.5 text-[11px] font-bold"
-                  style={{ borderColor: palette.line, color: palette.text, backgroundColor: palette.paper }}
+                  style={{
+                    borderColor: palette.line,
+                    color: palette.text,
+                    backgroundColor: palette.paper,
+                  }}
                 >
                   {strength}
                 </span>
@@ -160,7 +238,11 @@ function ResumePreview({
             </div>
 
             <div className="mt-8">
-              <SectionTitle label={t("resumeBuilder.toolsLabel")} accent={palette.accent} line={palette.line} />
+              <SectionTitle
+                label={t("resumeBuilder.toolsLabel")}
+                accent={palette.accent}
+                line={palette.line}
+              />
               <div className="space-y-3">
                 {resumeBuilderData.tools.map((tool) => (
                   <div key={tool.name}>
@@ -168,19 +250,40 @@ function ResumePreview({
                       <span>{tool.name}</span>
                       <span style={{ color: palette.muted }}>{tool.level}</span>
                     </div>
-                    <div className="mt-1.5 h-1.5 rounded-full" style={{ backgroundColor: palette.soft }}>
-                      <div className="h-full rounded-full" style={{ width: `${tool.pct}%`, backgroundColor: palette.accent }} />
+                    <div
+                      className="mt-1.5 h-1.5 rounded-full"
+                      style={{ backgroundColor: palette.soft }}
+                    >
+                      <div
+                        className="h-full rounded-full"
+                        style={{
+                          width: `${tool.pct}%`,
+                          backgroundColor: palette.accent,
+                        }}
+                      />
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-8 rounded-[24px] border p-5" style={{ borderColor: palette.line, backgroundColor: palette.paper }}>
-              <p className="text-[10px] font-black tracking-[0.18em] uppercase" style={{ color: palette.accent }}>
+            <div
+              className="mt-8 rounded-[24px] border p-5"
+              style={{
+                borderColor: palette.line,
+                backgroundColor: palette.paper,
+              }}
+            >
+              <p
+                className="text-[10px] font-black tracking-[0.18em] uppercase"
+                style={{ color: palette.accent }}
+              >
                 {t("resumeBuilder.contact")}
               </p>
-              <div className="mt-4 space-y-3 text-[12px] font-semibold" style={{ color: palette.muted }}>
+              <div
+                className="mt-4 space-y-3 text-[12px] font-semibold"
+                style={{ color: palette.muted }}
+              >
                 <p>{clientDetails.email}</p>
                 <p>{clientDetails.website}</p>
                 <p>{clientDetails.linkedin}</p>
@@ -195,19 +298,35 @@ function ResumePreview({
   return (
     <div
       ref={resumeRef}
-      className="grid w-198.5 min-h-280.75 grid-cols-[250px_1fr] overflow-hidden shadow-2xl"
+      className="grid min-h-280.75 w-198.5 grid-cols-[250px_1fr] overflow-hidden shadow-2xl"
       style={{ backgroundColor: palette.paper, color: palette.text }}
     >
       <aside className="px-8 py-10" style={{ backgroundColor: palette.panel }}>
-        <div className="rounded-[28px] p-6" style={{ backgroundColor: palette.accent, color: "#fff7f1" }}>
-          <p className="text-[13px] font-semibold uppercase tracking-[0.18em] opacity-85">Resume</p>
-          <h2 className="mt-5 text-[34px] font-black leading-none">{clientDetails.name}</h2>
-          <p className="mt-3 text-[14px] font-semibold leading-6 opacity-95">{clientDetails.headline}</p>
+        <div
+          className="rounded-[28px] p-6"
+          style={{ backgroundColor: palette.accent, color: "#fff7f1" }}
+        >
+          <p className="text-[13px] font-semibold tracking-[0.18em] uppercase opacity-85">
+            Resume
+          </p>
+          <h2 className="mt-5 text-[34px] leading-none font-black">
+            {clientDetails.name}
+          </h2>
+          <p className="mt-3 text-[14px] leading-6 font-semibold opacity-95">
+            {clientDetails.headline}
+          </p>
         </div>
 
         <div className="mt-8">
-          <SectionTitle label={t("resumeBuilder.contact")} accent={palette.accent} line={palette.line} />
-          <div className="space-y-4 text-[12px] leading-6" style={{ color: palette.muted }}>
+          <SectionTitle
+            label={t("resumeBuilder.contact")}
+            accent={palette.accent}
+            line={palette.line}
+          />
+          <div
+            className="space-y-4 text-[12px] leading-6"
+            style={{ color: palette.muted }}
+          >
             <p>{clientDetails.email}</p>
             <p>{clientDetails.phone}</p>
             <p>{clientDetails.location}</p>
@@ -217,10 +336,21 @@ function ResumePreview({
         </div>
 
         <div className="mt-8">
-          <SectionTitle label={t("resumeBuilder.skills")} accent={palette.accent} line={palette.line} />
-          <div className="space-y-2 text-[12px] font-semibold" style={{ color: palette.muted }}>
+          <SectionTitle
+            label={t("resumeBuilder.skills")}
+            accent={palette.accent}
+            line={palette.line}
+          />
+          <div
+            className="space-y-2 text-[12px] font-semibold"
+            style={{ color: palette.muted }}
+          >
             {resumeBuilderData.skills.map((strength) => (
-              <div key={strength} className="rounded-2xl px-3 py-2" style={{ backgroundColor: palette.soft }}>
+              <div
+                key={strength}
+                className="rounded-2xl px-3 py-2"
+                style={{ backgroundColor: palette.soft }}
+              >
                 {strength}
               </div>
             ))}
@@ -228,7 +358,11 @@ function ResumePreview({
         </div>
 
         <div className="mt-8">
-          <SectionTitle label={t("resumeBuilder.toolsLabel")} accent={palette.accent} line={palette.line} />
+          <SectionTitle
+            label={t("resumeBuilder.toolsLabel")}
+            accent={palette.accent}
+            line={palette.line}
+          />
           <div className="flex flex-wrap gap-2">
             {resumeBuilderData.tools.map((tool) => (
               <span
@@ -244,25 +378,47 @@ function ResumePreview({
       </aside>
 
       <div className="px-10 py-10">
-        <SectionTitle label={t("resumeBuilder.profile")} accent={palette.accent} line={palette.line} />
+        <SectionTitle
+          label={t("resumeBuilder.profile")}
+          accent={palette.accent}
+          line={palette.line}
+        />
         <p className="text-[14px] leading-7" style={{ color: palette.muted }}>
           {resumeBuilderData.summary}
         </p>
 
         <div className="mt-8">
-          <SectionTitle label={t("resumeBuilder.experience")} accent={palette.accent} line={palette.line} />
+          <SectionTitle
+            label={t("resumeBuilder.experience")}
+            accent={palette.accent}
+            line={palette.line}
+          />
           <div className="space-y-7">
             {resumeBuilderData.experience.map((item) => (
-              <div key={`${item.role}-${item.company}`} className="grid grid-cols-[90px_1fr] gap-5">
-                <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: palette.accent }}>
+              <div
+                key={`${item.role}-${item.company}`}
+                className="grid grid-cols-[90px_1fr] gap-5"
+              >
+                <div
+                  className="text-[11px] font-bold tracking-[0.12em] uppercase"
+                  style={{ color: palette.accent }}
+                >
                   {item.period}
                 </div>
                 <div>
-                  <h4 className="text-[20px] font-black leading-tight">{item.role}</h4>
-                  <p className="mt-1 text-[13px] font-semibold" style={{ color: palette.muted }}>
+                  <h4 className="text-[20px] leading-tight font-black">
+                    {item.role}
+                  </h4>
+                  <p
+                    className="mt-1 text-[13px] font-semibold"
+                    style={{ color: palette.muted }}
+                  >
                     {item.company}
                   </p>
-                  <p className="mt-3 text-[14px] leading-7" style={{ color: palette.muted }}>
+                  <p
+                    className="mt-3 text-[14px] leading-7"
+                    style={{ color: palette.muted }}
+                  >
                     {item.body}
                   </p>
                 </div>
@@ -272,10 +428,24 @@ function ResumePreview({
         </div>
 
         <div className="mt-8">
-          <SectionTitle label={t("resumeBuilder.selectedProjects")} accent={palette.accent} line={palette.line} />
-          <div className="grid gap-3 text-[14px] leading-7" style={{ color: palette.muted }}>
+          <SectionTitle
+            label={t("resumeBuilder.selectedProjects")}
+            accent={palette.accent}
+            line={palette.line}
+          />
+          <div
+            className="grid gap-3 text-[14px] leading-7"
+            style={{ color: palette.muted }}
+          >
             {resumeBuilderData.projects.map((project) => (
-              <div key={project} className="rounded-[22px] border px-4 py-4" style={{ borderColor: palette.line, backgroundColor: palette.soft }}>
+              <div
+                key={project}
+                className="rounded-[22px] border px-4 py-4"
+                style={{
+                  borderColor: palette.line,
+                  backgroundColor: palette.soft,
+                }}
+              >
                 {project}
               </div>
             ))}
@@ -314,14 +484,18 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
   }, [open, onClose])
 
   const zoom = ZOOM_STEPS[zoomIndex]
-  const selectedTheme = COLOR_THEMES.find((item) => item.value === accent) ?? COLOR_THEMES[0]
+  const selectedTheme =
+    COLOR_THEMES.find((item) => item.value === accent) ?? COLOR_THEMES[0]
 
   const exportPdf = async () => {
     if (!resumeRef.current || isExporting) return
 
     setIsExporting(true)
     try {
-      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([import("html2canvas"), import("jspdf")])
+      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
+        import("html2canvas"),
+        import("jspdf"),
+      ])
       const canvas = await html2canvas(resumeRef.current, {
         scale: 2,
         backgroundColor: null,
@@ -330,13 +504,28 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
       })
 
       const image = canvas.toDataURL("image/png")
-      const pdf = new jsPDF({ orientation: "portrait", unit: "pt", format: "a4" })
+      const pdf = new jsPDF({
+        orientation: "portrait",
+        unit: "pt",
+        format: "a4",
+      })
       const pageWidth = pdf.internal.pageSize.getWidth()
       const pageHeight = pdf.internal.pageSize.getHeight()
       const imageHeight = (canvas.height * pageWidth) / canvas.width
 
-      pdf.addImage(image, "PNG", 0, 0, pageWidth, Math.min(pageHeight, imageHeight), undefined, "FAST")
-      pdf.save(`${clientDetails.name.toLowerCase().replace(/\s+/g, "-")}-resume-${template}.pdf`)
+      pdf.addImage(
+        image,
+        "PNG",
+        0,
+        0,
+        pageWidth,
+        Math.min(pageHeight, imageHeight),
+        undefined,
+        "FAST"
+      )
+      pdf.save(
+        `${clientDetails.name.toLowerCase().replace(/\s+/g, "-")}-resume-${template}.pdf`
+      )
     } finally {
       setIsExporting(false)
     }
@@ -362,7 +551,10 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
               <div className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-[11px] font-black tracking-[0.18em] text-primary uppercase">
                 {t("resumeBuilder.badge")}
               </div>
-              <h2 id="resume-builder-title" className="mt-3 text-2xl font-black text-white">
+              <h2
+                id="resume-builder-title"
+                className="mt-3 text-2xl font-black text-white"
+              >
                 {t("resumeBuilder.title")}
               </h2>
               <p className="mt-1 max-w-70 text-sm leading-6 text-white/55">
@@ -379,7 +571,7 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
             </button>
           </div>
 
-          <div className="max-h-[calc(90vh-110px)] flex-1 space-y-5 overflow-y-auto px-6 py-6 lg:min-h-0 lg:max-h-none">
+          <div className="max-h-[calc(90vh-110px)] flex-1 space-y-5 overflow-y-auto px-6 py-6 lg:max-h-none lg:min-h-0">
             <section className="rounded-[22px] border border-white/8 bg-[#1b1b1d]/55 p-4">
               <p className="text-[11px] font-black tracking-[0.16em] text-white/45 uppercase">
                 {t("resumeBuilder.template")}
@@ -399,10 +591,17 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
                           : "border-white/8 bg-[#181b22] hover:border-white/15 hover:bg-[#1c2029]"
                       )}
                     >
-                      <p className={cn("text-base font-black", active ? "text-[#29c96a]" : "text-white/80")}>
+                      <p
+                        className={cn(
+                          "text-base font-black",
+                          active ? "text-[#29c96a]" : "text-white/80"
+                        )}
+                      >
                         {t(`resumeBuilder.${item}`)}
                       </p>
-                      <p className="mt-1 text-xs text-white/40">{t(`resumeBuilder.${item}Desc`)}</p>
+                      <p className="mt-1 text-xs text-white/40">
+                        {t(`resumeBuilder.${item}Desc`)}
+                      </p>
                     </button>
                   )
                 })}
@@ -414,10 +613,12 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
                 {t("resumeBuilder.background")}
               </p>
               <div className="mt-4 grid grid-cols-2 gap-3">
-                {([
-                  { key: "light", icon: SunMedium },
-                  { key: "dark", icon: MoonStar },
-                ] as const).map(({ key, icon: Icon }) => {
+                {(
+                  [
+                    { key: "light", icon: SunMedium },
+                    { key: "dark", icon: MoonStar },
+                  ] as const
+                ).map(({ key, icon: Icon }) => {
                   const active = background === key
                   return (
                     <button
@@ -432,12 +633,24 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
                       )}
                     >
                       <div className="flex items-center gap-2">
-                        <Icon className={cn("size-4", active ? "text-[#29c96a]" : "text-white/50")} />
-                        <p className={cn("text-base font-black", active ? "text-[#29c96a]" : "text-white/80")}>
+                        <Icon
+                          className={cn(
+                            "size-4",
+                            active ? "text-[#29c96a]" : "text-white/50"
+                          )}
+                        />
+                        <p
+                          className={cn(
+                            "text-base font-black",
+                            active ? "text-[#29c96a]" : "text-white/80"
+                          )}
+                        >
                           {t(`resumeBuilder.${key}`)}
                         </p>
                       </div>
-                      <p className="mt-2 text-xs text-white/40">{t(`resumeBuilder.${key}Desc`)}</p>
+                      <p className="mt-2 text-xs text-white/40">
+                        {t(`resumeBuilder.${key}Desc`)}
+                      </p>
                     </button>
                   )
                 })}
@@ -453,7 +666,9 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
                   <p className="text-[11px] font-black tracking-[0.16em] text-white/45 uppercase">
                     {t("resumeBuilder.colorTheme")}
                   </p>
-                  <p className="mt-1 text-xs text-white/35">{selectedTheme.name}</p>
+                  <p className="mt-1 text-xs text-white/35">
+                    {selectedTheme.name}
+                  </p>
                 </div>
               </div>
               <div className="mt-4 flex flex-wrap gap-3">
@@ -466,11 +681,16 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
                       onClick={() => setAccent(theme.value)}
                       className={cn(
                         "inline-flex size-10 items-center justify-center rounded-full border transition",
-                        active ? "border-white bg-white/8" : "border-transparent bg-white/3 hover:bg-white/8"
+                        active
+                          ? "border-white bg-white/8"
+                          : "border-transparent bg-white/3 hover:bg-white/8"
                       )}
                       aria-label={theme.name}
                     >
-                      <span className="size-7 rounded-full" style={{ backgroundColor: theme.value }} />
+                      <span
+                        className="size-7 rounded-full"
+                        style={{ backgroundColor: theme.value }}
+                      />
                     </button>
                   )
                 })}
@@ -482,11 +702,15 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
               className="h-12 w-full rounded-2xl bg-primary text-base font-black hover:bg-primary/90"
             >
               <Download className="size-4" />
-              {isExporting ? t("resumeBuilder.exporting") : t("resumeBuilder.export")}
+              {isExporting
+                ? t("resumeBuilder.exporting")
+                : t("resumeBuilder.export")}
             </Button>
 
             <section className="rounded-[22px] border border-dashed border-white/10 bg-[#11182d] p-4">
-              <p className="text-lg font-black text-white">{t("resumeBuilder.exportTips")}</p>
+              <p className="text-lg font-black text-white">
+                {t("resumeBuilder.exportTips")}
+              </p>
               <div className="mt-4 space-y-3 text-sm leading-6 text-white/45">
                 <p>{t("resumeBuilder.tip1")}</p>
                 <p>{t("resumeBuilder.tip2")}</p>
@@ -502,7 +726,9 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
               <p className="text-[11px] font-black tracking-[0.16em] text-white/35 uppercase">
                 {t("resumeBuilder.preview")}
               </p>
-              <p className="mt-1 text-sm text-white/45">{t("resumeBuilder.previewHint")}</p>
+              <p className="mt-1 text-sm text-white/45">
+                {t("resumeBuilder.previewHint")}
+              </p>
             </div>
             <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-[#11161f] px-2 py-2 text-white/70">
               <button
@@ -520,7 +746,11 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
               </div>
               <button
                 type="button"
-                onClick={() => setZoomIndex((value) => Math.min(ZOOM_STEPS.length - 1, value + 1))}
+                onClick={() =>
+                  setZoomIndex((value) =>
+                    Math.min(ZOOM_STEPS.length - 1, value + 1)
+                  )
+                }
                 className="inline-flex size-8 items-center justify-center rounded-xl transition hover:bg-white/5 disabled:opacity-40"
                 disabled={zoomIndex === ZOOM_STEPS.length - 1}
                 aria-label={t("resumeBuilder.zoomIn")}
@@ -533,10 +763,23 @@ export function ResumeBuilderModal({ open, onClose }: ResumeBuilderModalProps) {
           <div className="min-h-0 flex-1 overflow-auto px-4 py-6 sm:px-6 lg:px-10">
             <div
               className="flex min-h-full min-w-max items-start justify-center rounded-[28px] border border-white/6 p-6"
-              style={{ backgroundColor: background === "dark" ? "#101828" : "#ece4d7" }}
+              style={{
+                backgroundColor: background === "dark" ? "#101828" : "#ece4d7",
+              }}
             >
-              <div style={{ transform: `scale(${zoom})`, transformOrigin: "top center" }} className="transition-transform duration-200">
-                <ResumePreview template={template} background={background} accent={accent} resumeRef={resumeRef} />
+              <div
+                style={{
+                  transform: `scale(${zoom})`,
+                  transformOrigin: "top center",
+                }}
+                className="transition-transform duration-200"
+              >
+                <ResumePreview
+                  template={template}
+                  background={background}
+                  accent={accent}
+                  resumeRef={resumeRef}
+                />
               </div>
             </div>
           </div>

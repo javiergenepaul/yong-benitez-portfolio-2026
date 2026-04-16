@@ -42,7 +42,8 @@ function SparkleIcon({ size, color }: { size: number; color: string }) {
   )
 }
 
-const rand = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min
+const rand = (min: number, max: number) =>
+  Math.floor(Math.random() * (max - min + 1)) + min
 
 function generateSparkle(colors: { first: string; second: string }): Sparkle {
   return {
@@ -65,7 +66,10 @@ export function SparklesText({
   useEffect(() => {
     const interval = setInterval(() => {
       setSparkles((prev) => {
-        const next = [...prev.slice(-(sparklesCount - 1)), generateSparkle(colors)]
+        const next = [
+          ...prev.slice(-(sparklesCount - 1)),
+          generateSparkle(colors),
+        ]
         return next
       })
     }, 300)

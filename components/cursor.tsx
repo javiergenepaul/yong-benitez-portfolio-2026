@@ -26,11 +26,11 @@ export function Cursor() {
     <>
       <div
         ref={dotRef}
-        className="fixed z-[9999] w-2 h-2 rounded-full bg-primary pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-[transform] duration-100 hidden md:block"
+        className="pointer-events-none fixed z-[9999] hidden h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary transition-[transform] duration-100 md:block"
       />
       <div
         ref={ringRef}
-        className="fixed z-[9998] w-8 h-8 rounded-full border-2 border-primary/50 pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-[left,top] duration-[120ms] ease-out hidden md:block"
+        className="pointer-events-none fixed z-[9998] hidden h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary/50 transition-[left,top] duration-[120ms] ease-out md:block"
       />
     </>
   )

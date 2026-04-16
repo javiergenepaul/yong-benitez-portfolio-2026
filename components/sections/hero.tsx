@@ -8,7 +8,13 @@ import siteContent from "@/lib/data/site-content.json"
 import { ResumeBuilderModal } from "@/components/resume-builder-modal"
 import { Button } from "@/components/ui/button"
 
-function StatCounter({ target, suffix = "+" }: { target: number; suffix?: string }) {
+function StatCounter({
+  target,
+  suffix = "+",
+}: {
+  target: number
+  suffix?: string
+}) {
   const [count, setCount] = useState(0)
   const ref = useRef<HTMLDivElement>(null)
   const started = useRef(false)
@@ -45,13 +51,20 @@ function StatCounter({ target, suffix = "+" }: { target: number; suffix?: string
 
 function scrollTo(id: string) {
   const el = document.getElementById(id)
-  if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: "smooth" })
+  if (el)
+    window.scrollTo({
+      top: el.getBoundingClientRect().top + window.scrollY - 70,
+      behavior: "smooth",
+    })
 }
 
 export function Hero() {
   const { t, i18n } = useTranslation()
   const [isResumeBuilderOpen, setIsResumeBuilderOpen] = useState(false)
-  const description = i18n.language === "en" ? siteContent.hero.description : t("hero.description")
+  const description =
+    i18n.language === "en"
+      ? siteContent.hero.description
+      : t("hero.description")
 
   const roles = t("hero.roles", { returnObjects: true }) as string[]
   const rolesSequence: (string | number)[] = roles.flatMap((r) => [r, 2500])
@@ -101,7 +114,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-16 px-6 relative overflow-hidden"
+      className="relative flex min-h-screen items-center overflow-hidden px-6 pt-16"
     >
       {/* Grid bg */}
       <div
@@ -113,21 +126,27 @@ export function Hero() {
         }}
       />
       {/* Glow orbs */}
-      <div className="absolute top-20 right-20 w-80 h-80 bg-primary/15 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-64 h-64 bg-navy/30 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-20 h-80 w-80 rounded-full bg-primary/15 blur-3xl" />
+      <div className="absolute bottom-20 left-10 h-64 w-64 rounded-full bg-navy/30 blur-3xl" />
 
-      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 py-16 md:grid-cols-2">
         {/* Left copy */}
         <div>
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".1s" }}>
-            <span className="inline-flex items-center gap-2 bg-foreground/5 border border-foreground/10 text-primary text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+          <div
+            className="animate-fade-up opacity-0"
+            style={{ animationDelay: ".1s" }}
+          >
+            <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/5 px-4 py-2 text-xs font-bold tracking-widest text-primary uppercase">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
               {t("hero.badge")}
             </span>
           </div>
 
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".25s" }}>
-            <h1 className="text-5xl md:text-7xl font-black leading-[1.05] mb-2">
+          <div
+            className="animate-fade-up opacity-0"
+            style={{ animationDelay: ".25s" }}
+          >
+            <h1 className="mb-2 text-5xl leading-[1.05] font-black md:text-7xl">
               <span className="text-foreground">{t("hero.tagline1")}</span>
               <br />
               <span className="shimmer-text">{t("hero.tagline2")}</span>
@@ -137,10 +156,15 @@ export function Hero() {
           </div>
 
           {/* Name + animated role */}
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: ".4s" }}>
-            <div className="mt-4 mb-6 flex items-baseline flex-wrap gap-x-2">
-              <span className="text-lg text-foreground/40 whitespace-nowrap">{t("hero.intro")}</span>
-              <span className="text-lg font-black text-foreground whitespace-nowrap">
+          <div
+            className="animate-fade-up opacity-0"
+            style={{ animationDelay: ".4s" }}
+          >
+            <div className="mt-4 mb-6 flex flex-wrap items-baseline gap-x-2">
+              <span className="text-lg whitespace-nowrap text-foreground/40">
+                {t("hero.intro")}
+              </span>
+              <span className="text-lg font-black whitespace-nowrap text-foreground">
                 Yong Benitez,
               </span>
               <TypeAnimation
@@ -154,24 +178,24 @@ export function Hero() {
                 className="text-lg font-bold text-primary"
               />
             </div>
-            <p className="text-base text-foreground/50 max-w-md leading-relaxed mb-8">
+            <p className="mb-8 max-w-md text-base leading-relaxed text-foreground/50">
               {description}
             </p>
           </div>
 
           <div
-            className="opacity-0 animate-fade-up flex gap-4 flex-wrap"
+            className="flex animate-fade-up flex-wrap gap-4 opacity-0"
             style={{ animationDelay: ".55s" }}
           >
             <Button
               onClick={() => scrollTo("contact")}
-              className="rounded-full px-8 py-3.5 h-auto font-bold text-sm"
+              className="h-auto rounded-full px-8 py-3.5 text-sm font-bold"
             >
               {t("hero.cta1")}
             </Button>
             <button
               onClick={() => setIsResumeBuilderOpen(true)}
-              className="border border-border text-foreground px-8 py-3.5 rounded-full font-bold text-sm hover:border-primary hover:text-primary transition-all duration-300"
+              className="rounded-full border border-border px-8 py-3.5 text-sm font-bold text-foreground transition-all duration-300 hover:border-primary hover:text-primary"
             >
               {t("hero.cta2")}
             </button>
@@ -179,13 +203,13 @@ export function Hero() {
 
           {/* Stats */}
           <div
-            className="opacity-0 animate-fade-up flex gap-8 mt-10 pt-8 border-t border-border"
+            className="mt-10 flex animate-fade-up gap-8 border-t border-border pt-8 opacity-0"
             style={{ animationDelay: ".7s" }}
           >
             {stats.map((s) => (
               <div key={s.label}>
                 <StatCounter target={s.count} suffix={s.suffix} />
-                <div className="text-xs text-foreground/30 mt-1">{s.label}</div>
+                <div className="mt-1 text-xs text-foreground/30">{s.label}</div>
               </div>
             ))}
           </div>
@@ -193,24 +217,26 @@ export function Hero() {
 
         {/* Right visual */}
         <div
-          className="opacity-0 animate-slide-left hidden md:flex relative justify-center items-center h-125"
+          className="relative hidden h-125 animate-slide-left items-center justify-center opacity-0 md:flex"
           style={{ animationDelay: ".3s" }}
         >
           {/* Ripple rings */}
-          <div className="absolute w-64 h-64 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-1/2 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full">
             {[0, 0.8, 1.6].map((delay, i) => (
               <div
                 key={i}
-                className="absolute inset-0 rounded-full border-2 border-primary/40 animate-ripple"
+                className="absolute inset-0 animate-ripple rounded-full border-2 border-primary/40"
                 style={{ animationDelay: `${delay}s` }}
               />
             ))}
           </div>
 
           {/* Blob avatar */}
-          <div className="animate-blob relative w-52 h-52 bg-linear-to-br from-navy to-[#1a1f2e] flex items-center justify-center z-10">
-            <span className="text-8xl font-black text-white/10 select-none">Y</span>
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap z-20">
+          <div className="relative z-10 flex h-52 w-52 animate-blob items-center justify-center bg-linear-to-br from-navy to-[#1a1f2e]">
+            <span className="text-8xl font-black text-white/10 select-none">
+              Y
+            </span>
+            <div className="absolute -bottom-4 left-1/2 z-20 -translate-x-1/2 rounded-full bg-primary px-4 py-1.5 text-xs font-bold whitespace-nowrap text-white">
               {t("hero.avatarBadge")}
             </div>
           </div>
@@ -219,11 +245,11 @@ export function Hero() {
           {floatingChips.map((chip) => (
             <div
               key={chip.label}
-              className={`animate-float absolute ${chip.pos} bg-card border border-border rounded-2xl p-3 text-xs font-bold text-foreground flex items-center gap-2`}
+              className={`absolute animate-float ${chip.pos} flex items-center gap-2 rounded-2xl border border-border bg-card p-3 text-xs font-bold text-foreground`}
               style={{ animationDelay: chip.delay }}
             >
               <div
-                className={`w-8 h-8 rounded-xl ${chip.bg} flex items-center justify-center ${chip.color} text-base`}
+                className={`h-8 w-8 rounded-xl ${chip.bg} flex items-center justify-center ${chip.color} text-base`}
               >
                 {chip.emoji}
               </div>
@@ -232,11 +258,14 @@ export function Hero() {
           ))}
 
           {/* Slow spinning ring */}
-          <div className="animate-spin-slow absolute w-80 h-80 rounded-full border border-dashed border-white/5 pointer-events-none" />
+          <div className="pointer-events-none absolute h-80 w-80 animate-spin-slow rounded-full border border-dashed border-white/5" />
         </div>
       </div>
 
-      <ResumeBuilderModal open={isResumeBuilderOpen} onClose={() => setIsResumeBuilderOpen(false)} />
+      <ResumeBuilderModal
+        open={isResumeBuilderOpen}
+        onClose={() => setIsResumeBuilderOpen(false)}
+      />
     </section>
   )
 }

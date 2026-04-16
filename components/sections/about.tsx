@@ -16,7 +16,11 @@ const fallbackSkillKeys = [
   { key: "contentCreation", pct: 92 },
 ] as const
 
-function SkillBars({ items }: { items: Array<{ label: string; pct: number }> }) {
+function SkillBars({
+  items,
+}: {
+  items: Array<{ label: string; pct: number }>
+}) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -40,11 +44,11 @@ function SkillBars({ items }: { items: Array<{ label: string; pct: number }> }) 
     <div ref={ref} className="space-y-5">
       {items.map((item) => (
         <div key={item.label}>
-          <div className="flex justify-between mb-1.5">
+          <div className="mb-1.5 flex justify-between">
             <span className="text-sm text-foreground/70">{item.label}</span>
-            <span className="text-sm text-primary font-bold">{item.pct}%</span>
+            <span className="text-sm font-bold text-primary">{item.pct}%</span>
           </div>
-          <div className="h-1.5 bg-white/5 rounded-full">
+          <div className="h-1.5 rounded-full bg-white/5">
             <div
               className="h-1.5 rounded-full bg-linear-to-r from-primary to-[#e879f9] transition-[width] duration-1200 ease-out"
               style={{ width: 0 }}
@@ -59,7 +63,11 @@ function SkillBars({ items }: { items: Array<{ label: string; pct: number }> }) 
 
 function scrollTo(id: string) {
   const el = document.getElementById(id)
-  if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: "smooth" })
+  if (el)
+    window.scrollTo({
+      top: el.getBoundingClientRect().top + window.scrollY - 70,
+      behavior: "smooth",
+    })
 }
 
 export function About() {
@@ -76,28 +84,33 @@ export function About() {
       ]
   const skillItems = isEnglish
     ? siteContent.about.skills
-    : fallbackSkillKeys.map((skill) => ({ label: t(`about.skills.${skill.key}`), pct: skill.pct }))
+    : fallbackSkillKeys.map((skill) => ({
+        label: t(`about.skills.${skill.key}`),
+        pct: skill.pct,
+      }))
   const ctaLabel = isEnglish ? siteContent.about.cta : t("about.cta")
 
   return (
-    <section id="about" className="py-24 px-6 bg-background">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="bg-background px-6 py-24">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 md:grid-cols-2">
         {/* Left */}
         <Reveal>
-          <p className="text-xs font-bold tracking-widest uppercase text-primary mb-3">{t("about.label")}</p>
-          <h2 className="text-4xl font-black text-foreground mb-6 leading-tight">
+          <p className="mb-3 text-xs font-bold tracking-widest text-primary uppercase">
+            {t("about.label")}
+          </p>
+          <h2 className="mb-6 text-4xl leading-tight font-black text-foreground">
             {title1}
             <br />
             <span className="text-primary">{title2}</span>
           </h2>
-          <div className="space-y-4 text-foreground/50 text-base leading-relaxed">
+          <div className="space-y-4 text-base leading-relaxed text-foreground/50">
             {paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
           <Button
             onClick={() => scrollTo("contact")}
-            className="mt-8 rounded-full px-7 py-3 h-auto font-bold text-sm"
+            className="mt-8 h-auto rounded-full px-7 py-3 text-sm font-bold"
           >
             {ctaLabel}
           </Button>
@@ -105,8 +118,8 @@ export function About() {
 
         {/* Right — skill bars */}
         <Reveal delay={200}>
-          <div className="bg-card border border-border rounded-3xl p-8">
-            <h3 className="text-sm font-bold text-foreground/40 uppercase tracking-widest mb-6">
+          <div className="rounded-3xl border border-border bg-card p-8">
+            <h3 className="mb-6 text-sm font-bold tracking-widest text-foreground/40 uppercase">
               {t("about.skillsTitle")}
             </h3>
             <SkillBars items={skillItems} />
